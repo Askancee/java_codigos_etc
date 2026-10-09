@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="189" height="307" viewBox="0 0 189 307"><title>Diagrama de flujo: área de un rectángulo</title><defs><marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#455A64"/></marker></defs><rect x="0" y="0" width="189" height="307" rx="0" fill="#FFFFFF" stroke="none" stroke-width="0"/>
+<g transform="translate(94.77600000000001,18.0)">
+<path d="M0.0,34.0 L0.0,60.0" stroke="#455A64" stroke-width="1.5" fill="none" marker-end="url(#arr)"/>
+<path d="M0.0,93.0 L0.0,119.0" stroke="#455A64" stroke-width="1.5" fill="none" marker-end="url(#arr)"/>
+<path d="M0.0,152.0 L0.0,178.0" stroke="#455A64" stroke-width="1.5" fill="none" marker-end="url(#arr)"/>
+<path d="M0.0,211.0 L0.0,237.0" stroke="#455A64" stroke-width="1.5" fill="none" marker-end="url(#arr)"/>
+<rect x="-42.0" y="0.0" width="84" height="34" rx="17.0" fill="#E8F5E9" stroke="#2E7D32" stroke-width="1.8"/>
+<text x="0" y="18.0" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="13" font-weight="normal" fill="#263238" text-anchor="middle" dominant-baseline="central">Inicio</text>
+<polygon points="-62.77600000000001,60.0 76.77600000000001,60.0 62.77600000000001,93.0 -76.77600000000001,93.0" fill="#E3F2FD" stroke="#1565C0" stroke-width="1.8"/>
+<text x="0" y="77.5" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="13" font-weight="normal" fill="#263238" text-anchor="middle" dominant-baseline="central">Leer base, altura</text>
+<rect x="-74.87899999999999" y="119.0" width="149.75799999999998" height="33" rx="0" fill="#FFF8E1" stroke="#F9A825" stroke-width="1.8"/>
+<text x="0" y="136.5" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="13" font-weight="normal" fill="#263238" text-anchor="middle" dominant-baseline="central">area ← base × altura</text>
+<polygon points="-50.47800000000001,178.0 64.47800000000001,178.0 50.47800000000001,211.0 -64.47800000000001,211.0" fill="#E3F2FD" stroke="#1565C0" stroke-width="1.8"/>
+<text x="0" y="195.5" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="13" font-weight="normal" fill="#263238" text-anchor="middle" dominant-baseline="central">Escribir area</text>
+<rect x="-42.0" y="237.0" width="84" height="34" rx="17.0" fill="#E8F5E9" stroke="#2E7D32" stroke-width="1.8"/>
+<text x="0" y="255.0" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="13" font-weight="normal" fill="#263238" text-anchor="middle" dominant-baseline="central">Fin</text>
+</g></svg>

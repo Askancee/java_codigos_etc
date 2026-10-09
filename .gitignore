@@ -1,0 +1,14 @@
+# Compilados de Java / Maven (NetBeans los genera al ejecutar)
+target/
+*.class
+nbproject/private/
+
+# Ejecutables y objetos de C++
+*.exe
+*.o
+*.out
+a.out
+
+# Archivos del sistema
+.DS_Store
+Thumbs.db

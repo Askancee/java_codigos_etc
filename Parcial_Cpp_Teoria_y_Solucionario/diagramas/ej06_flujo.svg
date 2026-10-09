@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="290" height="341" viewBox="0 0 290 341"><title>Ejercicio 6: diagrama de flujo</title><defs><marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#455A64"/></marker></defs><rect x="0" y="0" width="290" height="341" rx="0" fill="#FFFFFF" stroke="none" stroke-width="0"/>
+<g transform="translate(145.438,18.0)">
+<path d="M0.0,34.0 L0.0,60.0" stroke="#455A64" stroke-width="1.5" fill="none" marker-end="url(#arr)"/>
+<path d="M0.0,93.0 L0.0,119.0" stroke="#455A64" stroke-width="1.5" fill="none" marker-end="url(#arr)"/>
+<path d="M0.0,186.0 L0.0,212.0" stroke="#455A64" stroke-width="1.5" fill="none" marker-end="url(#arr)"/>
+<path d="M0.0,245.0 L0.0,271.0" stroke="#455A64" stroke-width="1.5" fill="none" marker-end="url(#arr)"/>
+<rect x="-42.0" y="0.0" width="84" height="34" rx="17.0" fill="#E8F5E9" stroke="#2E7D32" stroke-width="1.8"/>
+<text x="0" y="18.0" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="13" font-weight="normal" fill="#263238" text-anchor="middle" dominant-baseline="central">Inicio</text>
+<polygon points="-47.9625,60.0 61.9625,60.0 47.9625,93.0 -61.9625,93.0" fill="#E3F2FD" stroke="#1565C0" stroke-width="1.8"/>
+<text x="0" y="77.5" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="13" font-weight="normal" fill="#263238" text-anchor="middle" dominant-baseline="central">Leer codigo</text>
+<rect x="-127.438" y="119.0" width="254.876" height="67" rx="0" fill="#FFF8E1" stroke="#F9A825" stroke-width="1.8"/>
+<text x="-113.438" y="136.5" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="13" font-weight="normal" fill="#263238" text-anchor="start" dominant-baseline="central">facultad ← subcadena(codigo, 0, 4)</text>
+<text x="-113.438" y="153.5" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="13" font-weight="normal" fill="#263238" text-anchor="start" dominant-baseline="central">anio ← subcadena(codigo, 5, 4)</text>
+<text x="-113.438" y="170.5" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="13" font-weight="normal" fill="#263238" text-anchor="start" dominant-baseline="central">correlativo ← subcadena(codigo, 10, 4)</text>
+<polygon points="-109.7255,212.0 123.7255,212.0 109.7255,245.0 -123.7255,245.0" fill="#E3F2FD" stroke="#1565C0" stroke-width="1.8"/>
+<text x="0" y="229.5" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="13" font-weight="normal" fill="#263238" text-anchor="middle" dominant-baseline="central">Escribir facultad, anio, correlativo</text>
+<rect x="-42.0" y="271.0" width="84" height="34" rx="17.0" fill="#E8F5E9" stroke="#2E7D32" stroke-width="1.8"/>
+<text x="0" y="289.0" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="13" font-weight="normal" fill="#263238" text-anchor="middle" dominant-baseline="central">Fin</text>
+</g></svg>

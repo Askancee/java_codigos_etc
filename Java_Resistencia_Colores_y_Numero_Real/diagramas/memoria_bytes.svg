@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="820" height="330" viewBox="0 0 820 330"><title>Bit, byte y RAM</title><defs><marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#455A64"/></marker></defs><rect x="0" y="0" width="820" height="330" rx="0" fill="#FFFFFF" stroke="none" stroke-width="0"/>
+<text x="410" y="22" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="16" font-weight="bold" fill="#263238" text-anchor="middle" dominant-baseline="central">Bit, byte y memoria RAM</text>
+<rect x="40" y="50" width="34" height="34" rx="0" fill="#FFFFFF" stroke="#263238" stroke-width="1.5"/>
+<text x="57" y="68" font-family="'DejaVu Sans Mono', Consolas, 'Liberation Mono', 'Courier New', monospace" font-size="17" font-weight="bold" fill="#263238" text-anchor="middle" dominant-baseline="central">1</text>
+<text x="90" y="60" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="13" font-weight="bold" fill="#263238" text-anchor="start" dominant-baseline="central">1 bit: un «interruptor»</text>
+<text x="90" y="78" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="12" font-weight="normal" fill="#607D8B" text-anchor="start" dominant-baseline="central">solo vale 0 o 1</text>
+<rect x="330" y="50" width="30" height="34" rx="0" fill="#FFF8E1" stroke="#F9A825" stroke-width="1.5"/>
+<text x="345" y="68" font-family="'DejaVu Sans Mono', Consolas, 'Liberation Mono', 'Courier New', monospace" font-size="16" font-weight="bold" fill="#263238" text-anchor="middle" dominant-baseline="central">0</text>
+<rect x="360" y="50" width="30" height="34" rx="0" fill="#FFF8E1" stroke="#F9A825" stroke-width="1.5"/>
+<text x="375" y="68" font-family="'DejaVu Sans Mono', Consolas, 'Liberation Mono', 'Courier New', monospace" font-size="16" font-weight="bold" fill="#263238" text-anchor="middle" dominant-baseline="central">1</text>
+<rect x="390" y="50" width="30" height="34" rx="0" fill="#FFF8E1" stroke="#F9A825" stroke-width="1.5"/>
+<text x="405" y="68" font-family="'DejaVu Sans Mono', Consolas, 'Liberation Mono', 'Courier New', monospace" font-size="16" font-weight="bold" fill="#263238" text-anchor="middle" dominant-baseline="central">0</text>
+<rect x="420" y="50" width="30" height="34" rx="0" fill="#FFF8E1" stroke="#F9A825" stroke-width="1.5"/>
+<text x="435" y="68" font-family="'DejaVu Sans Mono', Consolas, 'Liberation Mono', 'Courier New', monospace" font-size="16" font-weight="bold" fill="#263238" text-anchor="middle" dominant-baseline="central">0</text>
+<rect x="450" y="50" width="30" height="34" rx="0" fill="#FFF8E1" stroke="#F9A825" stroke-width="1.5"/>
+<text x="465" y="68" font-family="'DejaVu Sans Mono', Consolas, 'Liberation Mono', 'Courier New', monospace" font-size="16" font-weight="bold" fill="#263238" text-anchor="middle" dominant-baseline="central">0</text>
+<rect x="480" y="50" width="30" height="34" rx="0" fill="#FFF8E1" stroke="#F9A825" stroke-width="1.5"/>
+<text x="495" y="68" font-family="'DejaVu Sans Mono', Consolas, 'Liberation Mono', 'Courier New', monospace" font-size="16" font-weight="bold" fill="#263238" text-anchor="middle" dominant-baseline="central">0</text>
+<rect x="510" y="50" width="30" height="34" rx="0" fill="#FFF8E1" stroke="#F9A825" stroke-width="1.5"/>
+<text x="525" y="68" font-family="'DejaVu Sans Mono', Consolas, 'Liberation Mono', 'Courier New', monospace" font-size="16" font-weight="bold" fill="#263238" text-anchor="middle" dominant-baseline="central">0</text>
+<rect x="540" y="50" width="30" height="34" rx="0" fill="#FFF8E1" stroke="#F9A825" stroke-width="1.5"/>
+<text x="555" y="68" font-family="'DejaVu Sans Mono', Consolas, 'Liberation Mono', 'Courier New', monospace" font-size="16" font-weight="bold" fill="#263238" text-anchor="middle" dominant-baseline="central">1</text>
+<text x="580" y="60" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="13" font-weight="bold" fill="#263238" text-anchor="start" dominant-baseline="central">1 byte = 8 bits</text>
+<text x="580" y="78" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="12" font-weight="normal" fill="#607D8B" text-anchor="start" dominant-baseline="central">01000001₂ = 65 = la letra 'A'</text>
+<text x="410" y="128" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="13" font-weight="bold" fill="#263238" text-anchor="middle" dominant-baseline="central">La RAM es una fila enorme de bytes; cada byte tiene un número: su DIRECCIÓN</text>
+<rect x="74" y="175" width="56" height="40" rx="0" fill="#E3F2FD" stroke="#1565C0" stroke-width="1.4"/>
+<text x="102.0" y="196" font-family="'DejaVu Sans Mono', Consolas, 'Liberation Mono', 'Courier New', monospace" font-size="15" font-weight="bold" fill="#263238" text-anchor="middle" dominant-baseline="central">00</text>
+<text x="102.0" y="229" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="11" font-weight="normal" fill="#607D8B" text-anchor="middle" dominant-baseline="central">1000</text>
+<rect x="130" y="175" width="56" height="40" rx="0" fill="#E3F2FD" stroke="#1565C0" stroke-width="1.4"/>
+<text x="158.0" y="196" font-family="'DejaVu Sans Mono', Consolas, 'Liberation Mono', 'Courier New', monospace" font-size="15" font-weight="bold" fill="#263238" text-anchor="middle" dominant-baseline="central">00</text>
+<text x="158.0" y="229" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="11" font-weight="normal" fill="#607D8B" text-anchor="middle" dominant-baseline="central">1001</text>
+<rect x="186" y="175" width="56" height="40" rx="0" fill="#E3F2FD" stroke="#1565C0" stroke-width="1.4"/>
+<text x="214.0" y="196" font-family="'DejaVu Sans Mono', Consolas, 'Liberation Mono', 'Courier New', monospace" font-size="15" font-weight="bold" fill="#263238" text-anchor="middle" dominant-baseline="central">D8</text>
+<text x="214.0" y="229" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="11" font-weight="normal" fill="#607D8B" text-anchor="middle" dominant-baseline="central">1002</text>
+<rect x="242" y="175" width="56" height="40" rx="0" fill="#E3F2FD" stroke="#1565C0" stroke-width="1.4"/>
+<text x="270.0" y="196" font-family="'DejaVu Sans Mono', Consolas, 'Liberation Mono', 'Courier New', monospace" font-size="15" font-weight="bold" fill="#263238" text-anchor="middle" dominant-baseline="central">C0</text>
+<text x="270.0" y="229" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="11" font-weight="normal" fill="#607D8B" text-anchor="middle" dominant-baseline="central">1003</text>
+<rect x="298" y="175" width="56" height="40" rx="0" fill="#E8F5E9" stroke="#2E7D32" stroke-width="1.4"/>
+<text x="326.0" y="196" font-family="'DejaVu Sans Mono', Consolas, 'Liberation Mono', 'Courier New', monospace" font-size="15" font-weight="bold" fill="#263238" text-anchor="middle" dominant-baseline="central">9A</text>
+<text x="326.0" y="229" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="11" font-weight="normal" fill="#607D8B" text-anchor="middle" dominant-baseline="central">1004</text>
+<rect x="354" y="175" width="56" height="40" rx="0" fill="#E8F5E9" stroke="#2E7D32" stroke-width="1.4"/>
+<text x="382.0" y="196" font-family="'DejaVu Sans Mono', Consolas, 'Liberation Mono', 'Courier New', monospace" font-size="15" font-weight="bold" fill="#263238" text-anchor="middle" dominant-baseline="central">99</text>
+<text x="382.0" y="229" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="11" font-weight="normal" fill="#607D8B" text-anchor="middle" dominant-baseline="central">1005</text>
+<rect x="410" y="175" width="56" height="40" rx="0" fill="#E8F5E9" stroke="#2E7D32" stroke-width="1.4"/>
+<text x="438.0" y="196" font-family="'DejaVu Sans Mono', Consolas, 'Liberation Mono', 'Courier New', monospace" font-size="15" font-weight="bold" fill="#263238" text-anchor="middle" dominant-baseline="central">99</text>
+<text x="438.0" y="229" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="11" font-weight="normal" fill="#607D8B" text-anchor="middle" dominant-baseline="central">1006</text>
+<rect x="466" y="175" width="56" height="40" rx="0" fill="#E8F5E9" stroke="#2E7D32" stroke-width="1.4"/>
+<text x="494.0" y="196" font-family="'DejaVu Sans Mono', Consolas, 'Liberation Mono', 'Courier New', monospace" font-size="15" font-weight="bold" fill="#263238" text-anchor="middle" dominant-baseline="central">99</text>
+<text x="494.0" y="229" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="11" font-weight="normal" fill="#607D8B" text-anchor="middle" dominant-baseline="central">1007</text>
+<rect x="522" y="175" width="56" height="40" rx="0" fill="#E8F5E9" stroke="#2E7D32" stroke-width="1.4"/>
+<text x="550.0" y="196" font-family="'DejaVu Sans Mono', Consolas, 'Liberation Mono', 'Courier New', monospace" font-size="15" font-weight="bold" fill="#263238" text-anchor="middle" dominant-baseline="central">99</text>
+<text x="550.0" y="229" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="11" font-weight="normal" fill="#607D8B" text-anchor="middle" dominant-baseline="central">1008</text>
+<rect x="578" y="175" width="56" height="40" rx="0" fill="#E8F5E9" stroke="#2E7D32" stroke-width="1.4"/>
+<text x="606.0" y="196" font-family="'DejaVu Sans Mono', Consolas, 'Liberation Mono', 'Courier New', monospace" font-size="15" font-weight="bold" fill="#263238" text-anchor="middle" dominant-baseline="central">99</text>
+<text x="606.0" y="229" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="11" font-weight="normal" fill="#607D8B" text-anchor="middle" dominant-baseline="central">1009</text>
+<rect x="634" y="175" width="56" height="40" rx="0" fill="#E8F5E9" stroke="#2E7D32" stroke-width="1.4"/>
+<text x="662.0" y="196" font-family="'DejaVu Sans Mono', Consolas, 'Liberation Mono', 'Courier New', monospace" font-size="15" font-weight="bold" fill="#263238" text-anchor="middle" dominant-baseline="central">B9</text>
+<text x="662.0" y="229" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="11" font-weight="normal" fill="#607D8B" text-anchor="middle" dominant-baseline="central">1010</text>
+<rect x="690" y="175" width="56" height="40" rx="0" fill="#E8F5E9" stroke="#2E7D32" stroke-width="1.4"/>
+<text x="718.0" y="196" font-family="'DejaVu Sans Mono', Consolas, 'Liberation Mono', 'Courier New', monospace" font-size="15" font-weight="bold" fill="#263238" text-anchor="middle" dominant-baseline="central">3F</text>
+<text x="718.0" y="229" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="11" font-weight="normal" fill="#607D8B" text-anchor="middle" dominant-baseline="central">1011</text>
+<path d="M77,169 L77,162 L295,162 L295,169" stroke="#1565C0" stroke-width="1.6" fill="none"/>
+<text x="186" y="149" font-family="'DejaVu Sans Mono', Consolas, 'Liberation Mono', 'Courier New', monospace" font-size="12" font-weight="bold" fill="#1565C0" text-anchor="middle" dominant-baseline="central">float precio = -6.75f;  (4 bytes)</text>
+<path d="M301,169 L301,162 L743,162 L743,169" stroke="#2E7D32" stroke-width="1.6" fill="none"/>
+<text x="522" y="149" font-family="'DejaVu Sans Mono', Consolas, 'Liberation Mono', 'Courier New', monospace" font-size="12" font-weight="bold" fill="#2E7D32" text-anchor="middle" dominant-baseline="central">double total = 0.1;  (8 bytes)</text>
+<text x="410" y="268" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="12" font-weight="normal" fill="#607D8B" text-anchor="middle" dominant-baseline="central">Contenido en hexadecimal (2 dígitos hex = 1 byte). Debajo de cada casilla: su dirección.</text>
+<text x="410" y="290" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="12" font-weight="normal" fill="#263238" text-anchor="middle" dominant-baseline="central" font-style="italic">En las siguientes páginas veremos POR QUÉ −6.75 se convierte justamente en C0 D8 00 00.</text></svg>

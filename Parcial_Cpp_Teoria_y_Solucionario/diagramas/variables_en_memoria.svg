@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="780" height="352" viewBox="0 0 780 352"><title>Variables en memoria</title><defs><marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#455A64"/></marker></defs><rect x="0" y="0" width="780" height="352" rx="0" fill="#FFFFFF" stroke="none" stroke-width="0"/>
+<text x="390" y="22" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="15" font-weight="bold" fill="#263238" text-anchor="middle" dominant-baseline="central">Una variable es una «caja» con nombre, tipo y valor guardada en la memoria RAM</text>
+<rect x="60" y="52" width="110" height="26" rx="5" fill="#1565C0" stroke="#1565C0" stroke-width="1.5"/>
+<text x="115" y="65" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="14" font-weight="bold" fill="#FFFFFF" text-anchor="middle" dominant-baseline="central">edad</text>
+<rect x="40" y="78" width="150" height="58" rx="6" fill="#E3F2FD" stroke="#1565C0" stroke-width="2"/>
+<text x="115" y="107" font-family="'DejaVu Sans Mono', Consolas, 'Liberation Mono', 'Courier New', monospace" font-size="22" font-weight="bold" fill="#263238" text-anchor="middle" dominant-baseline="central">19</text>
+<text x="115" y="152" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="13" font-weight="normal" fill="#607D8B" text-anchor="middle" dominant-baseline="central">tipo int  ·  4 bytes</text>
+<rect x="245" y="52" width="110" height="26" rx="5" fill="#2E7D32" stroke="#2E7D32" stroke-width="1.5"/>
+<text x="300" y="65" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="14" font-weight="bold" fill="#FFFFFF" text-anchor="middle" dominant-baseline="central">notaFinal</text>
+<rect x="225" y="78" width="150" height="58" rx="6" fill="#E8F5E9" stroke="#2E7D32" stroke-width="2"/>
+<text x="300" y="107" font-family="'DejaVu Sans Mono', Consolas, 'Liberation Mono', 'Courier New', monospace" font-size="22" font-weight="bold" fill="#263238" text-anchor="middle" dominant-baseline="central">15.75</text>
+<text x="300" y="152" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="13" font-weight="normal" fill="#607D8B" text-anchor="middle" dominant-baseline="central">tipo double  ·  8 bytes</text>
+<rect x="430" y="52" width="110" height="26" rx="5" fill="#F9A825" stroke="#F9A825" stroke-width="1.5"/>
+<text x="485" y="65" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="14" font-weight="bold" fill="#FFFFFF" text-anchor="middle" dominant-baseline="central">inicial</text>
+<rect x="410" y="78" width="150" height="58" rx="6" fill="#FFF8E1" stroke="#F9A825" stroke-width="2"/>
+<text x="485" y="107" font-family="'DejaVu Sans Mono', Consolas, 'Liberation Mono', 'Courier New', monospace" font-size="22" font-weight="bold" fill="#263238" text-anchor="middle" dominant-baseline="central">'T'</text>
+<text x="485" y="152" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="13" font-weight="normal" fill="#607D8B" text-anchor="middle" dominant-baseline="central">tipo char  ·  1 byte</text>
+<rect x="615" y="52" width="110" height="26" rx="5" fill="#C2185B" stroke="#C2185B" stroke-width="1.5"/>
+<text x="670" y="65" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="14" font-weight="bold" fill="#FFFFFF" text-anchor="middle" dominant-baseline="central">aprobado</text>
+<rect x="595" y="78" width="150" height="58" rx="6" fill="#FCE4EC" stroke="#C2185B" stroke-width="2"/>
+<text x="670" y="107" font-family="'DejaVu Sans Mono', Consolas, 'Liberation Mono', 'Courier New', monospace" font-size="22" font-weight="bold" fill="#263238" text-anchor="middle" dominant-baseline="central">true</text>
+<text x="670" y="152" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="13" font-weight="normal" fill="#607D8B" text-anchor="middle" dominant-baseline="central">tipo bool  ·  1 byte</text>
+<text x="390" y="318" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="13" font-weight="normal" fill="#607D8B" text-anchor="middle" dominant-baseline="central">Memoria RAM: cada casilla es 1 byte; el número de abajo es su dirección</text>
+<rect x="54" y="248" width="42" height="34" rx="0" fill="#E3F2FD" stroke="#1565C0" stroke-width="1.3"/>
+<text x="75.0" y="296" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="10" font-weight="normal" fill="#607D8B" text-anchor="middle" dominant-baseline="central">1000</text>
+<rect x="96" y="248" width="42" height="34" rx="0" fill="#E3F2FD" stroke="#1565C0" stroke-width="1.3"/>
+<text x="117.0" y="296" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="10" font-weight="normal" fill="#607D8B" text-anchor="middle" dominant-baseline="central">1001</text>
+<rect x="138" y="248" width="42" height="34" rx="0" fill="#E3F2FD" stroke="#1565C0" stroke-width="1.3"/>
+<text x="159.0" y="296" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="10" font-weight="normal" fill="#607D8B" text-anchor="middle" dominant-baseline="central">1002</text>
+<rect x="180" y="248" width="42" height="34" rx="0" fill="#E3F2FD" stroke="#1565C0" stroke-width="1.3"/>
+<text x="201.0" y="296" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="10" font-weight="normal" fill="#607D8B" text-anchor="middle" dominant-baseline="central">1003</text>
+<rect x="222" y="248" width="42" height="34" rx="0" fill="#E8F5E9" stroke="#2E7D32" stroke-width="1.3"/>
+<text x="243.0" y="296" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="10" font-weight="normal" fill="#607D8B" text-anchor="middle" dominant-baseline="central">1004</text>
+<rect x="264" y="248" width="42" height="34" rx="0" fill="#E8F5E9" stroke="#2E7D32" stroke-width="1.3"/>
+<text x="285.0" y="296" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="10" font-weight="normal" fill="#607D8B" text-anchor="middle" dominant-baseline="central">1005</text>
+<rect x="306" y="248" width="42" height="34" rx="0" fill="#E8F5E9" stroke="#2E7D32" stroke-width="1.3"/>
+<text x="327.0" y="296" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="10" font-weight="normal" fill="#607D8B" text-anchor="middle" dominant-baseline="central">1006</text>
+<rect x="348" y="248" width="42" height="34" rx="0" fill="#E8F5E9" stroke="#2E7D32" stroke-width="1.3"/>
+<text x="369.0" y="296" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="10" font-weight="normal" fill="#607D8B" text-anchor="middle" dominant-baseline="central">1007</text>
+<rect x="390" y="248" width="42" height="34" rx="0" fill="#E8F5E9" stroke="#2E7D32" stroke-width="1.3"/>
+<text x="411.0" y="296" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="10" font-weight="normal" fill="#607D8B" text-anchor="middle" dominant-baseline="central">1008</text>
+<rect x="432" y="248" width="42" height="34" rx="0" fill="#E8F5E9" stroke="#2E7D32" stroke-width="1.3"/>
+<text x="453.0" y="296" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="10" font-weight="normal" fill="#607D8B" text-anchor="middle" dominant-baseline="central">1009</text>
+<rect x="474" y="248" width="42" height="34" rx="0" fill="#E8F5E9" stroke="#2E7D32" stroke-width="1.3"/>
+<text x="495.0" y="296" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="10" font-weight="normal" fill="#607D8B" text-anchor="middle" dominant-baseline="central">1010</text>
+<rect x="516" y="248" width="42" height="34" rx="0" fill="#E8F5E9" stroke="#2E7D32" stroke-width="1.3"/>
+<text x="537.0" y="296" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="10" font-weight="normal" fill="#607D8B" text-anchor="middle" dominant-baseline="central">1011</text>
+<rect x="558" y="248" width="42" height="34" rx="0" fill="#FFF8E1" stroke="#F9A825" stroke-width="1.3"/>
+<text x="579.0" y="296" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="10" font-weight="normal" fill="#607D8B" text-anchor="middle" dominant-baseline="central">1012</text>
+<rect x="600" y="248" width="42" height="34" rx="0" fill="#FCE4EC" stroke="#C2185B" stroke-width="1.3"/>
+<text x="621.0" y="296" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="10" font-weight="normal" fill="#607D8B" text-anchor="middle" dominant-baseline="central">1013</text>
+<rect x="642" y="248" width="42" height="34" rx="0" fill="#FFFFFF" stroke="#B0BEC5" stroke-width="1.3"/>
+<text x="663.0" y="296" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="10" font-weight="normal" fill="#607D8B" text-anchor="middle" dominant-baseline="central">1014</text>
+<rect x="684" y="248" width="42" height="34" rx="0" fill="#FFFFFF" stroke="#B0BEC5" stroke-width="1.3"/>
+<text x="705.0" y="296" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="10" font-weight="normal" fill="#607D8B" text-anchor="middle" dominant-baseline="central">1015</text>
+<text x="663.0" y="265" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="11" font-weight="normal" fill="#607D8B" text-anchor="middle" dominant-baseline="central">libre</text>
+<path d="M115,164 C115,200 138.0,200 138.0,244" stroke="#1565C0" stroke-width="1.6" fill="none" marker-end="url(#arr)"/>
+<path d="M300,164 C300,200 390.0,200 390.0,244" stroke="#2E7D32" stroke-width="1.6" fill="none" marker-end="url(#arr)"/>
+<path d="M485,164 C485,200 579.0,200 579.0,244" stroke="#F9A825" stroke-width="1.6" fill="none" marker-end="url(#arr)"/>
+<path d="M670,164 C670,200 621.0,200 621.0,244" stroke="#C2185B" stroke-width="1.6" fill="none" marker-end="url(#arr)"/>
+<text x="390" y="340" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="12" font-weight="normal" fill="#607D8B" text-anchor="middle" dominant-baseline="central" font-style="italic">Esquema simplificado: el compilador decide las direcciones exactas.</text></svg>

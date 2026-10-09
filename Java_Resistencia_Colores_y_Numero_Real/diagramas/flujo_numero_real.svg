@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="646" height="653" viewBox="0 0 646 653"><title>Diagrama de flujo del programa de números reales</title><defs><marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#455A64"/></marker></defs><rect x="0" y="0" width="646" height="653" rx="0" fill="#FFFFFF" stroke="none" stroke-width="0"/>
+<g transform="translate(-12,35.0)">
+<path d="M330.0,17.0 L330.0,38.0" stroke="#455A64" stroke-width="1.5" fill="none"/>
+<path d="M330.0,46.0 L330.0,62.9" stroke="#455A64" stroke-width="1.5" fill="none" marker-end="url(#arr)"/>
+<path d="M400.5,88.0 L498.0,88.0" stroke="#455A64" stroke-width="1.5" fill="none" marker-end="url(#arr)"/>
+<text x="412.53875" y="78" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="12" font-weight="bold" fill="#37474F" text-anchor="start" dominant-baseline="central">No</text>
+<path d="M330.0,113.2 L330.0,133.0" stroke="#455A64" stroke-width="1.5" fill="none" marker-end="url(#arr)"/>
+<text x="340" y="125.15" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="12" font-weight="bold" fill="#37474F" text-anchor="start" dominant-baseline="central">Sí</text>
+<path d="M330.0,183.0 L330.0,200.8" stroke="#455A64" stroke-width="1.5" fill="none" marker-end="url(#arr)"/>
+<path d="M330.0,251.2 L330.0,268.0" stroke="#455A64" stroke-width="1.5" fill="none"/>
+<path d="M326.0,272.0 L140.0,272.0 L140.0,301.5" stroke="#455A64" stroke-width="1.5" fill="none" marker-end="url(#arr)"/>
+<text x="122" y="292" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="12" font-weight="bold" fill="#37474F" text-anchor="middle" dominant-baseline="central">"1"</text>
+<path d="M330.0,276.0 L330.0,301.5" stroke="#455A64" stroke-width="1.5" fill="none" marker-end="url(#arr)"/>
+<text x="346" y="292" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="12" font-weight="bold" fill="#37474F" text-anchor="middle" dominant-baseline="central">"2"</text>
+<path d="M334.0,272.0 L510.0,272.0 L510.0,301.5" stroke="#455A64" stroke-width="1.5" fill="none" marker-end="url(#arr)"/>
+<text x="535" y="292" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="12" font-weight="bold" fill="#37474F" text-anchor="middle" dominant-baseline="central">otro</text>
+<path d="M334.0,272.0 L640.0,272.0 L640.0,568.0 L334.0,568.0" stroke="#455A64" stroke-width="1.5" fill="none"/>
+<text x="626" y="292" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="12" font-weight="bold" fill="#37474F" text-anchor="middle" dominant-baseline="central">"0"</text>
+<path d="M140.0,334.5 L140.0,355.0" stroke="#455A64" stroke-width="1.5" fill="none" marker-end="url(#arr)"/>
+<path d="M140.0,405.0 L140.0,421.0" stroke="#455A64" stroke-width="1.5" fill="none" marker-end="url(#arr)"/>
+<path d="M140.0,471.0 L140.0,487.0" stroke="#455A64" stroke-width="1.5" fill="none" marker-end="url(#arr)"/>
+<path d="M140.0,537.0 L140.0,568.0 L326.0,568.0" stroke="#455A64" stroke-width="1.5" fill="none"/>
+<path d="M330.0,334.5 L330.0,564.0" stroke="#455A64" stroke-width="1.5" fill="none"/>
+<path d="M510.0,334.5 L510.0,568.0 L334.0,568.0" stroke="#455A64" stroke-width="1.5" fill="none"/>
+<path d="M330.0,572.0 L330.0,600.0 L30.0,600.0 L30.0,42.0 L326.0,42.0" stroke="#455A64" stroke-width="1.5" fill="none"/>
+<rect x="288.0" y="-17.0" width="84" height="34" rx="17.0" fill="#E8F5E9" stroke="#2E7D32" stroke-width="1.8"/>
+<text x="330" y="1.0" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="13" font-weight="normal" fill="#263238" text-anchor="middle" dominant-baseline="central">Inicio</text>
+<circle cx="330" cy="42" r="3.5" fill="#455A64" stroke="#455A64" stroke-width="1"/>
+<polygon points="330,62.85 400.53875,88 330,113.15 259.46125,88" fill="#FCE4EC" stroke="#C2185B" stroke-width="1.8"/>
+<text x="330" y="89.0" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="13" font-weight="normal" fill="#263238" text-anchor="middle" dominant-baseline="central">¿opc ≠ "0"?</text>
+<rect x="498.0" y="71.0" width="84" height="34" rx="17.0" fill="#E8F5E9" stroke="#2E7D32" stroke-width="1.8"/>
+<text x="540" y="89.0" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="13" font-weight="normal" fill="#263238" text-anchor="middle" dominant-baseline="central">Fin</text>
+<polygon points="269.408,133.0 404.592,133.0 390.592,183.0 255.40800000000002,183.0" fill="#E3F2FD" stroke="#1565C0" stroke-width="1.8"/>
+<text x="330" y="150.5" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="13" font-weight="normal" fill="#263238" text-anchor="middle" dominant-baseline="central">Escribir el menú</text>
+<text x="330" y="167.5" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="13" font-weight="normal" fill="#263238" text-anchor="middle" dominant-baseline="central">Leer opc</text>
+<polygon points="330,200.85 367.1931,226 330,251.15 292.8069,226" fill="#FCE4EC" stroke="#C2185B" stroke-width="1.8"/>
+<text x="330" y="227.0" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="13" font-weight="normal" fill="#263238" text-anchor="middle" dominant-baseline="central">opc</text>
+<circle cx="330" cy="272" r="3.5" fill="#455A64" stroke="#455A64" stroke-width="1"/>
+<polygon points="62.0595,301.5 231.9405,301.5 217.9405,334.5 48.0595,334.5" fill="#E3F2FD" stroke="#1565C0" stroke-width="1.8"/>
+<text x="140" y="319.0" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="13" font-weight="normal" fill="#263238" text-anchor="middle" dominant-baseline="central">Leer texto (el número)</text>
+<rect x="65.088" y="355.0" width="149.824" height="50" rx="0" fill="#F3E5F5" stroke="#6A1B9A" stroke-width="1.8"/>
+<line x1="72.088" y1="355.0" x2="72.088" y2="405.0" stroke="#6A1B9A" stroke-width="1.4"/>
+<line x1="207.912" y1="355.0" x2="207.912" y2="405.0" stroke="#6A1B9A" stroke-width="1.4"/>
+<text x="140" y="372.5" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="13" font-weight="normal" fill="#263238" text-anchor="middle" dominant-baseline="central">pasoAPaso(texto)</text>
+<text x="140" y="389.5" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="13" font-weight="normal" fill="#263238" text-anchor="middle" dominant-baseline="central">conversión a mano</text>
+<rect x="77.386" y="421.0" width="125.228" height="50" rx="0" fill="#F3E5F5" stroke="#6A1B9A" stroke-width="1.8"/>
+<line x1="84.386" y1="421.0" x2="84.386" y2="471.0" stroke="#6A1B9A" stroke-width="1.4"/>
+<line x1="195.614" y1="421.0" x2="195.614" y2="471.0" stroke="#6A1B9A" stroke-width="1.4"/>
+<text x="140" y="438.5" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="13" font-weight="normal" fill="#263238" text-anchor="middle" dominant-baseline="central">mostrarFloat(f)</text>
+<text x="140" y="455.5" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="13" font-weight="normal" fill="#263238" text-anchor="middle" dominant-baseline="central">los 32 bits</text>
+<rect x="69.4365" y="487.0" width="141.127" height="50" rx="0" fill="#F3E5F5" stroke="#6A1B9A" stroke-width="1.8"/>
+<line x1="76.4365" y1="487.0" x2="76.4365" y2="537.0" stroke="#6A1B9A" stroke-width="1.4"/>
+<line x1="203.5635" y1="487.0" x2="203.5635" y2="537.0" stroke="#6A1B9A" stroke-width="1.4"/>
+<text x="140" y="504.5" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="13" font-weight="normal" fill="#263238" text-anchor="middle" dominant-baseline="central">mostrarDouble(d)</text>
+<text x="140" y="521.5" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="13" font-weight="normal" fill="#263238" text-anchor="middle" dominant-baseline="central">los 64 bits</text>
+<rect x="269.1865" y="301.5" width="121.627" height="33" rx="0" fill="#F3E5F5" stroke="#6A1B9A" stroke-width="1.8"/>
+<line x1="276.1865" y1="301.5" x2="276.1865" y2="334.5" stroke="#6A1B9A" stroke-width="1.4"/>
+<line x1="383.8135" y1="301.5" x2="383.8135" y2="334.5" stroke="#6A1B9A" stroke-width="1.4"/>
+<text x="330" y="319.0" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="13" font-weight="normal" fill="#263238" text-anchor="middle" dominant-baseline="central">curiosidades()</text>
+<polygon points="442.973,301.5 591.027,301.5 577.027,334.5 428.973,334.5" fill="#E3F2FD" stroke="#1565C0" stroke-width="1.8"/>
+<text x="510" y="319.0" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="13" font-weight="normal" fill="#263238" text-anchor="middle" dominant-baseline="central">"Opción no válida"</text>
+<circle cx="330" cy="568" r="3.5" fill="#455A64" stroke="#455A64" stroke-width="1"/>
+</g></svg>

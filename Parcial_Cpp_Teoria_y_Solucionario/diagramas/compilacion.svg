@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="633" height="334" viewBox="0 0 633 334"><title>Compilación en C++</title><defs><marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#455A64"/></marker></defs><rect x="0" y="0" width="633" height="334" rx="0" fill="#FFFFFF" stroke="none" stroke-width="0"/>
+<g transform="translate(95.57650000000001,51.5)">
+<path d="M57.4,0.0 L133.6,0.0" stroke="#455A64" stroke-width="1.5" fill="none" marker-end="url(#arr)"/>
+<path d="M266.4,0.0 L339.8,0.0" stroke="#455A64" stroke-width="1.5" fill="none" marker-end="url(#arr)"/>
+<path d="M430.0,33.5 L430.0,110.0" stroke="#455A64" stroke-width="1.5" fill="none" marker-end="url(#arr)"/>
+<path d="M373.0,135.0 L272.2,135.0" stroke="#455A64" stroke-width="1.5" fill="none" marker-end="url(#arr)"/>
+<path d="M127.8,135.0 L77.6,135.0" stroke="#455A64" stroke-width="1.5" fill="none" marker-end="url(#arr)"/>
+<path d="M200.0,215.0 L200.0,168.5" stroke="#455A64" stroke-width="1.5" fill="none" marker-end="url(#arr)"/>
+<rect x="-57.355" y="-25.0" width="114.71" height="50" rx="8" fill="#FFF8E1" stroke="#F9A825" stroke-width="1.8"/>
+<text x="0" y="-7.5" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="13" font-weight="normal" fill="#263238" text-anchor="middle" dominant-baseline="central">hola.cpp</text>
+<text x="0" y="9.5" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="13" font-weight="normal" fill="#263238" text-anchor="middle" dominant-baseline="central">(código fuente)</text>
+<rect x="133.61" y="-33.5" width="132.78" height="67" rx="8" fill="#ECEFF1" stroke="#546E7A" stroke-width="1.8"/>
+<text x="200" y="-16.0" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="13" font-weight="normal" fill="#263238" text-anchor="middle" dominant-baseline="central">1. Preprocesador</text>
+<text x="200" y="1.0" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="13" font-weight="normal" fill="#263238" text-anchor="middle" dominant-baseline="central">copia el contenido</text>
+<text x="200" y="18.0" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="13" font-weight="normal" fill="#263238" text-anchor="middle" dominant-baseline="central">de los #include</text>
+<rect x="339.781" y="-33.5" width="180.438" height="67" rx="8" fill="#ECEFF1" stroke="#546E7A" stroke-width="1.8"/>
+<text x="430" y="-16.0" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="13" font-weight="normal" fill="#263238" text-anchor="middle" dominant-baseline="central">2. Compilador</text>
+<text x="430" y="1.0" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="13" font-weight="normal" fill="#263238" text-anchor="middle" dominant-baseline="central">revisa la sintaxis y traduce</text>
+<text x="430" y="18.0" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="13" font-weight="normal" fill="#263238" text-anchor="middle" dominant-baseline="central">a lenguaje máquina</text>
+<rect x="373.009" y="110.0" width="113.982" height="50" rx="8" fill="#F3E5F5" stroke="#6A1B9A" stroke-width="1.8"/>
+<text x="430" y="127.5" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="13" font-weight="normal" fill="#263238" text-anchor="middle" dominant-baseline="central">hola.o</text>
+<text x="430" y="144.5" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="13" font-weight="normal" fill="#263238" text-anchor="middle" dominant-baseline="central">(código objeto)</text>
+<rect x="127.825" y="101.5" width="144.35" height="67" rx="8" fill="#ECEFF1" stroke="#546E7A" stroke-width="1.8"/>
+<text x="200" y="119.0" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="13" font-weight="normal" fill="#263238" text-anchor="middle" dominant-baseline="central">3. Enlazador (linker)</text>
+<text x="200" y="136.0" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="13" font-weight="normal" fill="#263238" text-anchor="middle" dominant-baseline="central">une el código objeto</text>
+<text x="200" y="153.0" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="13" font-weight="normal" fill="#263238" text-anchor="middle" dominant-baseline="central">con las bibliotecas</text>
+<rect x="-77.57650000000001" y="110.0" width="155.15300000000002" height="50" rx="8" fill="#E8F5E9" stroke="#2E7D32" stroke-width="1.8"/>
+<text x="0" y="127.5" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="13" font-weight="normal" fill="#263238" text-anchor="middle" dominant-baseline="central">hola.exe</text>
+<text x="0" y="144.5" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="13" font-weight="normal" fill="#263238" text-anchor="middle" dominant-baseline="central">(programa ejecutable)</text>
+<rect x="128.1955" y="215.0" width="143.60899999999998" height="50" rx="8" fill="#F5F5F5" stroke="#757575" stroke-width="1.8"/>
+<text x="200" y="232.5" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="13" font-weight="normal" fill="#263238" text-anchor="middle" dominant-baseline="central">bibliotecas estándar</text>
+<text x="200" y="249.5" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="13" font-weight="normal" fill="#263238" text-anchor="middle" dominant-baseline="central">(iostream, string, ...)</text>
+</g></svg>

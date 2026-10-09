@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="820" height="270" viewBox="0 0 820 270"><title>Comparación de programas</title><defs><marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#455A64"/></marker></defs><rect x="0" y="0" width="820" height="270" rx="0" fill="#FFFFFF" stroke="none" stroke-width="0"/>
+<text x="410" y="22" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="16" font-weight="bold" fill="#263238" text-anchor="middle" dominant-baseline="central">El programa de clase y el nuestro hacen el camino INVERSO</text>
+<text x="40" y="56" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="14" font-weight="bold" fill="#263238" text-anchor="start" dominant-baseline="central">Programa de clase (Colores_bandas_segun_valor_Resistencia_Varios2)</text>
+<rect x="40" y="68" width="170" height="44" rx="8" fill="#E3F2FD" stroke="#1565C0" stroke-width="1.8"/>
+<text x="125" y="90" font-family="'DejaVu Sans Mono', Consolas, 'Liberation Mono', 'Courier New', monospace" font-size="15" font-weight="bold" fill="#263238" text-anchor="middle" dominant-baseline="central">4  (número)</text>
+<line x1="214" y1="90" x2="296" y2="90" stroke="#455A64" stroke-width="2" marker-end="url(#arr)"/>
+<rect x="300" y="68" width="220" height="44" rx="0" fill="#FCE4EC" stroke="#C2185B" stroke-width="1.8"/>
+<text x="410" y="90" font-family="'DejaVu Sans Mono', Consolas, 'Liberation Mono', 'Courier New', monospace" font-size="14" font-weight="bold" fill="#263238" text-anchor="middle" dominant-baseline="central">switch(ncb1)</text>
+<line x1="524" y1="90" x2="606" y2="90" stroke="#455A64" stroke-width="2" marker-end="url(#arr)"/>
+<rect x="610" y="68" width="170" height="44" rx="8" fill="#FFF8E1" stroke="#F9A825" stroke-width="1.8"/>
+<text x="695" y="90" font-family="'DejaVu Sans Mono', Consolas, 'Liberation Mono', 'Courier New', monospace" font-size="15" font-weight="bold" fill="#263238" text-anchor="middle" dominant-baseline="central">"Amarillo"</text>
+<text x="40" y="166" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="14" font-weight="bold" fill="#263238" text-anchor="start" dominant-baseline="central">Nuestro programa (Valor_Resistencia_segun_Colores_Bandas)</text>
+<rect x="40" y="178" width="170" height="44" rx="8" fill="#FFF8E1" stroke="#F9A825" stroke-width="1.8"/>
+<text x="125" y="200" font-family="'DejaVu Sans Mono', Consolas, 'Liberation Mono', 'Courier New', monospace" font-size="15" font-weight="bold" fill="#263238" text-anchor="middle" dominant-baseline="central">"amarillo"</text>
+<line x1="214" y1="200" x2="296" y2="200" stroke="#455A64" stroke-width="2" marker-end="url(#arr)"/>
+<rect x="300" y="178" width="220" height="44" rx="0" fill="#FCE4EC" stroke="#C2185B" stroke-width="1.8"/>
+<text x="410" y="200" font-family="'DejaVu Sans Mono', Consolas, 'Liberation Mono', 'Courier New', monospace" font-size="14" font-weight="bold" fill="#263238" text-anchor="middle" dominant-baseline="central">switch(colorb1)</text>
+<line x1="524" y1="200" x2="606" y2="200" stroke="#455A64" stroke-width="2" marker-end="url(#arr)"/>
+<rect x="610" y="178" width="170" height="44" rx="8" fill="#E3F2FD" stroke="#1565C0" stroke-width="1.8"/>
+<text x="695" y="200" font-family="'DejaVu Sans Mono', Consolas, 'Liberation Mono', 'Courier New', monospace" font-size="15" font-weight="bold" fill="#263238" text-anchor="middle" dominant-baseline="central">4  (número)</text>
+<text x="410" y="252" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="13" font-weight="normal" fill="#263238" text-anchor="middle" dominant-baseline="central">Con los 3 números ya obtenidos, el cálculo es el mismo:  vr = (ncb1 × 10 + ncb2) × 10^ncb3</text></svg>

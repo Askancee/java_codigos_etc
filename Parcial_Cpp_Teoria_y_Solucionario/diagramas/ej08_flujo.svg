@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="341" height="358" viewBox="0 0 341 358"><title>Ejercicio 8: diagrama de flujo</title><defs><marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#455A64"/></marker></defs><rect x="0" y="0" width="341" height="358" rx="0" fill="#FFFFFF" stroke="none" stroke-width="0"/>
+<g transform="translate(170.644,18.0)">
+<path d="M0.0,34.0 L0.0,60.0" stroke="#455A64" stroke-width="1.5" fill="none" marker-end="url(#arr)"/>
+<path d="M0.0,93.0 L0.0,119.0" stroke="#455A64" stroke-width="1.5" fill="none" marker-end="url(#arr)"/>
+<path d="M0.0,186.0 L0.0,212.0" stroke="#455A64" stroke-width="1.5" fill="none" marker-end="url(#arr)"/>
+<path d="M0.0,262.0 L0.0,288.0" stroke="#455A64" stroke-width="1.5" fill="none" marker-end="url(#arr)"/>
+<rect x="-42.0" y="0.0" width="84" height="34" rx="17.0" fill="#E8F5E9" stroke="#2E7D32" stroke-width="1.8"/>
+<text x="0" y="18.0" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="13" font-weight="normal" fill="#263238" text-anchor="middle" dominant-baseline="central">Inicio</text>
+<polygon points="-137.565,60.0 151.565,60.0 137.565,93.0 -151.565,93.0" fill="#E3F2FD" stroke="#1565C0" stroke-width="1.8"/>
+<text x="0" y="77.5" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="13" font-weight="normal" fill="#263238" text-anchor="middle" dominant-baseline="central">Leer producto, precio, cantidad, porcentaje</text>
+<rect x="-135.2185" y="119.0" width="270.437" height="67" rx="0" fill="#FFF8E1" stroke="#F9A825" stroke-width="1.8"/>
+<text x="-121.2185" y="136.5" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="13" font-weight="normal" fill="#263238" text-anchor="start" dominant-baseline="central">subtotal ← precio × cantidad</text>
+<text x="-121.2185" y="153.5" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="13" font-weight="normal" fill="#263238" text-anchor="start" dominant-baseline="central">descuento ← subtotal × (porcentaje / 100)</text>
+<text x="-121.2185" y="170.5" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="13" font-weight="normal" fill="#263238" text-anchor="start" dominant-baseline="central">total ← subtotal − descuento</text>
+<polygon points="-138.644,212.0 152.644,212.0 138.644,262.0 -152.644,262.0" fill="#E3F2FD" stroke="#1565C0" stroke-width="1.8"/>
+<text x="0" y="229.5" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="13" font-weight="normal" fill="#263238" text-anchor="middle" dominant-baseline="central">Escribir producto, subtotal, descuento, total</text>
+<text x="0" y="246.5" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="13" font-weight="normal" fill="#263238" text-anchor="middle" dominant-baseline="central">(con 2 decimales)</text>
+<rect x="-42.0" y="288.0" width="84" height="34" rx="17.0" fill="#E8F5E9" stroke="#2E7D32" stroke-width="1.8"/>
+<text x="0" y="306.0" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="13" font-weight="normal" fill="#263238" text-anchor="middle" dominant-baseline="central">Fin</text>
+</g></svg>

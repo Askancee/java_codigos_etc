@@ -1,0 +1,211 @@
+<svg width="676pt" height="293pt"
+ viewBox="0.00 0.00 676.00 293.12" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(18 275.12)">
+<title>G</title>
+<polygon fill="white" stroke="none" points="-18,18 -18,-275.12 658,-275.12 658,18 -18,18"/>
+<g id="clust1" class="cluster">
+<title>cluster_A</title>
+<path fill="white" stroke="#b0bec5" d="M20,-8C20,-8 146,-8 146,-8 152,-8 158,-14 158,-20 158,-20 158,-237.12 158,-237.12 158,-243.12 152,-249.12 146,-249.12 146,-249.12 20,-249.12 20,-249.12 14,-249.12 8,-243.12 8,-237.12 8,-237.12 8,-20 8,-20 8,-14 14,-8 20,-8"/>
+<text text-anchor="middle" x="83" y="-232.52" font-family="Arial" font-size="14.00">A) &#160;a + b * c &#160;= &#160;14</text>
+</g>
+<g id="clust2" class="cluster">
+<title>cluster_B</title>
+<path fill="white" stroke="#b0bec5" d="M178,-8C178,-8 304,-8 304,-8 310,-8 316,-14 316,-20 316,-20 316,-237.12 316,-237.12 316,-243.12 310,-249.12 304,-249.12 304,-249.12 178,-249.12 178,-249.12 172,-249.12 166,-243.12 166,-237.12 166,-237.12 166,-20 166,-20 166,-14 172,-8 178,-8"/>
+<text text-anchor="middle" x="241" y="-232.52" font-family="Arial" font-size="14.00">B) &#160;(a + b) * c &#160;= &#160;22</text>
+</g>
+<g id="clust3" class="cluster">
+<title>cluster_C</title>
+<path fill="white" stroke="#b0bec5" d="M336,-8C336,-8 462,-8 462,-8 468,-8 474,-14 474,-20 474,-20 474,-237.12 474,-237.12 474,-243.12 468,-249.12 462,-249.12 462,-249.12 336,-249.12 336,-249.12 330,-249.12 324,-243.12 324,-237.12 324,-237.12 324,-20 324,-20 324,-14 330,-8 336,-8"/>
+<text text-anchor="middle" x="399" y="-232.52" font-family="Arial" font-size="14.00">C) &#160;a % b + c &#160;= &#160;4</text>
+</g>
+<g id="clust4" class="cluster">
+<title>cluster_D</title>
+<path fill="white" stroke="#b0bec5" d="M494,-8C494,-8 620,-8 620,-8 626,-8 632,-14 632,-20 632,-20 632,-237.12 632,-237.12 632,-243.12 626,-249.12 620,-249.12 620,-249.12 494,-249.12 494,-249.12 488,-249.12 482,-243.12 482,-237.12 482,-237.12 482,-20 482,-20 482,-14 488,-8 494,-8"/>
+<text text-anchor="middle" x="557" y="-232.52" font-family="Arial" font-size="14.00">D) &#160;a / b * c &#160;= &#160;4</text>
+</g>
+<g id="node1" class="node">
+<title>Ar</title>
+<ellipse fill="#fce4ec" stroke="#c2185b" stroke-width="1.6" cx="83" cy="-185.32" rx="27" ry="27"/>
+<text text-anchor="middle" x="83" y="-188.92" font-family="Arial" font-size="12.00">+</text>
+<text text-anchor="middle" x="83" y="-174.52" font-family="Arial" font-size="12.00">= 14</text>
+</g>
+<g id="node2" class="node">
+<title>Ax</title>
+<path fill="#e3f2fd" stroke="#1565c0" stroke-width="1.6" d="M62,-129.48C62,-129.48 32,-129.48 32,-129.48 26,-129.48 20,-123.48 20,-117.48 20,-117.48 20,-101.16 20,-101.16 20,-95.16 26,-89.16 32,-89.16 32,-89.16 62,-89.16 62,-89.16 68,-89.16 74,-95.16 74,-101.16 74,-101.16 74,-117.48 74,-117.48 74,-123.48 68,-129.48 62,-129.48"/>
+<text text-anchor="middle" x="47" y="-112.92" font-family="Arial" font-size="12.00">a</text>
+<text text-anchor="middle" x="47" y="-98.52" font-family="Arial" font-size="12.00">8</text>
+</g>
+<g id="edge1" class="edge">
+<title>Ar&#45;&gt;Ax</title>
+<path fill="none" stroke="#455a64" stroke-width="1.6" d="M71.41,-160.5C66.56,-150.53 60.99,-139.09 56.4,-129.65"/>
+</g>
+<g id="node3" class="node">
+<title>Am</title>
+<ellipse fill="#fce4ec" stroke="#c2185b" stroke-width="1.6" cx="119" cy="-109.32" rx="27" ry="27"/>
+<text text-anchor="middle" x="119" y="-112.92" font-family="Arial" font-size="12.00">*</text>
+<text text-anchor="middle" x="119" y="-98.52" font-family="Arial" font-size="12.00">= 6</text>
+</g>
+<g id="edge2" class="edge">
+<title>Ar&#45;&gt;Am</title>
+<path fill="none" stroke="#455a64" stroke-width="1.6" d="M94.59,-160.5C98.7,-152.05 103.32,-142.54 107.43,-134.1"/>
+</g>
+<g id="node4" class="node">
+<title>Ay</title>
+<path fill="#e3f2fd" stroke="#1565c0" stroke-width="1.6" d="M62,-60.32C62,-60.32 32,-60.32 32,-60.32 26,-60.32 20,-54.32 20,-48.32 20,-48.32 20,-32 20,-32 20,-26 26,-20 32,-20 32,-20 62,-20 62,-20 68,-20 74,-26 74,-32 74,-32 74,-48.32 74,-48.32 74,-54.32 68,-60.32 62,-60.32"/>
+<text text-anchor="middle" x="47" y="-43.76" font-family="Arial" font-size="12.00">b</text>
+<text text-anchor="middle" x="47" y="-29.36" font-family="Arial" font-size="12.00">3</text>
+</g>
+<g id="edge3" class="edge">
+<title>Am&#45;&gt;Ay</title>
+<path fill="none" stroke="#455a64" stroke-width="1.6" d="M99.71,-90.32C89.87,-81.15 77.91,-69.99 67.86,-60.62"/>
+</g>
+<g id="node5" class="node">
+<title>Az</title>
+<path fill="#e3f2fd" stroke="#1565c0" stroke-width="1.6" d="M134,-60.32C134,-60.32 104,-60.32 104,-60.32 98,-60.32 92,-54.32 92,-48.32 92,-48.32 92,-32 92,-32 92,-26 98,-20 104,-20 104,-20 134,-20 134,-20 140,-20 146,-26 146,-32 146,-32 146,-48.32 146,-48.32 146,-54.32 140,-60.32 134,-60.32"/>
+<text text-anchor="middle" x="119" y="-43.76" font-family="Arial" font-size="12.00">c</text>
+<text text-anchor="middle" x="119" y="-29.36" font-family="Arial" font-size="12.00">2</text>
+</g>
+<g id="edge4" class="edge">
+<title>Am&#45;&gt;Az</title>
+<path fill="none" stroke="#455a64" stroke-width="1.6" d="M119,-82.16C119,-74.94 119,-67.24 119,-60.49"/>
+</g>
+<g id="node6" class="node">
+<title>Br</title>
+<ellipse fill="#fce4ec" stroke="#c2185b" stroke-width="1.6" cx="241" cy="-185.32" rx="27" ry="27"/>
+<text text-anchor="middle" x="241" y="-188.92" font-family="Arial" font-size="12.00">*</text>
+<text text-anchor="middle" x="241" y="-174.52" font-family="Arial" font-size="12.00">= 22</text>
+</g>
+<g id="node7" class="node">
+<title>Bp</title>
+<ellipse fill="#fce4ec" stroke="#c2185b" stroke-width="1.6" cx="205" cy="-109.32" rx="27" ry="27"/>
+<text text-anchor="middle" x="205" y="-112.92" font-family="Arial" font-size="12.00">+</text>
+<text text-anchor="middle" x="205" y="-98.52" font-family="Arial" font-size="12.00">= 11</text>
+</g>
+<g id="edge5" class="edge">
+<title>Br&#45;&gt;Bp</title>
+<path fill="none" stroke="#455a64" stroke-width="1.6" d="M229.41,-160.5C225.3,-152.05 220.68,-142.54 216.57,-134.1"/>
+</g>
+<g id="node8" class="node">
+<title>Bz</title>
+<path fill="#e3f2fd" stroke="#1565c0" stroke-width="1.6" d="M292,-129.48C292,-129.48 262,-129.48 262,-129.48 256,-129.48 250,-123.48 250,-117.48 250,-117.48 250,-101.16 250,-101.16 250,-95.16 256,-89.16 262,-89.16 262,-89.16 292,-89.16 292,-89.16 298,-89.16 304,-95.16 304,-101.16 304,-101.16 304,-117.48 304,-117.48 304,-123.48 298,-129.48 292,-129.48"/>
+<text text-anchor="middle" x="277" y="-112.92" font-family="Arial" font-size="12.00">c</text>
+<text text-anchor="middle" x="277" y="-98.52" font-family="Arial" font-size="12.00">2</text>
+</g>
+<g id="edge6" class="edge">
+<title>Br&#45;&gt;Bz</title>
+<path fill="none" stroke="#455a64" stroke-width="1.6" d="M252.59,-160.5C257.44,-150.53 263.01,-139.09 267.6,-129.65"/>
+</g>
+<g id="node9" class="node">
+<title>Bx</title>
+<path fill="#e3f2fd" stroke="#1565c0" stroke-width="1.6" d="M220,-60.32C220,-60.32 190,-60.32 190,-60.32 184,-60.32 178,-54.32 178,-48.32 178,-48.32 178,-32 178,-32 178,-26 184,-20 190,-20 190,-20 220,-20 220,-20 226,-20 232,-26 232,-32 232,-32 232,-48.32 232,-48.32 232,-54.32 226,-60.32 220,-60.32"/>
+<text text-anchor="middle" x="205" y="-43.76" font-family="Arial" font-size="12.00">a</text>
+<text text-anchor="middle" x="205" y="-29.36" font-family="Arial" font-size="12.00">8</text>
+</g>
+<g id="edge7" class="edge">
+<title>Bp&#45;&gt;Bx</title>
+<path fill="none" stroke="#455a64" stroke-width="1.6" d="M205,-82.16C205,-74.94 205,-67.24 205,-60.49"/>
+</g>
+<g id="node10" class="node">
+<title>By</title>
+<path fill="#e3f2fd" stroke="#1565c0" stroke-width="1.6" d="M292,-60.32C292,-60.32 262,-60.32 262,-60.32 256,-60.32 250,-54.32 250,-48.32 250,-48.32 250,-32 250,-32 250,-26 256,-20 262,-20 262,-20 292,-20 292,-20 298,-20 304,-26 304,-32 304,-32 304,-48.32 304,-48.32 304,-54.32 298,-60.32 292,-60.32"/>
+<text text-anchor="middle" x="277" y="-43.76" font-family="Arial" font-size="12.00">b</text>
+<text text-anchor="middle" x="277" y="-29.36" font-family="Arial" font-size="12.00">3</text>
+</g>
+<g id="edge8" class="edge">
+<title>Bp&#45;&gt;By</title>
+<path fill="none" stroke="#455a64" stroke-width="1.6" d="M224.29,-90.32C234.13,-81.15 246.09,-69.99 256.14,-60.62"/>
+</g>
+<g id="node11" class="node">
+<title>Cr</title>
+<ellipse fill="#fce4ec" stroke="#c2185b" stroke-width="1.6" cx="399" cy="-185.32" rx="27" ry="27"/>
+<text text-anchor="middle" x="399" y="-188.92" font-family="Arial" font-size="12.00">+</text>
+<text text-anchor="middle" x="399" y="-174.52" font-family="Arial" font-size="12.00">= 4</text>
+</g>
+<g id="node12" class="node">
+<title>Cp</title>
+<ellipse fill="#fce4ec" stroke="#c2185b" stroke-width="1.6" cx="363" cy="-109.32" rx="27" ry="27"/>
+<text text-anchor="middle" x="363" y="-112.92" font-family="Arial" font-size="12.00">%</text>
+<text text-anchor="middle" x="363" y="-98.52" font-family="Arial" font-size="12.00">= 2</text>
+</g>
+<g id="edge9" class="edge">
+<title>Cr&#45;&gt;Cp</title>
+<path fill="none" stroke="#455a64" stroke-width="1.6" d="M387.41,-160.5C383.3,-152.05 378.68,-142.54 374.57,-134.1"/>
+</g>
+<g id="node13" class="node">
+<title>Cz</title>
+<path fill="#e3f2fd" stroke="#1565c0" stroke-width="1.6" d="M450,-129.48C450,-129.48 420,-129.48 420,-129.48 414,-129.48 408,-123.48 408,-117.48 408,-117.48 408,-101.16 408,-101.16 408,-95.16 414,-89.16 420,-89.16 420,-89.16 450,-89.16 450,-89.16 456,-89.16 462,-95.16 462,-101.16 462,-101.16 462,-117.48 462,-117.48 462,-123.48 456,-129.48 450,-129.48"/>
+<text text-anchor="middle" x="435" y="-112.92" font-family="Arial" font-size="12.00">c</text>
+<text text-anchor="middle" x="435" y="-98.52" font-family="Arial" font-size="12.00">2</text>
+</g>
+<g id="edge10" class="edge">
+<title>Cr&#45;&gt;Cz</title>
+<path fill="none" stroke="#455a64" stroke-width="1.6" d="M410.59,-160.5C415.44,-150.53 421.01,-139.09 425.6,-129.65"/>
+</g>
+<g id="node14" class="node">
+<title>Cx</title>
+<path fill="#e3f2fd" stroke="#1565c0" stroke-width="1.6" d="M378,-60.32C378,-60.32 348,-60.32 348,-60.32 342,-60.32 336,-54.32 336,-48.32 336,-48.32 336,-32 336,-32 336,-26 342,-20 348,-20 348,-20 378,-20 378,-20 384,-20 390,-26 390,-32 390,-32 390,-48.32 390,-48.32 390,-54.32 384,-60.32 378,-60.32"/>
+<text text-anchor="middle" x="363" y="-43.76" font-family="Arial" font-size="12.00">a</text>
+<text text-anchor="middle" x="363" y="-29.36" font-family="Arial" font-size="12.00">8</text>
+</g>
+<g id="edge11" class="edge">
+<title>Cp&#45;&gt;Cx</title>
+<path fill="none" stroke="#455a64" stroke-width="1.6" d="M363,-82.16C363,-74.94 363,-67.24 363,-60.49"/>
+</g>
+<g id="node15" class="node">
+<title>Cy</title>
+<path fill="#e3f2fd" stroke="#1565c0" stroke-width="1.6" d="M450,-60.32C450,-60.32 420,-60.32 420,-60.32 414,-60.32 408,-54.32 408,-48.32 408,-48.32 408,-32 408,-32 408,-26 414,-20 420,-20 420,-20 450,-20 450,-20 456,-20 462,-26 462,-32 462,-32 462,-48.32 462,-48.32 462,-54.32 456,-60.32 450,-60.32"/>
+<text text-anchor="middle" x="435" y="-43.76" font-family="Arial" font-size="12.00">b</text>
+<text text-anchor="middle" x="435" y="-29.36" font-family="Arial" font-size="12.00">3</text>
+</g>
+<g id="edge12" class="edge">
+<title>Cp&#45;&gt;Cy</title>
+<path fill="none" stroke="#455a64" stroke-width="1.6" d="M382.29,-90.32C392.13,-81.15 404.09,-69.99 414.14,-60.62"/>
+</g>
+<g id="node16" class="node">
+<title>Dr</title>
+<ellipse fill="#fce4ec" stroke="#c2185b" stroke-width="1.6" cx="557" cy="-185.32" rx="27" ry="27"/>
+<text text-anchor="middle" x="557" y="-188.92" font-family="Arial" font-size="12.00">*</text>
+<text text-anchor="middle" x="557" y="-174.52" font-family="Arial" font-size="12.00">= 4</text>
+</g>
+<g id="node17" class="node">
+<title>Dp</title>
+<ellipse fill="#fce4ec" stroke="#c2185b" stroke-width="1.6" cx="521" cy="-109.32" rx="27" ry="27"/>
+<text text-anchor="middle" x="521" y="-112.92" font-family="Arial" font-size="12.00">/</text>
+<text text-anchor="middle" x="521" y="-98.52" font-family="Arial" font-size="12.00">= 2</text>
+</g>
+<g id="edge13" class="edge">
+<title>Dr&#45;&gt;Dp</title>
+<path fill="none" stroke="#455a64" stroke-width="1.6" d="M545.41,-160.5C541.3,-152.05 536.68,-142.54 532.57,-134.1"/>
+</g>
+<g id="node18" class="node">
+<title>Dz</title>
+<path fill="#e3f2fd" stroke="#1565c0" stroke-width="1.6" d="M608,-129.48C608,-129.48 578,-129.48 578,-129.48 572,-129.48 566,-123.48 566,-117.48 566,-117.48 566,-101.16 566,-101.16 566,-95.16 572,-89.16 578,-89.16 578,-89.16 608,-89.16 608,-89.16 614,-89.16 620,-95.16 620,-101.16 620,-101.16 620,-117.48 620,-117.48 620,-123.48 614,-129.48 608,-129.48"/>
+<text text-anchor="middle" x="593" y="-112.92" font-family="Arial" font-size="12.00">c</text>
+<text text-anchor="middle" x="593" y="-98.52" font-family="Arial" font-size="12.00">2</text>
+</g>
+<g id="edge14" class="edge">
+<title>Dr&#45;&gt;Dz</title>
+<path fill="none" stroke="#455a64" stroke-width="1.6" d="M568.59,-160.5C573.44,-150.53 579.01,-139.09 583.6,-129.65"/>
+</g>
+<g id="node19" class="node">
+<title>Dx</title>
+<path fill="#e3f2fd" stroke="#1565c0" stroke-width="1.6" d="M536,-60.32C536,-60.32 506,-60.32 506,-60.32 500,-60.32 494,-54.32 494,-48.32 494,-48.32 494,-32 494,-32 494,-26 500,-20 506,-20 506,-20 536,-20 536,-20 542,-20 548,-26 548,-32 548,-32 548,-48.32 548,-48.32 548,-54.32 542,-60.32 536,-60.32"/>
+<text text-anchor="middle" x="521" y="-43.76" font-family="Arial" font-size="12.00">a</text>
+<text text-anchor="middle" x="521" y="-29.36" font-family="Arial" font-size="12.00">8</text>
+</g>
+<g id="edge15" class="edge">
+<title>Dp&#45;&gt;Dx</title>
+<path fill="none" stroke="#455a64" stroke-width="1.6" d="M521,-82.16C521,-74.94 521,-67.24 521,-60.49"/>
+</g>
+<g id="node20" class="node">
+<title>Dy</title>
+<path fill="#e3f2fd" stroke="#1565c0" stroke-width="1.6" d="M608,-60.32C608,-60.32 578,-60.32 578,-60.32 572,-60.32 566,-54.32 566,-48.32 566,-48.32 566,-32 566,-32 566,-26 572,-20 578,-20 578,-20 608,-20 608,-20 614,-20 620,-26 620,-32 620,-32 620,-48.32 620,-48.32 620,-54.32 614,-60.32 608,-60.32"/>
+<text text-anchor="middle" x="593" y="-43.76" font-family="Arial" font-size="12.00">b</text>
+<text text-anchor="middle" x="593" y="-29.36" font-family="Arial" font-size="12.00">3</text>
+</g>
+<g id="edge16" class="edge">
+<title>Dp&#45;&gt;Dy</title>
+<path fill="none" stroke="#455a64" stroke-width="1.6" d="M540.29,-90.32C550.13,-81.15 562.09,-69.99 572.14,-60.62"/>
+</g>
+</g>
+</svg>

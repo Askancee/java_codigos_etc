@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="366" height="510" viewBox="0 0 366 510"><title>Ejercicio 7: diagrama de flujo</title><defs><marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#455A64"/></marker></defs><rect x="0" y="0" width="366" height="510" rx="0" fill="#FFFFFF" stroke="none" stroke-width="0"/>
+<g transform="translate(183.2745,18.0)">
+<path d="M0.0,34.0 L0.0,60.0" stroke="#455A64" stroke-width="1.5" fill="none" marker-end="url(#arr)"/>
+<path d="M0.0,93.0 L0.0,119.0" stroke="#455A64" stroke-width="1.5" fill="none" marker-end="url(#arr)"/>
+<path d="M0.0,169.0 L0.0,195.0" stroke="#455A64" stroke-width="1.5" fill="none" marker-end="url(#arr)"/>
+<path d="M0.0,245.0 L0.0,271.0" stroke="#455A64" stroke-width="1.5" fill="none" marker-end="url(#arr)"/>
+<path d="M0.0,338.0 L0.0,364.0" stroke="#455A64" stroke-width="1.5" fill="none" marker-end="url(#arr)"/>
+<path d="M0.0,414.0 L0.0,440.0" stroke="#455A64" stroke-width="1.5" fill="none" marker-end="url(#arr)"/>
+<rect x="-42.0" y="0.0" width="84" height="34" rx="17.0" fill="#E8F5E9" stroke="#2E7D32" stroke-width="1.8"/>
+<text x="0" y="18.0" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="13" font-weight="normal" fill="#263238" text-anchor="middle" dominant-baseline="central">Inicio</text>
+<rect x="-129.9795" y="60.0" width="259.959" height="33" rx="0" fill="#FFF8E1" stroke="#F9A825" stroke-width="1.8"/>
+<text x="0" y="77.5" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="13" font-weight="normal" fill="#263238" text-anchor="middle" dominant-baseline="central">correo ← "alumno@universidad.edu.pe"</text>
+<rect x="-111.1815" y="119.0" width="222.363" height="50" rx="0" fill="#FFF8E1" stroke="#F9A825" stroke-width="1.8"/>
+<text x="-97.1815" y="136.5" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="13" font-weight="normal" fill="#263238" text-anchor="start" dominant-baseline="central">longitud ← longitud(correo)</text>
+<text x="-97.1815" y="153.5" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="13" font-weight="normal" fill="#263238" text-anchor="start" dominant-baseline="central">posArroba ← buscar(correo, "@")</text>
+<rect x="-146.041" y="195.0" width="292.082" height="50" rx="0" fill="#FFF8E1" stroke="#F9A825" stroke-width="1.8"/>
+<text x="-132.041" y="212.5" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="13" font-weight="normal" fill="#263238" text-anchor="start" dominant-baseline="central">usuario ← subcadena(correo, 0, posArroba)</text>
+<text x="-132.041" y="229.5" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="13" font-weight="normal" fill="#263238" text-anchor="start" dominant-baseline="central">dominio ← subcadena(correo, posArroba + 1)</text>
+<rect x="-165.2745" y="271.0" width="330.549" height="67" rx="0" fill="#FFF8E1" stroke="#F9A825" stroke-width="1.8"/>
+<text x="-151.2745" y="288.5" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="13" font-weight="normal" fill="#263238" text-anchor="start" dominant-baseline="central">nuevoCorreo ← correo</text>
+<text x="-151.2745" y="305.5" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="13" font-weight="normal" fill="#263238" text-anchor="start" dominant-baseline="central">posPalabra ← buscar(nuevoCorreo, "universidad")</text>
+<text x="-151.2745" y="322.5" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="13" font-weight="normal" fill="#263238" text-anchor="start" dominant-baseline="central">reemplazar(nuevoCorreo, posPalabra, 11, "unmsm")</text>
+<polygon points="-120.5675,364.0 134.5675,364.0 120.5675,414.0 -134.5675,414.0" fill="#E3F2FD" stroke="#1565C0" stroke-width="1.8"/>
+<text x="0" y="381.5" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="13" font-weight="normal" fill="#263238" text-anchor="middle" dominant-baseline="central">Escribir longitud, posArroba, usuario,</text>
+<text x="0" y="398.5" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="13" font-weight="normal" fill="#263238" text-anchor="middle" dominant-baseline="central">dominio, nuevoCorreo</text>
+<rect x="-42.0" y="440.0" width="84" height="34" rx="17.0" fill="#E8F5E9" stroke="#2E7D32" stroke-width="1.8"/>
+<text x="0" y="458.0" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="13" font-weight="normal" fill="#263238" text-anchor="middle" dominant-baseline="central">Fin</text>
+</g></svg>

@@ -1,0 +1,85 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="360" viewBox="0 0 760 360"><title>cin &gt;&gt; vs getline</title><defs><marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#455A64"/></marker></defs><rect x="0" y="0" width="760" height="360" rx="0" fill="#FFFFFF" stroke="none" stroke-width="0"/>
+<text x="380" y="20" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="15" font-weight="bold" fill="#263238" text-anchor="middle" dominant-baseline="central">El usuario escribe:  Juan Carlos Perez  y presiona Enter (⏎)</text>
+<text x="92.0" y="52" font-family="'DejaVu Sans Mono', Consolas, 'Liberation Mono', 'Courier New', monospace" font-size="15" font-weight="bold" fill="#C62828" text-anchor="start" dominant-baseline="central">Caso A:   cin &gt;&gt; nombre;</text>
+<rect x="92.0" y="74" width="32" height="36" rx="0" fill="#E8F5E9" stroke="#2E7D32" stroke-width="1.3"/>
+<text x="108.0" y="93.0" font-family="'DejaVu Sans Mono', Consolas, 'Liberation Mono', 'Courier New', monospace" font-size="17" font-weight="bold" fill="#263238" text-anchor="middle" dominant-baseline="central">J</text>
+<rect x="124.0" y="74" width="32" height="36" rx="0" fill="#E8F5E9" stroke="#2E7D32" stroke-width="1.3"/>
+<text x="140.0" y="93.0" font-family="'DejaVu Sans Mono', Consolas, 'Liberation Mono', 'Courier New', monospace" font-size="17" font-weight="bold" fill="#263238" text-anchor="middle" dominant-baseline="central">u</text>
+<rect x="156.0" y="74" width="32" height="36" rx="0" fill="#E8F5E9" stroke="#2E7D32" stroke-width="1.3"/>
+<text x="172.0" y="93.0" font-family="'DejaVu Sans Mono', Consolas, 'Liberation Mono', 'Courier New', monospace" font-size="17" font-weight="bold" fill="#263238" text-anchor="middle" dominant-baseline="central">a</text>
+<rect x="188.0" y="74" width="32" height="36" rx="0" fill="#E8F5E9" stroke="#2E7D32" stroke-width="1.3"/>
+<text x="204.0" y="93.0" font-family="'DejaVu Sans Mono', Consolas, 'Liberation Mono', 'Courier New', monospace" font-size="17" font-weight="bold" fill="#263238" text-anchor="middle" dominant-baseline="central">n</text>
+<rect x="220.0" y="74" width="32" height="36" rx="0" fill="#F5F5F5" stroke="#757575" stroke-width="1.3"/>
+<text x="236.0" y="93.0" font-family="'DejaVu Sans Mono', Consolas, 'Liberation Mono', 'Courier New', monospace" font-size="17" font-weight="bold" fill="#607D8B" text-anchor="middle" dominant-baseline="central">␣</text>
+<rect x="252.0" y="74" width="32" height="36" rx="0" fill="#F5F5F5" stroke="#757575" stroke-width="1.3"/>
+<text x="268.0" y="93.0" font-family="'DejaVu Sans Mono', Consolas, 'Liberation Mono', 'Courier New', monospace" font-size="17" font-weight="bold" fill="#263238" text-anchor="middle" dominant-baseline="central">C</text>
+<rect x="284.0" y="74" width="32" height="36" rx="0" fill="#F5F5F5" stroke="#757575" stroke-width="1.3"/>
+<text x="300.0" y="93.0" font-family="'DejaVu Sans Mono', Consolas, 'Liberation Mono', 'Courier New', monospace" font-size="17" font-weight="bold" fill="#263238" text-anchor="middle" dominant-baseline="central">a</text>
+<rect x="316.0" y="74" width="32" height="36" rx="0" fill="#F5F5F5" stroke="#757575" stroke-width="1.3"/>
+<text x="332.0" y="93.0" font-family="'DejaVu Sans Mono', Consolas, 'Liberation Mono', 'Courier New', monospace" font-size="17" font-weight="bold" fill="#263238" text-anchor="middle" dominant-baseline="central">r</text>
+<rect x="348.0" y="74" width="32" height="36" rx="0" fill="#F5F5F5" stroke="#757575" stroke-width="1.3"/>
+<text x="364.0" y="93.0" font-family="'DejaVu Sans Mono', Consolas, 'Liberation Mono', 'Courier New', monospace" font-size="17" font-weight="bold" fill="#263238" text-anchor="middle" dominant-baseline="central">l</text>
+<rect x="380.0" y="74" width="32" height="36" rx="0" fill="#F5F5F5" stroke="#757575" stroke-width="1.3"/>
+<text x="396.0" y="93.0" font-family="'DejaVu Sans Mono', Consolas, 'Liberation Mono', 'Courier New', monospace" font-size="17" font-weight="bold" fill="#263238" text-anchor="middle" dominant-baseline="central">o</text>
+<rect x="412.0" y="74" width="32" height="36" rx="0" fill="#F5F5F5" stroke="#757575" stroke-width="1.3"/>
+<text x="428.0" y="93.0" font-family="'DejaVu Sans Mono', Consolas, 'Liberation Mono', 'Courier New', monospace" font-size="17" font-weight="bold" fill="#263238" text-anchor="middle" dominant-baseline="central">s</text>
+<rect x="444.0" y="74" width="32" height="36" rx="0" fill="#F5F5F5" stroke="#757575" stroke-width="1.3"/>
+<text x="460.0" y="93.0" font-family="'DejaVu Sans Mono', Consolas, 'Liberation Mono', 'Courier New', monospace" font-size="17" font-weight="bold" fill="#607D8B" text-anchor="middle" dominant-baseline="central">␣</text>
+<rect x="476.0" y="74" width="32" height="36" rx="0" fill="#F5F5F5" stroke="#757575" stroke-width="1.3"/>
+<text x="492.0" y="93.0" font-family="'DejaVu Sans Mono', Consolas, 'Liberation Mono', 'Courier New', monospace" font-size="17" font-weight="bold" fill="#263238" text-anchor="middle" dominant-baseline="central">P</text>
+<rect x="508.0" y="74" width="32" height="36" rx="0" fill="#F5F5F5" stroke="#757575" stroke-width="1.3"/>
+<text x="524.0" y="93.0" font-family="'DejaVu Sans Mono', Consolas, 'Liberation Mono', 'Courier New', monospace" font-size="17" font-weight="bold" fill="#263238" text-anchor="middle" dominant-baseline="central">e</text>
+<rect x="540.0" y="74" width="32" height="36" rx="0" fill="#F5F5F5" stroke="#757575" stroke-width="1.3"/>
+<text x="556.0" y="93.0" font-family="'DejaVu Sans Mono', Consolas, 'Liberation Mono', 'Courier New', monospace" font-size="17" font-weight="bold" fill="#263238" text-anchor="middle" dominant-baseline="central">r</text>
+<rect x="572.0" y="74" width="32" height="36" rx="0" fill="#F5F5F5" stroke="#757575" stroke-width="1.3"/>
+<text x="588.0" y="93.0" font-family="'DejaVu Sans Mono', Consolas, 'Liberation Mono', 'Courier New', monospace" font-size="17" font-weight="bold" fill="#263238" text-anchor="middle" dominant-baseline="central">e</text>
+<rect x="604.0" y="74" width="32" height="36" rx="0" fill="#F5F5F5" stroke="#757575" stroke-width="1.3"/>
+<text x="620.0" y="93.0" font-family="'DejaVu Sans Mono', Consolas, 'Liberation Mono', 'Courier New', monospace" font-size="17" font-weight="bold" fill="#263238" text-anchor="middle" dominant-baseline="central">z</text>
+<rect x="636.0" y="74" width="32" height="36" rx="0" fill="#F5F5F5" stroke="#757575" stroke-width="1.3"/>
+<text x="652.0" y="93.0" font-family="'DejaVu Sans Mono', Consolas, 'Liberation Mono', 'Courier New', monospace" font-size="17" font-weight="bold" fill="#607D8B" text-anchor="middle" dominant-baseline="central">⏎</text>
+<path d="M94.0,118 L94.0,125 L218.0,125 L218.0,118" stroke="#2E7D32" stroke-width="1.6" fill="none"/>
+<text x="156.0" y="142" font-family="'DejaVu Sans Mono', Consolas, 'Liberation Mono', 'Courier New', monospace" font-size="13" font-weight="bold" fill="#2E7D32" text-anchor="middle" dominant-baseline="central">nombre = "Juan"</text>
+<path d="M222.0,118 L222.0,125 L666.0,125 L666.0,118" stroke="#607D8B" stroke-width="1.6" fill="none"/>
+<text x="444.0" y="142" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="13" font-weight="normal" fill="#607D8B" text-anchor="middle" dominant-baseline="central">se queda esperando en el buffer (no se guarda)</text>
+<text x="444.0" y="160" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="12" font-weight="normal" fill="#C62828" text-anchor="middle" dominant-baseline="central" font-style="italic">cin &gt;&gt; se DETIENE en el primer espacio</text>
+<text x="92.0" y="214" font-family="'DejaVu Sans Mono', Consolas, 'Liberation Mono', 'Courier New', monospace" font-size="15" font-weight="bold" fill="#2E7D32" text-anchor="start" dominant-baseline="central">Caso B:   getline(cin, nombre);</text>
+<rect x="92.0" y="236" width="32" height="36" rx="0" fill="#E8F5E9" stroke="#2E7D32" stroke-width="1.3"/>
+<text x="108.0" y="255.0" font-family="'DejaVu Sans Mono', Consolas, 'Liberation Mono', 'Courier New', monospace" font-size="17" font-weight="bold" fill="#263238" text-anchor="middle" dominant-baseline="central">J</text>
+<rect x="124.0" y="236" width="32" height="36" rx="0" fill="#E8F5E9" stroke="#2E7D32" stroke-width="1.3"/>
+<text x="140.0" y="255.0" font-family="'DejaVu Sans Mono', Consolas, 'Liberation Mono', 'Courier New', monospace" font-size="17" font-weight="bold" fill="#263238" text-anchor="middle" dominant-baseline="central">u</text>
+<rect x="156.0" y="236" width="32" height="36" rx="0" fill="#E8F5E9" stroke="#2E7D32" stroke-width="1.3"/>
+<text x="172.0" y="255.0" font-family="'DejaVu Sans Mono', Consolas, 'Liberation Mono', 'Courier New', monospace" font-size="17" font-weight="bold" fill="#263238" text-anchor="middle" dominant-baseline="central">a</text>
+<rect x="188.0" y="236" width="32" height="36" rx="0" fill="#E8F5E9" stroke="#2E7D32" stroke-width="1.3"/>
+<text x="204.0" y="255.0" font-family="'DejaVu Sans Mono', Consolas, 'Liberation Mono', 'Courier New', monospace" font-size="17" font-weight="bold" fill="#263238" text-anchor="middle" dominant-baseline="central">n</text>
+<rect x="220.0" y="236" width="32" height="36" rx="0" fill="#E8F5E9" stroke="#2E7D32" stroke-width="1.3"/>
+<text x="236.0" y="255.0" font-family="'DejaVu Sans Mono', Consolas, 'Liberation Mono', 'Courier New', monospace" font-size="17" font-weight="bold" fill="#607D8B" text-anchor="middle" dominant-baseline="central">␣</text>
+<rect x="252.0" y="236" width="32" height="36" rx="0" fill="#E8F5E9" stroke="#2E7D32" stroke-width="1.3"/>
+<text x="268.0" y="255.0" font-family="'DejaVu Sans Mono', Consolas, 'Liberation Mono', 'Courier New', monospace" font-size="17" font-weight="bold" fill="#263238" text-anchor="middle" dominant-baseline="central">C</text>
+<rect x="284.0" y="236" width="32" height="36" rx="0" fill="#E8F5E9" stroke="#2E7D32" stroke-width="1.3"/>
+<text x="300.0" y="255.0" font-family="'DejaVu Sans Mono', Consolas, 'Liberation Mono', 'Courier New', monospace" font-size="17" font-weight="bold" fill="#263238" text-anchor="middle" dominant-baseline="central">a</text>
+<rect x="316.0" y="236" width="32" height="36" rx="0" fill="#E8F5E9" stroke="#2E7D32" stroke-width="1.3"/>
+<text x="332.0" y="255.0" font-family="'DejaVu Sans Mono', Consolas, 'Liberation Mono', 'Courier New', monospace" font-size="17" font-weight="bold" fill="#263238" text-anchor="middle" dominant-baseline="central">r</text>
+<rect x="348.0" y="236" width="32" height="36" rx="0" fill="#E8F5E9" stroke="#2E7D32" stroke-width="1.3"/>
+<text x="364.0" y="255.0" font-family="'DejaVu Sans Mono', Consolas, 'Liberation Mono', 'Courier New', monospace" font-size="17" font-weight="bold" fill="#263238" text-anchor="middle" dominant-baseline="central">l</text>
+<rect x="380.0" y="236" width="32" height="36" rx="0" fill="#E8F5E9" stroke="#2E7D32" stroke-width="1.3"/>
+<text x="396.0" y="255.0" font-family="'DejaVu Sans Mono', Consolas, 'Liberation Mono', 'Courier New', monospace" font-size="17" font-weight="bold" fill="#263238" text-anchor="middle" dominant-baseline="central">o</text>
+<rect x="412.0" y="236" width="32" height="36" rx="0" fill="#E8F5E9" stroke="#2E7D32" stroke-width="1.3"/>
+<text x="428.0" y="255.0" font-family="'DejaVu Sans Mono', Consolas, 'Liberation Mono', 'Courier New', monospace" font-size="17" font-weight="bold" fill="#263238" text-anchor="middle" dominant-baseline="central">s</text>
+<rect x="444.0" y="236" width="32" height="36" rx="0" fill="#E8F5E9" stroke="#2E7D32" stroke-width="1.3"/>
+<text x="460.0" y="255.0" font-family="'DejaVu Sans Mono', Consolas, 'Liberation Mono', 'Courier New', monospace" font-size="17" font-weight="bold" fill="#607D8B" text-anchor="middle" dominant-baseline="central">␣</text>
+<rect x="476.0" y="236" width="32" height="36" rx="0" fill="#E8F5E9" stroke="#2E7D32" stroke-width="1.3"/>
+<text x="492.0" y="255.0" font-family="'DejaVu Sans Mono', Consolas, 'Liberation Mono', 'Courier New', monospace" font-size="17" font-weight="bold" fill="#263238" text-anchor="middle" dominant-baseline="central">P</text>
+<rect x="508.0" y="236" width="32" height="36" rx="0" fill="#E8F5E9" stroke="#2E7D32" stroke-width="1.3"/>
+<text x="524.0" y="255.0" font-family="'DejaVu Sans Mono', Consolas, 'Liberation Mono', 'Courier New', monospace" font-size="17" font-weight="bold" fill="#263238" text-anchor="middle" dominant-baseline="central">e</text>
+<rect x="540.0" y="236" width="32" height="36" rx="0" fill="#E8F5E9" stroke="#2E7D32" stroke-width="1.3"/>
+<text x="556.0" y="255.0" font-family="'DejaVu Sans Mono', Consolas, 'Liberation Mono', 'Courier New', monospace" font-size="17" font-weight="bold" fill="#263238" text-anchor="middle" dominant-baseline="central">r</text>
+<rect x="572.0" y="236" width="32" height="36" rx="0" fill="#E8F5E9" stroke="#2E7D32" stroke-width="1.3"/>
+<text x="588.0" y="255.0" font-family="'DejaVu Sans Mono', Consolas, 'Liberation Mono', 'Courier New', monospace" font-size="17" font-weight="bold" fill="#263238" text-anchor="middle" dominant-baseline="central">e</text>
+<rect x="604.0" y="236" width="32" height="36" rx="0" fill="#E8F5E9" stroke="#2E7D32" stroke-width="1.3"/>
+<text x="620.0" y="255.0" font-family="'DejaVu Sans Mono', Consolas, 'Liberation Mono', 'Courier New', monospace" font-size="17" font-weight="bold" fill="#263238" text-anchor="middle" dominant-baseline="central">z</text>
+<rect x="636.0" y="236" width="32" height="36" rx="0" fill="#FFF8E1" stroke="#F9A825" stroke-width="1.3"/>
+<text x="652.0" y="255.0" font-family="'DejaVu Sans Mono', Consolas, 'Liberation Mono', 'Courier New', monospace" font-size="17" font-weight="bold" fill="#607D8B" text-anchor="middle" dominant-baseline="central">⏎</text>
+<path d="M94.0,280 L94.0,287 L634.0,287 L634.0,280" stroke="#2E7D32" stroke-width="1.6" fill="none"/>
+<text x="364.0" y="304" font-family="'DejaVu Sans Mono', Consolas, 'Liberation Mono', 'Courier New', monospace" font-size="13" font-weight="bold" fill="#2E7D32" text-anchor="middle" dominant-baseline="central">nombre = "Juan Carlos Perez"  (con espacios)</text>
+<line x1="652.0" y1="338" x2="652.0" y2="278" stroke="#F9A825" stroke-width="1.5" marker-end="url(#arr)"/>
+<text x="652.0" y="348" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="12" font-weight="normal" fill="#F9A825" text-anchor="end" dominant-baseline="central">el Enter se lee y se descarta</text></svg>

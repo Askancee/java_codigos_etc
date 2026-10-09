@@ -1,0 +1,63 @@
+<svg width="686pt" height="198pt"
+ viewBox="0.00 0.00 686.00 197.88" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(18 179.88)">
+<title>G</title>
+<polygon fill="white" stroke="none" points="-18,18 -18,-179.88 668,-179.88 668,18 -18,18"/>
+<g id="node1" class="node">
+<title>e</title>
+<path fill="#e3f2fd" stroke="#1565c0" stroke-width="1.6" d="M185.88,-161.88C185.88,-161.88 12,-161.88 12,-161.88 6,-161.88 0,-155.88 0,-149.88 0,-149.88 0,-90.2 0,-90.2 0,-84.2 6,-78.2 12,-78.2 12,-78.2 185.88,-78.2 185.88,-78.2 191.88,-78.2 197.88,-84.2 197.88,-90.2 197.88,-90.2 197.88,-149.88 197.88,-149.88 197.88,-155.88 191.88,-161.88 185.88,-161.88"/>
+<text text-anchor="middle" x="98.94" y="-140.64" font-family="Arial" font-size="14.00">ENTRADA</text>
+<text text-anchor="middle" x="98.94" y="-107.84" font-family="Arial" font-size="14.00">los datos que el programa</text>
+<text text-anchor="middle" x="98.94" y="-91.04" font-family="Arial" font-size="14.00">necesita (se LEEN)</text>
+</g>
+<g id="node2" class="node">
+<title>p</title>
+<path fill="#fff8e1" stroke="#f9a825" stroke-width="1.6" d="M426.74,-161.88C426.74,-161.88 252.88,-161.88 252.88,-161.88 246.88,-161.88 240.88,-155.88 240.88,-149.88 240.88,-149.88 240.88,-90.2 240.88,-90.2 240.88,-84.2 246.88,-78.2 252.88,-78.2 252.88,-78.2 426.74,-78.2 426.74,-78.2 432.74,-78.2 438.74,-84.2 438.74,-90.2 438.74,-90.2 438.74,-149.88 438.74,-149.88 438.74,-155.88 432.74,-161.88 426.74,-161.88"/>
+<text text-anchor="middle" x="339.81" y="-140.64" font-family="Arial" font-size="14.00">PROCESO</text>
+<text text-anchor="middle" x="339.81" y="-107.84" font-family="Arial" font-size="14.00">los cálculos o pasos</text>
+<text text-anchor="middle" x="339.81" y="-91.04" font-family="Arial" font-size="14.00">que transforman los datos</text>
+</g>
+<g id="edge1" class="edge">
+<title>e&#45;&gt;p</title>
+<path fill="none" stroke="#455a64" stroke-width="2.2" d="M198.13,-120.04C207.44,-120.04 216.94,-120.04 226.37,-120.04"/>
+<polygon fill="#455a64" stroke="#455a64" stroke-width="2.2" points="226.28,-123.89 237.28,-120.04 226.28,-116.19 226.28,-123.89"/>
+</g>
+<g id="node4" class="node">
+<title>ee</title>
+<text text-anchor="middle" x="98.94" y="-26.64" font-family="Arial" font-size="12.00" fill="#1565c0">horas = 8</text>
+<text text-anchor="middle" x="98.94" y="-12.24" font-family="Arial" font-size="12.00" fill="#1565c0">tarifa = 25.50</text>
+</g>
+<g id="edge3" class="edge">
+<title>e&#45;&gt;ee</title>
+<path fill="none" stroke="#455a64" stroke-width="1.4" stroke-dasharray="1,5" d="M98.94,-77.98C98.94,-67.24 98.94,-56.51 98.94,-45.77"/>
+</g>
+<g id="node3" class="node">
+<title>s</title>
+<path fill="#e8f5e9" stroke="#2e7d32" stroke-width="1.6" d="M638,-161.88C638,-161.88 493.74,-161.88 493.74,-161.88 487.74,-161.88 481.74,-155.88 481.74,-149.88 481.74,-149.88 481.74,-90.2 481.74,-90.2 481.74,-84.2 487.74,-78.2 493.74,-78.2 493.74,-78.2 638,-78.2 638,-78.2 644,-78.2 650,-84.2 650,-90.2 650,-90.2 650,-149.88 650,-149.88 650,-155.88 644,-161.88 638,-161.88"/>
+<text text-anchor="middle" x="565.87" y="-140.64" font-family="Arial" font-size="14.00">SALIDA</text>
+<text text-anchor="middle" x="565.87" y="-107.84" font-family="Arial" font-size="14.00">los resultados que el</text>
+<text text-anchor="middle" x="565.87" y="-91.04" font-family="Arial" font-size="14.00">programa MUESTRA</text>
+</g>
+<g id="edge2" class="edge">
+<title>p&#45;&gt;s</title>
+<path fill="none" stroke="#455a64" stroke-width="2.2" d="M439.09,-120.04C448.46,-120.04 457.96,-120.04 467.32,-120.04"/>
+<polygon fill="#455a64" stroke="#455a64" stroke-width="2.2" points="467.06,-123.89 478.06,-120.04 467.06,-116.19 467.06,-123.89"/>
+</g>
+<g id="node5" class="node">
+<title>pp</title>
+<text text-anchor="middle" x="339.81" y="-24.44" font-family="Arial" font-size="12.00" fill="#e65100">pago = horas × tarifa</text>
+</g>
+<g id="edge4" class="edge">
+<title>p&#45;&gt;pp</title>
+<path fill="none" stroke="#455a64" stroke-width="1.4" stroke-dasharray="1,5" d="M339.81,-77.82C339.81,-67.22 339.81,-56.61 339.81,-46.01"/>
+</g>
+<g id="node6" class="node">
+<title>ss</title>
+<text text-anchor="middle" x="565.87" y="-24.44" font-family="Arial" font-size="12.00" fill="#2e7d32">pago = 204.00</text>
+</g>
+<g id="edge5" class="edge">
+<title>s&#45;&gt;ss</title>
+<path fill="none" stroke="#455a64" stroke-width="1.4" stroke-dasharray="1,5" d="M565.87,-77.82C565.87,-67.22 565.87,-56.61 565.87,-46.01"/>
+</g>
+</g>
+</svg>

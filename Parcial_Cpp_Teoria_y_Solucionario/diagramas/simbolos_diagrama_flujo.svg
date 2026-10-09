@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="470" viewBox="0 0 760 470"><title>Símbolos de diagrama de flujo</title><defs><marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#455A64"/></marker></defs><rect x="0" y="0" width="760" height="470" rx="0" fill="#FFFFFF" stroke="none" stroke-width="0"/>
+<text x="380" y="24" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="17" font-weight="bold" fill="#263238" text-anchor="middle" dominant-baseline="central">Símbolos de un diagrama de flujo (norma ISO 5807 / ANSI)</text>
+<ellipse cx="120" cy="78" rx="72" ry="23" fill="#E8F5E9" stroke="#2E7D32" stroke-width="1.8"/>
+<text x="120" y="79" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="14" font-weight="normal" fill="#263238" text-anchor="middle" dominant-baseline="central">Inicio</text>
+<text x="240" y="68" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="15" font-weight="bold" fill="#263238" text-anchor="start" dominant-baseline="central">Terminal (óvalo)</text>
+<text x="240" y="90" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="13" font-weight="normal" fill="#607D8B" text-anchor="start" dominant-baseline="central">Marca el INICIO y el FIN del algoritmo. Hay uno de cada uno.</text>
+<polygon points="62,127 202,127 178,173 38,173" fill="#E3F2FD" stroke="#1565C0" stroke-width="1.8"/>
+<text x="120" y="151" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="14" font-weight="normal" fill="#263238" text-anchor="middle" dominant-baseline="central">Leer x</text>
+<text x="240" y="140" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="15" font-weight="bold" fill="#263238" text-anchor="start" dominant-baseline="central">Entrada / Salida (paralelogramo)</text>
+<text x="240" y="162" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="13" font-weight="normal" fill="#607D8B" text-anchor="start" dominant-baseline="central">Leer datos del teclado (Leer) o mostrar resultados (Escribir).</text>
+<rect x="48" y="199" width="144" height="46" rx="0" fill="#FFF8E1" stroke="#F9A825" stroke-width="1.8"/>
+<text x="120" y="223" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="14" font-weight="normal" fill="#263238" text-anchor="middle" dominant-baseline="central">x ← a + b</text>
+<text x="240" y="212" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="15" font-weight="bold" fill="#263238" text-anchor="start" dominant-baseline="central">Proceso (rectángulo)</text>
+<text x="240" y="234" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="13" font-weight="normal" fill="#607D8B" text-anchor="start" dominant-baseline="central">Un cálculo o una asignación: guardar un valor en una variable.</text>
+<polygon points="120,264 198,294 120,324 42,294" fill="#FCE4EC" stroke="#C2185B" stroke-width="1.8"/>
+<text x="120" y="295" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="14" font-weight="normal" fill="#263238" text-anchor="middle" dominant-baseline="central">¿x &gt; 0?</text>
+<text x="240" y="284" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="15" font-weight="bold" fill="#263238" text-anchor="start" dominant-baseline="central">Decisión (rombo)</text>
+<text x="240" y="306" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="13" font-weight="normal" fill="#607D8B" text-anchor="start" dominant-baseline="central">Pregunta con dos salidas: Sí / No (equivale a un if).</text>
+<circle cx="120" cy="366" r="20" fill="#F3E5F5" stroke="#6A1B9A" stroke-width="1.8"/>
+<text x="120" y="367" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="14" font-weight="bold" fill="#263238" text-anchor="middle" dominant-baseline="central">A</text>
+<text x="240" y="356" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="15" font-weight="bold" fill="#263238" text-anchor="start" dominant-baseline="central">Conector (círculo)</text>
+<text x="240" y="378" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="13" font-weight="normal" fill="#607D8B" text-anchor="start" dominant-baseline="central">Une dos partes del diagrama que no caben juntas (misma letra).</text>
+<line x1="50" y1="438" x2="190" y2="438" stroke="#455A64" stroke-width="2" marker-end="url(#arr)"/>
+<text x="240" y="428" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="15" font-weight="bold" fill="#263238" text-anchor="start" dominant-baseline="central">Línea de flujo (flecha)</text>
+<text x="240" y="450" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="13" font-weight="normal" fill="#607D8B" text-anchor="start" dominant-baseline="central">Indica el orden en que se ejecutan los pasos.</text></svg>

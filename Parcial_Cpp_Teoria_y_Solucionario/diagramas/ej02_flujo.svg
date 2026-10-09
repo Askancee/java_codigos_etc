@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="265" height="366" viewBox="0 0 265 366"><title>Ejercicio 2: diagrama de flujo</title><defs><marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#455A64"/></marker></defs><rect x="0" y="0" width="265" height="366" rx="0" fill="#FFFFFF" stroke="none" stroke-width="0"/>
+<g transform="translate(132.98950000000002,18.0)">
+<path d="M0.0,34.0 L0.0,60.0" stroke="#455A64" stroke-width="1.5" fill="none" marker-end="url(#arr)"/>
+<path d="M0.0,93.0 L0.0,119.0" stroke="#455A64" stroke-width="1.5" fill="none" marker-end="url(#arr)"/>
+<path d="M0.0,152.0 L0.0,178.0" stroke="#455A64" stroke-width="1.5" fill="none" marker-end="url(#arr)"/>
+<path d="M0.0,211.0 L0.0,237.0" stroke="#455A64" stroke-width="1.5" fill="none" marker-end="url(#arr)"/>
+<path d="M0.0,270.0 L0.0,296.0" stroke="#455A64" stroke-width="1.5" fill="none" marker-end="url(#arr)"/>
+<rect x="-42.0" y="0.0" width="84" height="34" rx="17.0" fill="#E8F5E9" stroke="#2E7D32" stroke-width="1.8"/>
+<text x="0" y="18.0" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="13" font-weight="normal" fill="#263238" text-anchor="middle" dominant-baseline="central">Inicio</text>
+<polygon points="-45.07,60.0 59.07,60.0 45.07,93.0 -59.07,93.0" fill="#E3F2FD" stroke="#1565C0" stroke-width="1.8"/>
+<text x="0" y="77.5" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="13" font-weight="normal" fill="#263238" text-anchor="middle" dominant-baseline="central">Leer horas</text>
+<polygon points="-43.263000000000005,119.0 57.263000000000005,119.0 43.263000000000005,152.0 -57.263000000000005,152.0" fill="#E3F2FD" stroke="#1565C0" stroke-width="1.8"/>
+<text x="0" y="136.5" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="13" font-weight="normal" fill="#263238" text-anchor="middle" dominant-baseline="central">Leer tarifa</text>
+<rect x="-76.686" y="178.0" width="153.372" height="33" rx="0" fill="#FFF8E1" stroke="#F9A825" stroke-width="1.8"/>
+<text x="0" y="195.5" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="13" font-weight="normal" fill="#263238" text-anchor="middle" dominant-baseline="central">pago ← horas × tarifa</text>
+<polygon points="-100.9895,237.0 114.9895,237.0 100.9895,270.0 -114.9895,270.0" fill="#E3F2FD" stroke="#1565C0" stroke-width="1.8"/>
+<text x="0" y="254.5" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="13" font-weight="normal" fill="#263238" text-anchor="middle" dominant-baseline="central">Escribir "Pago total: S/ ", pago</text>
+<rect x="-42.0" y="296.0" width="84" height="34" rx="17.0" fill="#E8F5E9" stroke="#2E7D32" stroke-width="1.8"/>
+<text x="0" y="314.0" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="13" font-weight="normal" fill="#263238" text-anchor="middle" dominant-baseline="central">Fin</text>
+</g></svg>

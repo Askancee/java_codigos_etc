@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="330" viewBox="0 0 760 330"><title>Little-endian</title><defs><marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#455A64"/></marker></defs><rect x="0" y="0" width="760" height="330" rx="0" fill="#FFFFFF" stroke="none" stroke-width="0"/>
+<text x="380" y="22" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="16" font-weight="bold" fill="#263238" text-anchor="middle" dominant-baseline="central">¿En qué orden se guardan los 4 bytes de −6.75f = C0 D8 00 00 ?</text>
+<text x="210" y="58" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="14" font-weight="bold" fill="#546E7A" text-anchor="middle" dominant-baseline="central">Big-endian</text>
+<text x="210" y="78" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="12" font-weight="normal" fill="#607D8B" text-anchor="middle" dominant-baseline="central">(el orden en que lo escribimos)</text>
+<text x="140" y="120" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="12" font-weight="normal" fill="#607D8B" text-anchor="end" dominant-baseline="central">dirección 1000</text>
+<rect x="152" y="100" width="120" height="40" rx="0" fill="#F3E5F5" stroke="#546E7A" stroke-width="1.6"/>
+<text x="212" y="121" font-family="'DejaVu Sans Mono', Consolas, 'Liberation Mono', 'Courier New', monospace" font-size="18" font-weight="bold" fill="#263238" text-anchor="middle" dominant-baseline="central">C0</text>
+<text x="140" y="166" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="12" font-weight="normal" fill="#607D8B" text-anchor="end" dominant-baseline="central">dirección 1001</text>
+<rect x="152" y="146" width="120" height="40" rx="0" fill="#F3E5F5" stroke="#546E7A" stroke-width="1.6"/>
+<text x="212" y="167" font-family="'DejaVu Sans Mono', Consolas, 'Liberation Mono', 'Courier New', monospace" font-size="18" font-weight="bold" fill="#263238" text-anchor="middle" dominant-baseline="central">D8</text>
+<text x="140" y="212" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="12" font-weight="normal" fill="#607D8B" text-anchor="end" dominant-baseline="central">dirección 1002</text>
+<rect x="152" y="192" width="120" height="40" rx="0" fill="#FFFFFF" stroke="#546E7A" stroke-width="1.6"/>
+<text x="212" y="213" font-family="'DejaVu Sans Mono', Consolas, 'Liberation Mono', 'Courier New', monospace" font-size="18" font-weight="bold" fill="#263238" text-anchor="middle" dominant-baseline="central">00</text>
+<text x="140" y="258" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="12" font-weight="normal" fill="#607D8B" text-anchor="end" dominant-baseline="central">dirección 1003</text>
+<rect x="152" y="238" width="120" height="40" rx="0" fill="#FFFFFF" stroke="#546E7A" stroke-width="1.6"/>
+<text x="212" y="259" font-family="'DejaVu Sans Mono', Consolas, 'Liberation Mono', 'Courier New', monospace" font-size="18" font-weight="bold" fill="#263238" text-anchor="middle" dominant-baseline="central">00</text>
+<text x="560" y="58" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="14" font-weight="bold" fill="#6A1B9A" text-anchor="middle" dominant-baseline="central">Little-endian</text>
+<text x="560" y="78" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="12" font-weight="normal" fill="#607D8B" text-anchor="middle" dominant-baseline="central">(Intel y AMD: así está en tu PC)</text>
+<text x="490" y="120" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="12" font-weight="normal" fill="#607D8B" text-anchor="end" dominant-baseline="central">dirección 1000</text>
+<rect x="502" y="100" width="120" height="40" rx="0" fill="#FFFFFF" stroke="#6A1B9A" stroke-width="1.6"/>
+<text x="562" y="121" font-family="'DejaVu Sans Mono', Consolas, 'Liberation Mono', 'Courier New', monospace" font-size="18" font-weight="bold" fill="#263238" text-anchor="middle" dominant-baseline="central">00</text>
+<text x="490" y="166" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="12" font-weight="normal" fill="#607D8B" text-anchor="end" dominant-baseline="central">dirección 1001</text>
+<rect x="502" y="146" width="120" height="40" rx="0" fill="#FFFFFF" stroke="#6A1B9A" stroke-width="1.6"/>
+<text x="562" y="167" font-family="'DejaVu Sans Mono', Consolas, 'Liberation Mono', 'Courier New', monospace" font-size="18" font-weight="bold" fill="#263238" text-anchor="middle" dominant-baseline="central">00</text>
+<text x="490" y="212" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="12" font-weight="normal" fill="#607D8B" text-anchor="end" dominant-baseline="central">dirección 1002</text>
+<rect x="502" y="192" width="120" height="40" rx="0" fill="#F3E5F5" stroke="#6A1B9A" stroke-width="1.6"/>
+<text x="562" y="213" font-family="'DejaVu Sans Mono', Consolas, 'Liberation Mono', 'Courier New', monospace" font-size="18" font-weight="bold" fill="#263238" text-anchor="middle" dominant-baseline="central">D8</text>
+<text x="490" y="258" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="12" font-weight="normal" fill="#607D8B" text-anchor="end" dominant-baseline="central">dirección 1003</text>
+<rect x="502" y="238" width="120" height="40" rx="0" fill="#F3E5F5" stroke="#6A1B9A" stroke-width="1.6"/>
+<text x="562" y="259" font-family="'DejaVu Sans Mono', Consolas, 'Liberation Mono', 'Courier New', monospace" font-size="18" font-weight="bold" fill="#263238" text-anchor="middle" dominant-baseline="central">C0</text>
+<text x="380" y="300" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="12" font-weight="normal" fill="#263238" text-anchor="middle" dominant-baseline="central">Little-endian = «el byte menos significativo primero». El programa de la Parte 1 muestra este orden.</text></svg>

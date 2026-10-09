@@ -1,0 +1,112 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="820" height="430" viewBox="0 0 820 430"><title>Ejemplo 0.1</title><defs><marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#455A64"/></marker></defs><rect x="0" y="0" width="820" height="430" rx="0" fill="#FFFFFF" stroke="none" stroke-width="0"/>
+<text x="410" y="22" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="16" font-weight="bold" fill="#263238" text-anchor="middle" dominant-baseline="central">Ejemplo con trampa:  0.1  guardado como float</text>
+<text x="410" y="50" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="13" font-weight="normal" fill="#263238" text-anchor="middle" dominant-baseline="central">0.1 = 0.000110011001100110011…₂  (¡infinito! el bloque 0011 se repite para siempre)</text>
+<text x="410" y="72" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="13" font-weight="normal" fill="#263238" text-anchor="middle" dominant-baseline="central">normalizado: 1.10011001100…₂ × 2⁻⁴   →   exponente guardado = −4 + 127 = 123</text>
+<rect x="58" y="114" width="22" height="34" rx="0" fill="#FFCDD2" stroke="#C62828" stroke-width="1.1"/>
+<text x="69.0" y="132.0" font-family="'DejaVu Sans Mono', Consolas, 'Liberation Mono', 'Courier New', monospace" font-size="15" font-weight="bold" fill="#263238" text-anchor="middle" dominant-baseline="central">0</text>
+<text x="69.0" y="105" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="10" font-weight="normal" fill="#607D8B" text-anchor="middle" dominant-baseline="central">31</text>
+<rect x="80" y="114" width="22" height="34" rx="0" fill="#BBDEFB" stroke="#1565C0" stroke-width="1.1"/>
+<text x="91.0" y="132.0" font-family="'DejaVu Sans Mono', Consolas, 'Liberation Mono', 'Courier New', monospace" font-size="15" font-weight="bold" fill="#263238" text-anchor="middle" dominant-baseline="central">0</text>
+<text x="91.0" y="105" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="10" font-weight="normal" fill="#607D8B" text-anchor="middle" dominant-baseline="central">30</text>
+<rect x="102" y="114" width="22" height="34" rx="0" fill="#BBDEFB" stroke="#1565C0" stroke-width="1.1"/>
+<text x="113.0" y="132.0" font-family="'DejaVu Sans Mono', Consolas, 'Liberation Mono', 'Courier New', monospace" font-size="15" font-weight="bold" fill="#263238" text-anchor="middle" dominant-baseline="central">1</text>
+<text x="113.0" y="105" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="10" font-weight="normal" fill="#607D8B" text-anchor="middle" dominant-baseline="central">29</text>
+<rect x="124" y="114" width="22" height="34" rx="0" fill="#BBDEFB" stroke="#1565C0" stroke-width="1.1"/>
+<text x="135.0" y="132.0" font-family="'DejaVu Sans Mono', Consolas, 'Liberation Mono', 'Courier New', monospace" font-size="15" font-weight="bold" fill="#263238" text-anchor="middle" dominant-baseline="central">1</text>
+<text x="135.0" y="105" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="10" font-weight="normal" fill="#607D8B" text-anchor="middle" dominant-baseline="central">28</text>
+<rect x="146" y="114" width="22" height="34" rx="0" fill="#BBDEFB" stroke="#1565C0" stroke-width="1.1"/>
+<text x="157.0" y="132.0" font-family="'DejaVu Sans Mono', Consolas, 'Liberation Mono', 'Courier New', monospace" font-size="15" font-weight="bold" fill="#263238" text-anchor="middle" dominant-baseline="central">1</text>
+<text x="157.0" y="105" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="10" font-weight="normal" fill="#607D8B" text-anchor="middle" dominant-baseline="central">27</text>
+<rect x="168" y="114" width="22" height="34" rx="0" fill="#BBDEFB" stroke="#1565C0" stroke-width="1.1"/>
+<text x="179.0" y="132.0" font-family="'DejaVu Sans Mono', Consolas, 'Liberation Mono', 'Courier New', monospace" font-size="15" font-weight="bold" fill="#263238" text-anchor="middle" dominant-baseline="central">1</text>
+<text x="179.0" y="105" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="10" font-weight="normal" fill="#607D8B" text-anchor="middle" dominant-baseline="central">26</text>
+<rect x="190" y="114" width="22" height="34" rx="0" fill="#BBDEFB" stroke="#1565C0" stroke-width="1.1"/>
+<text x="201.0" y="132.0" font-family="'DejaVu Sans Mono', Consolas, 'Liberation Mono', 'Courier New', monospace" font-size="15" font-weight="bold" fill="#263238" text-anchor="middle" dominant-baseline="central">0</text>
+<text x="201.0" y="105" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="10" font-weight="normal" fill="#607D8B" text-anchor="middle" dominant-baseline="central">25</text>
+<rect x="212" y="114" width="22" height="34" rx="0" fill="#BBDEFB" stroke="#1565C0" stroke-width="1.1"/>
+<text x="223.0" y="132.0" font-family="'DejaVu Sans Mono', Consolas, 'Liberation Mono', 'Courier New', monospace" font-size="15" font-weight="bold" fill="#263238" text-anchor="middle" dominant-baseline="central">1</text>
+<text x="223.0" y="105" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="10" font-weight="normal" fill="#607D8B" text-anchor="middle" dominant-baseline="central">24</text>
+<rect x="234" y="114" width="22" height="34" rx="0" fill="#BBDEFB" stroke="#1565C0" stroke-width="1.1"/>
+<text x="245.0" y="132.0" font-family="'DejaVu Sans Mono', Consolas, 'Liberation Mono', 'Courier New', monospace" font-size="15" font-weight="bold" fill="#263238" text-anchor="middle" dominant-baseline="central">1</text>
+<text x="245.0" y="105" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="10" font-weight="normal" fill="#607D8B" text-anchor="middle" dominant-baseline="central">23</text>
+<rect x="256" y="114" width="22" height="34" rx="0" fill="#C8E6C9" stroke="#2E7D32" stroke-width="1.1"/>
+<text x="267.0" y="132.0" font-family="'DejaVu Sans Mono', Consolas, 'Liberation Mono', 'Courier New', monospace" font-size="15" font-weight="bold" fill="#263238" text-anchor="middle" dominant-baseline="central">1</text>
+<text x="267.0" y="105" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="10" font-weight="normal" fill="#607D8B" text-anchor="middle" dominant-baseline="central">22</text>
+<rect x="278" y="114" width="22" height="34" rx="0" fill="#C8E6C9" stroke="#2E7D32" stroke-width="1.1"/>
+<text x="289.0" y="132.0" font-family="'DejaVu Sans Mono', Consolas, 'Liberation Mono', 'Courier New', monospace" font-size="15" font-weight="bold" fill="#263238" text-anchor="middle" dominant-baseline="central">0</text>
+<text x="289.0" y="105" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="10" font-weight="normal" fill="#607D8B" text-anchor="middle" dominant-baseline="central">21</text>
+<rect x="300" y="114" width="22" height="34" rx="0" fill="#C8E6C9" stroke="#2E7D32" stroke-width="1.1"/>
+<text x="311.0" y="132.0" font-family="'DejaVu Sans Mono', Consolas, 'Liberation Mono', 'Courier New', monospace" font-size="15" font-weight="bold" fill="#263238" text-anchor="middle" dominant-baseline="central">0</text>
+<text x="311.0" y="105" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="10" font-weight="normal" fill="#607D8B" text-anchor="middle" dominant-baseline="central">20</text>
+<rect x="322" y="114" width="22" height="34" rx="0" fill="#C8E6C9" stroke="#2E7D32" stroke-width="1.1"/>
+<text x="333.0" y="132.0" font-family="'DejaVu Sans Mono', Consolas, 'Liberation Mono', 'Courier New', monospace" font-size="15" font-weight="bold" fill="#263238" text-anchor="middle" dominant-baseline="central">1</text>
+<text x="333.0" y="105" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="10" font-weight="normal" fill="#607D8B" text-anchor="middle" dominant-baseline="central">19</text>
+<rect x="344" y="114" width="22" height="34" rx="0" fill="#DCEDC8" stroke="#2E7D32" stroke-width="1.1"/>
+<text x="355.0" y="132.0" font-family="'DejaVu Sans Mono', Consolas, 'Liberation Mono', 'Courier New', monospace" font-size="15" font-weight="bold" fill="#263238" text-anchor="middle" dominant-baseline="central">1</text>
+<text x="355.0" y="105" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="10" font-weight="normal" fill="#607D8B" text-anchor="middle" dominant-baseline="central">18</text>
+<rect x="366" y="114" width="22" height="34" rx="0" fill="#DCEDC8" stroke="#2E7D32" stroke-width="1.1"/>
+<text x="377.0" y="132.0" font-family="'DejaVu Sans Mono', Consolas, 'Liberation Mono', 'Courier New', monospace" font-size="15" font-weight="bold" fill="#263238" text-anchor="middle" dominant-baseline="central">0</text>
+<text x="377.0" y="105" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="10" font-weight="normal" fill="#607D8B" text-anchor="middle" dominant-baseline="central">17</text>
+<rect x="388" y="114" width="22" height="34" rx="0" fill="#DCEDC8" stroke="#2E7D32" stroke-width="1.1"/>
+<text x="399.0" y="132.0" font-family="'DejaVu Sans Mono', Consolas, 'Liberation Mono', 'Courier New', monospace" font-size="15" font-weight="bold" fill="#263238" text-anchor="middle" dominant-baseline="central">0</text>
+<text x="399.0" y="105" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="10" font-weight="normal" fill="#607D8B" text-anchor="middle" dominant-baseline="central">16</text>
+<rect x="410" y="114" width="22" height="34" rx="0" fill="#DCEDC8" stroke="#2E7D32" stroke-width="1.1"/>
+<text x="421.0" y="132.0" font-family="'DejaVu Sans Mono', Consolas, 'Liberation Mono', 'Courier New', monospace" font-size="15" font-weight="bold" fill="#263238" text-anchor="middle" dominant-baseline="central">1</text>
+<text x="421.0" y="105" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="10" font-weight="normal" fill="#607D8B" text-anchor="middle" dominant-baseline="central">15</text>
+<rect x="432" y="114" width="22" height="34" rx="0" fill="#C8E6C9" stroke="#2E7D32" stroke-width="1.1"/>
+<text x="443.0" y="132.0" font-family="'DejaVu Sans Mono', Consolas, 'Liberation Mono', 'Courier New', monospace" font-size="15" font-weight="bold" fill="#263238" text-anchor="middle" dominant-baseline="central">1</text>
+<text x="443.0" y="105" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="10" font-weight="normal" fill="#607D8B" text-anchor="middle" dominant-baseline="central">14</text>
+<rect x="454" y="114" width="22" height="34" rx="0" fill="#C8E6C9" stroke="#2E7D32" stroke-width="1.1"/>
+<text x="465.0" y="132.0" font-family="'DejaVu Sans Mono', Consolas, 'Liberation Mono', 'Courier New', monospace" font-size="15" font-weight="bold" fill="#263238" text-anchor="middle" dominant-baseline="central">0</text>
+<text x="465.0" y="105" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="10" font-weight="normal" fill="#607D8B" text-anchor="middle" dominant-baseline="central">13</text>
+<rect x="476" y="114" width="22" height="34" rx="0" fill="#C8E6C9" stroke="#2E7D32" stroke-width="1.1"/>
+<text x="487.0" y="132.0" font-family="'DejaVu Sans Mono', Consolas, 'Liberation Mono', 'Courier New', monospace" font-size="15" font-weight="bold" fill="#263238" text-anchor="middle" dominant-baseline="central">0</text>
+<text x="487.0" y="105" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="10" font-weight="normal" fill="#607D8B" text-anchor="middle" dominant-baseline="central">12</text>
+<rect x="498" y="114" width="22" height="34" rx="0" fill="#C8E6C9" stroke="#2E7D32" stroke-width="1.1"/>
+<text x="509.0" y="132.0" font-family="'DejaVu Sans Mono', Consolas, 'Liberation Mono', 'Courier New', monospace" font-size="15" font-weight="bold" fill="#263238" text-anchor="middle" dominant-baseline="central">1</text>
+<text x="509.0" y="105" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="10" font-weight="normal" fill="#607D8B" text-anchor="middle" dominant-baseline="central">11</text>
+<rect x="520" y="114" width="22" height="34" rx="0" fill="#DCEDC8" stroke="#2E7D32" stroke-width="1.1"/>
+<text x="531.0" y="132.0" font-family="'DejaVu Sans Mono', Consolas, 'Liberation Mono', 'Courier New', monospace" font-size="15" font-weight="bold" fill="#263238" text-anchor="middle" dominant-baseline="central">1</text>
+<text x="531.0" y="105" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="10" font-weight="normal" fill="#607D8B" text-anchor="middle" dominant-baseline="central">10</text>
+<rect x="542" y="114" width="22" height="34" rx="0" fill="#DCEDC8" stroke="#2E7D32" stroke-width="1.1"/>
+<text x="553.0" y="132.0" font-family="'DejaVu Sans Mono', Consolas, 'Liberation Mono', 'Courier New', monospace" font-size="15" font-weight="bold" fill="#263238" text-anchor="middle" dominant-baseline="central">0</text>
+<text x="553.0" y="105" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="10" font-weight="normal" fill="#607D8B" text-anchor="middle" dominant-baseline="central">9</text>
+<rect x="564" y="114" width="22" height="34" rx="0" fill="#DCEDC8" stroke="#2E7D32" stroke-width="1.1"/>
+<text x="575.0" y="132.0" font-family="'DejaVu Sans Mono', Consolas, 'Liberation Mono', 'Courier New', monospace" font-size="15" font-weight="bold" fill="#263238" text-anchor="middle" dominant-baseline="central">0</text>
+<text x="575.0" y="105" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="10" font-weight="normal" fill="#607D8B" text-anchor="middle" dominant-baseline="central">8</text>
+<rect x="586" y="114" width="22" height="34" rx="0" fill="#DCEDC8" stroke="#2E7D32" stroke-width="1.1"/>
+<text x="597.0" y="132.0" font-family="'DejaVu Sans Mono', Consolas, 'Liberation Mono', 'Courier New', monospace" font-size="15" font-weight="bold" fill="#263238" text-anchor="middle" dominant-baseline="central">1</text>
+<text x="597.0" y="105" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="10" font-weight="normal" fill="#607D8B" text-anchor="middle" dominant-baseline="central">7</text>
+<rect x="608" y="114" width="22" height="34" rx="0" fill="#C8E6C9" stroke="#2E7D32" stroke-width="1.1"/>
+<text x="619.0" y="132.0" font-family="'DejaVu Sans Mono', Consolas, 'Liberation Mono', 'Courier New', monospace" font-size="15" font-weight="bold" fill="#263238" text-anchor="middle" dominant-baseline="central">1</text>
+<text x="619.0" y="105" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="10" font-weight="normal" fill="#607D8B" text-anchor="middle" dominant-baseline="central">6</text>
+<rect x="630" y="114" width="22" height="34" rx="0" fill="#C8E6C9" stroke="#2E7D32" stroke-width="1.1"/>
+<text x="641.0" y="132.0" font-family="'DejaVu Sans Mono', Consolas, 'Liberation Mono', 'Courier New', monospace" font-size="15" font-weight="bold" fill="#263238" text-anchor="middle" dominant-baseline="central">0</text>
+<text x="641.0" y="105" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="10" font-weight="normal" fill="#607D8B" text-anchor="middle" dominant-baseline="central">5</text>
+<rect x="652" y="114" width="22" height="34" rx="0" fill="#C8E6C9" stroke="#2E7D32" stroke-width="1.1"/>
+<text x="663.0" y="132.0" font-family="'DejaVu Sans Mono', Consolas, 'Liberation Mono', 'Courier New', monospace" font-size="15" font-weight="bold" fill="#263238" text-anchor="middle" dominant-baseline="central">0</text>
+<text x="663.0" y="105" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="10" font-weight="normal" fill="#607D8B" text-anchor="middle" dominant-baseline="central">4</text>
+<rect x="674" y="114" width="22" height="34" rx="0" fill="#C8E6C9" stroke="#2E7D32" stroke-width="1.1"/>
+<text x="685.0" y="132.0" font-family="'DejaVu Sans Mono', Consolas, 'Liberation Mono', 'Courier New', monospace" font-size="15" font-weight="bold" fill="#263238" text-anchor="middle" dominant-baseline="central">1</text>
+<text x="685.0" y="105" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="10" font-weight="normal" fill="#607D8B" text-anchor="middle" dominant-baseline="central">3</text>
+<rect x="696" y="114" width="22" height="34" rx="0" fill="#DCEDC8" stroke="#2E7D32" stroke-width="1.1"/>
+<text x="707.0" y="132.0" font-family="'DejaVu Sans Mono', Consolas, 'Liberation Mono', 'Courier New', monospace" font-size="15" font-weight="bold" fill="#263238" text-anchor="middle" dominant-baseline="central">1</text>
+<text x="707.0" y="105" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="10" font-weight="normal" fill="#607D8B" text-anchor="middle" dominant-baseline="central">2</text>
+<rect x="718" y="114" width="22" height="34" rx="0" fill="#DCEDC8" stroke="#2E7D32" stroke-width="1.1"/>
+<text x="729.0" y="132.0" font-family="'DejaVu Sans Mono', Consolas, 'Liberation Mono', 'Courier New', monospace" font-size="15" font-weight="bold" fill="#263238" text-anchor="middle" dominant-baseline="central">0</text>
+<text x="729.0" y="105" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="10" font-weight="normal" fill="#607D8B" text-anchor="middle" dominant-baseline="central">1</text>
+<rect x="740" y="114" width="22" height="34" rx="0" fill="#FFE082" stroke="#2E7D32" stroke-width="1.1"/>
+<text x="751.0" y="132.0" font-family="'DejaVu Sans Mono', Consolas, 'Liberation Mono', 'Courier New', monospace" font-size="15" font-weight="bold" fill="#263238" text-anchor="middle" dominant-baseline="central">1</text>
+<text x="751.0" y="105" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="10" font-weight="normal" fill="#607D8B" text-anchor="middle" dominant-baseline="central">0</text>
+<line x1="751.0" y1="196" x2="751.0" y2="152" stroke="#E65100" stroke-width="1.5" marker-end="url(#arr)"/>
+<text x="751.0" y="210" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="12" font-weight="bold" fill="#E65100" text-anchor="end" dominant-baseline="central">último bit REDONDEADO</text>
+<text x="751.0" y="226" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="11" font-weight="normal" fill="#E65100" text-anchor="end" dominant-baseline="central">(el siguiente bit era 1 → se sube)</text>
+<text x="168" y="175" font-family="'DejaVu Sans Mono', Consolas, 'Liberation Mono', 'Courier New', monospace" font-size="13" font-weight="bold" fill="#1565C0" text-anchor="middle" dominant-baseline="central">= 123</text>
+<text x="69.0" y="175" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="13" font-weight="bold" fill="#C62828" text-anchor="middle" dominant-baseline="central">+</text>
+<text x="388" y="175" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="12" font-weight="normal" fill="#2E7D32" text-anchor="middle" dominant-baseline="central">1001 1001 1001 1001 1001 1… (se repite)</text>
+<rect x="40" y="262" width="740" height="128" rx="10" fill="#FFF3E0" stroke="#E65100" stroke-width="1.5"/>
+<text x="410" y="284" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="14" font-weight="bold" fill="#E65100" text-anchor="middle" dominant-baseline="central">Lo que REALMENTE queda guardado:</text>
+<text x="410" y="310" font-family="'DejaVu Sans Mono', Consolas, 'Liberation Mono', 'Courier New', monospace" font-size="15" font-weight="bold" fill="#263238" text-anchor="middle" dominant-baseline="central">float :  0.100000001490116119384765625</text>
+<text x="410" y="336" font-family="'DejaVu Sans Mono', Consolas, 'Liberation Mono', 'Courier New', monospace" font-size="15" font-weight="bold" fill="#263238" text-anchor="middle" dominant-baseline="central">double:  0.1000000000000000055511151231257827…</text>
+<text x="410" y="364" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="12" font-weight="normal" fill="#263238" text-anchor="middle" dominant-baseline="central">Ninguno es exactamente 0.1. Java imprime «0.1» porque muestra la forma más corta que lo identifica.</text>
+<text x="410" y="408" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="13" font-weight="bold" fill="#C62828" text-anchor="middle" dominant-baseline="central">Por eso en la computadora 0.1 + 0.2 da 0.30000000000000004</text></svg>

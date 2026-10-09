@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="581" height="219" viewBox="0 0 581 219"><title>Del problema al programa</title><defs><marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#455A64"/></marker></defs><rect x="0" y="0" width="581" height="219" rx="0" fill="#FFFFFF" stroke="none" stroke-width="0"/>
+<g transform="translate(87.27600000000001,51.5)">
+<path d="M48.3,0.0 L104.8,0.0" stroke="#455A64" stroke-width="1.5" fill="none" marker-end="url(#arr)"/>
+<path d="M285.2,0.0 L344.0,0.0" stroke="#455A64" stroke-width="1.5" fill="none" marker-end="url(#arr)"/>
+<path d="M410.0,33.5 L410.0,100.0" stroke="#455A64" stroke-width="1.5" fill="none" marker-end="url(#arr)"/>
+<text x="450" y="64" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="12" font-weight="bold" fill="#37474F" text-anchor="middle" dominant-baseline="central">codificar</text>
+<path d="M355.5,125.0 L269.0,125.0" stroke="#455A64" stroke-width="1.5" fill="none" marker-end="url(#arr)"/>
+<text x="305" y="112" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="12" font-weight="bold" fill="#37474F" text-anchor="middle" dominant-baseline="central">compilar</text>
+<path d="M121.0,125.0 L69.3,125.0" stroke="#455A64" stroke-width="1.5" fill="none" marker-end="url(#arr)"/>
+<text x="97" y="112" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="12" font-weight="bold" fill="#37474F" text-anchor="middle" dominant-baseline="central">ejecutar</text>
+<rect x="-48.32" y="-25.0" width="96.64" height="50" rx="8" fill="#ECEFF1" stroke="#546E7A" stroke-width="1.8"/>
+<text x="0" y="-7.5" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="13" font-weight="normal" fill="#263238" text-anchor="middle" dominant-baseline="central">Problema</text>
+<text x="0" y="9.5" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="13" font-weight="normal" fill="#263238" text-anchor="middle" dominant-baseline="central">(enunciado)</text>
+<rect x="104.7745" y="-25.0" width="180.451" height="50" rx="8" fill="#ECEFF1" stroke="#546E7A" stroke-width="1.8"/>
+<text x="195" y="-7.5" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="13" font-weight="normal" fill="#263238" text-anchor="middle" dominant-baseline="central">Análisis</text>
+<text x="195" y="9.5" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="13" font-weight="normal" fill="#263238" text-anchor="middle" dominant-baseline="central">Entrada - Proceso - Salida</text>
+<rect x="343.9805" y="-33.5" width="132.039" height="67" rx="8" fill="#E3F2FD" stroke="#1565C0" stroke-width="1.8"/>
+<text x="410" y="-16.0" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="13" font-weight="normal" fill="#263238" text-anchor="middle" dominant-baseline="central">Algoritmo</text>
+<text x="410" y="1.0" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="13" font-weight="normal" fill="#263238" text-anchor="middle" dominant-baseline="central">(pseudocódigo o</text>
+<text x="410" y="18.0" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="13" font-weight="normal" fill="#263238" text-anchor="middle" dominant-baseline="central">diagrama de flujo)</text>
+<rect x="355.531" y="100.0" width="108.938" height="50" rx="8" fill="#FFF8E1" stroke="#F9A825" stroke-width="1.8"/>
+<text x="410" y="117.5" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="13" font-weight="normal" fill="#263238" text-anchor="middle" dominant-baseline="central">Código fuente</text>
+<text x="410" y="134.5" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="13" font-weight="normal" fill="#263238" text-anchor="middle" dominant-baseline="central">programa.cpp</text>
+<rect x="121.031" y="100.0" width="147.938" height="50" rx="8" fill="#E8F5E9" stroke="#2E7D32" stroke-width="1.8"/>
+<text x="195" y="117.5" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="13" font-weight="normal" fill="#263238" text-anchor="middle" dominant-baseline="central">Programa ejecutable</text>
+<text x="195" y="134.5" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="13" font-weight="normal" fill="#263238" text-anchor="middle" dominant-baseline="central">programa.exe</text>
+<rect x="-69.27600000000001" y="100.0" width="138.55200000000002" height="50" rx="8" fill="#ECEFF1" stroke="#546E7A" stroke-width="1.8"/>
+<text x="0" y="117.5" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="13" font-weight="normal" fill="#263238" text-anchor="middle" dominant-baseline="central">Ejecución y prueba</text>
+<text x="0" y="134.5" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="13" font-weight="normal" fill="#263238" text-anchor="middle" dominant-baseline="central">(resultados)</text>
+</g></svg>
