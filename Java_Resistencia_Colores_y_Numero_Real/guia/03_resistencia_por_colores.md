@@ -1,4 +1,4 @@
-# Parte 2 — El valor de una resistencia a partir de sus colores
+# Parte 2 — La resistencia por colores: de los colores a los números
 
 ## 1. ¿Qué es una resistencia?
 
@@ -110,15 +110,344 @@ Desea terminar? 0
 - Si el usuario escribe una letra donde se espera un número, `nextByte()` detiene el programa con un error.
 - El `Scanner` se crea en cada vuelta del ciclo (funciona, pero basta con crearlo una vez).
 
-Nuestra versión mantiene **la misma estructura** (para que sea fácil compararlas) y agrega esos detalles.
+Nuestros programas mantienen **la misma estructura** (para que sea fácil compararlos) y corrigen esos detalles.
 
-## 5. Nuestro programa: colores → valor
+## 5. Nuestro programa: colores → número de cada banda
 
-La tarea pide hacer **el camino inverso**: el usuario escribe **los nombres de los colores** y el programa calcula **el número** (el valor de la resistencia).
+La tarea pide hacer **el camino inverso** al del programa de clase: el usuario escribe **los nombres de los colores** y el programa da como resultado **el número de cada banda**. Por ejemplo, amarillo, violeta y rojo dan **4 - 7 - 2**.
 
 ![El programa de clase y el nuestro hacen el camino inverso](../diagramas/comparacion_programas.svg)
 
+Es el mismo `switch` del profesor, pero **al revés**:
+
+| | Programa de clase | Nuestro programa |
+|---|---|---|
+| El usuario escribe | El **número** de cada banda (`datos.nextByte()`) | El **nombre del color** de cada banda (`datos.next().toLowerCase()`) |
+| El `switch` compara | Números: `switch(ncb1)` | Textos: `switch(colorb1)` |
+| Cada `case` | `case 4: colorb1 = "Amarillo";` | `case "amarillo": ncb1 = 4;` |
+| Muestra | El color de cada banda (y el valor) | El **número** de cada banda |
+| Colores | 7 (faltan verde, azul y violeta) | Los 10 |
+| Si un color no es válido | No avisa nada | Dice qué banda está mal |
+| «¿Desea terminar?» | `nextByte()`: se cae si escriben una letra | `next()` y `equals("0")`: acepta cualquier respuesta |
+
 ### 5.1 Análisis Entrada – Proceso – Salida
+
+| | Variable | Tipo | Descripción |
+|---|---|---|---|
+| **Entrada** | `colorb1`, `colorb2`, `colorb3` | `String` | Nombres de los colores de las 3 bandas (ej. `amarillo`) |
+| **Entrada** | `n` | `String` | Respuesta a «¿Desea terminar?» (`0` = sí) |
+| **Proceso** | `ncb1`, `ncb2`, `ncb3` | `int` | Número de cada color (0 a 9), obtenido con `switch` |
+| **Proceso** | `sw` | `int` | 0 si todos los colores son válidos; 1 si alguno no lo es |
+| **Salida** | — | — | El número de cada banda (ej. `4 - 7 - 2`) o un mensaje de error |
+
+### 5.2 Pseudocódigo
+
+```pseudo
+Algoritmo NumerosBandasSegunColores
+    Definir colorb1, colorb2, colorb3, n Como Cadena
+    Definir ncb1, ncb2, ncb3, sw, opc Como Entero
+    opc ← 0
+    Mientras opc = 0 Hacer
+        sw ← 0
+        Leer colorb1, colorb2, colorb3          // en minúsculas
+        Segun colorb1 Hacer
+            "negro": ncb1 ← 0
+            "marron": ncb1 ← 1
+            ...                                 // rojo 2 ... blanco 9
+            De Otro Modo: sw ← 1
+                          Escribir "El color de la Primera Banda No es valido"
+        FinSegun
+        // lo mismo para colorb2 (ncb2) y para colorb3 (ncb3)
+        Si sw = 0 Entonces
+            Escribir "El numero de color de la Primera Banda es: ", ncb1
+            Escribir "El numero de color de la Segunda Banda es: ", ncb2
+            Escribir "El numero de color de la Tercera Banda es: ", ncb3
+            Escribir "Numeros de las bandas: ", ncb1, " - ", ncb2, " - ", ncb3
+        SiNo
+            Escribir "No se puede mostrar: revise los colores."
+        FinSi
+        Escribir "Desea terminar? (0 = si)"
+        Leer n
+        Si n = "0" Entonces
+            opc ← 1
+        FinSi
+    FinMientras
+    Escribir "****** FIN *******"
+FinAlgoritmo
+```
+
+### 5.3 Diagrama de flujo
+
+![Diagrama de flujo del programa de los números de las bandas](../diagramas/flujo_numeros_bandas.svg)
+
+### 5.4 Código completo
+
+Proyecto: `Parte2_Valor_Resistencia_segun_Colores/` · Archivo: [`Numeros_bandas_segun_Colores_Resistencia.java`](../Parte2_Valor_Resistencia_segun_Colores/src/main/java/com/mycompany/valor_resistencia_segun_colores_bandas/Numeros_bandas_segun_Colores_Resistencia.java)
+
+```java
+
+package com.mycompany.valor_resistencia_segun_colores_bandas;
+
+import java.util.Scanner;
+
+/*
+ * NUMERO DE CADA BANDA SEGUN SU COLOR
+ * ------------------------------------
+ * Es el programa visto en clase (Colores_bandas_segun_valor_Resistencia_Varios2)
+ * hecho AL REVES:
+ *   - En clase : se ingresaba el NUMERO de cada banda y se mostraba su COLOR.
+ *   - Aqui     : se ingresa el NOMBRE del COLOR de cada banda y se muestra
+ *                su NUMERO.
+ *   Ejemplo: amarillo, violeta, rojo  ->  4, 7, 2
+ *
+ * Codigo de colores: negro 0, marron 1, rojo 2, naranja 3, amarillo 4,
+ *                    verde 5, azul 6, violeta 7, gris 8, blanco 9
+ */
+public class Numeros_bandas_segun_Colores_Resistencia
+{
+
+    public static void main(String[] args)
+    {
+        Scanner datos = new Scanner(System.in);   // para leer lo que se escribe en el teclado
+        byte opc = 0;                             // 0 = seguir, 1 = terminar
+
+        System.out.print("===== NUMERO DE CADA BANDA SEGUN SU COLOR =====");
+        System.out.print("\nColores validos (escribalos sin tildes):");
+        System.out.print("\n  negro, marron, rojo, naranja, amarillo,");
+        System.out.print("\n  verde, azul, violeta, gris, blanco\n");
+
+        while(opc==0)
+        {
+            String colorb1, colorb2, colorb3;     // colores que escribe el usuario
+            int ncb1 = 0, ncb2 = 0, ncb3 = 0;     // numero de cada banda
+            int sw = 0;                           // 0 = colores correctos, 1 = hubo un error
+
+            // ---------- ENTRADA: se leen los NOMBRES de los colores ----------
+            // toLowerCase() pasa todo a minusculas: "ROJO" y "Rojo" quedan como "rojo"
+            System.out.print("\nIngrese el color de la Primera Banda: ");
+            colorb1 = datos.next().toLowerCase();
+            System.out.print("Ingrese el color de la Segunda Banda: ");
+            colorb2 = datos.next().toLowerCase();
+            System.out.print("Ingrese el color de la Tercera Banda: ");
+            colorb3 = datos.next().toLowerCase();
+
+            // ---------- PROCESO: convertir cada color en su numero ----------
+            switch(colorb1)
+            {
+                case "negro":    ncb1 = 0;
+                                 break;
+                case "marron":   ncb1 = 1;
+                                 break;
+                case "rojo":     ncb1 = 2;
+                                 break;
+                case "naranja":  ncb1 = 3;
+                                 break;
+                case "amarillo": ncb1 = 4;
+                                 break;
+                case "verde":    ncb1 = 5;
+                                 break;
+                case "azul":     ncb1 = 6;
+                                 break;
+                case "violeta":  ncb1 = 7;
+                                 break;
+                case "gris":     ncb1 = 8;
+                                 break;
+                case "blanco":   ncb1 = 9;
+                                 break;
+                default: sw = 1;
+                         System.out.print("\n * El color de la Primera Banda ("
+                                          + colorb1 + ") No es valido");
+            }
+            switch(colorb2)
+            {
+                case "negro":    ncb2 = 0;
+                                 break;
+                case "marron":   ncb2 = 1;
+                                 break;
+                case "rojo":     ncb2 = 2;
+                                 break;
+                case "naranja":  ncb2 = 3;
+                                 break;
+                case "amarillo": ncb2 = 4;
+                                 break;
+                case "verde":    ncb2 = 5;
+                                 break;
+                case "azul":     ncb2 = 6;
+                                 break;
+                case "violeta":  ncb2 = 7;
+                                 break;
+                case "gris":     ncb2 = 8;
+                                 break;
+                case "blanco":   ncb2 = 9;
+                                 break;
+                default: sw = 1;
+                         System.out.print("\n * El color de la Segunda Banda ("
+                                          + colorb2 + ") No es valido");
+            }
+            switch(colorb3)
+            {
+                case "negro":    ncb3 = 0;
+                                 break;
+                case "marron":   ncb3 = 1;
+                                 break;
+                case "rojo":     ncb3 = 2;
+                                 break;
+                case "naranja":  ncb3 = 3;
+                                 break;
+                case "amarillo": ncb3 = 4;
+                                 break;
+                case "verde":    ncb3 = 5;
+                                 break;
+                case "azul":     ncb3 = 6;
+                                 break;
+                case "violeta":  ncb3 = 7;
+                                 break;
+                case "gris":     ncb3 = 8;
+                                 break;
+                case "blanco":   ncb3 = 9;
+                                 break;
+                default: sw = 1;
+                         System.out.print("\n * El color de la Tercera Banda ("
+                                          + colorb3 + ") No es valido");
+            }
+
+            // ---------- SALIDA: el numero de cada banda ----------
+            if(sw==0)
+            {
+                System.out.print("\nEl numero de color de la Primera Banda (" + colorb1
+                                 + ") es: " + ncb1);
+                System.out.print("\nEl numero de color de la Segunda Banda (" + colorb2
+                                 + ") es: " + ncb2);
+                System.out.print("\nEl numero de color de la Tercera Banda (" + colorb3
+                                 + ") es: " + ncb3);
+                System.out.print("\nNumeros de las bandas: " + ncb1 + " - " + ncb2
+                                 + " - " + ncb3);
+            }
+            else
+                System.out.print("\nNo se puede mostrar: revise los colores.");
+
+            System.out.print("\n\nPara terminar Ingrese <0>  (otro valor para continuar)");
+            System.out.print("\nDesea terminar? ");
+            String n = datos.next();          // se lee como texto: no falla si escriben una letra
+            if(n.equals("0"))                 // los String se comparan con equals, NO con ==
+                opc = 1;
+        }
+        System.out.print("\n****** FIN *******\n");
+    }
+}
+```
+
+### 5.5 Explicación por bloques
+
+| Líneas | Código | Qué hace | Equivalente en C++ |
+|---|---|---|---|
+| 2–4 | `package …` / `import java.util.Scanner;` | Indica el paquete y trae la clase `Scanner` | `#include <iostream>` |
+| 19–23 | `public class …` / `public static void main(…)` | La clase y el punto de inicio | `int main()` |
+| 24 | `Scanner datos = new Scanner(System.in);` | Crea el lector del teclado (una sola vez) | `cin` ya existe |
+| 25 | `byte opc = 0;` | Controla el ciclo: 0 = seguir | `int opc = 0;` |
+| 27–30 | `System.out.print(…)` | Muestra la lista de colores válidos una vez | `cout << …` |
+| 32 | `while(opc==0)` | Repite todo mientras `opc` valga 0 | igual |
+| 34–36 | Variables | Los textos de color, sus números y `sw` | igual |
+| 40–45 | `datos.next().toLowerCase()` | Lee **una palabra** y la pasa a minúsculas: `ROJO`, `Rojo` y `rojo` valen lo mismo | `cin >> colorb1;` |
+| 48–73 | `switch(colorb1)` | Convierte el **nombre** del color en su **número** (0–9); si no existe, `sw = 1` y avisa | `if`/`else if` (C++ no permite `switch` con textos) |
+| 74–99 | `switch(colorb2)` | Lo mismo para la 2.ª banda | |
+| 100–125 | `switch(colorb3)` | Lo mismo para la 3.ª banda | |
+| 128–138 | `if(sw==0)` y mensajes | Si los 3 colores son válidos, muestra el número de cada banda y los tres juntos: `4 - 7 - 2` | `if (sw == 0)` |
+| 139–140 | `else` | Mensaje si algún color no era válido | igual |
+| 142–146 | `datos.next()` y `n.equals("0")` | Pregunta si desea terminar; compara **textos con `equals`** | `if (n == "0")` |
+| 148 | `****** FIN *******` | Mensaje final | |
+
+### 5.6 Detalles importantes (las preguntas típicas)
+
+**¿Por qué `toLowerCase()`?** Porque `switch` compara letra por letra y `"Rojo"` no es igual a `"rojo"`. Pasando todo a minúsculas, el usuario puede escribir como quiera.
+
+**¿Por qué `switch` y no `if`?** Funcionarían ambos, pero cuando se compara **una misma variable contra muchos valores fijos**, el `switch` es más ordenado y fácil de leer. Además, es la estructura que usó el profesor. Desde Java 7, el `switch` acepta textos (`String`).
+
+**¿Para qué sirve `sw`?** Es una **bandera** (*switch* o interruptor): empieza en 0 y, si algún `switch` llega a `default` (color inválido), se pone en 1. Al final, solo se muestran los números si `sw` sigue en 0. Es la misma técnica del profesor.
+
+**¿Para qué sirve cada `break`?** Para salir del `switch` apenas se encuentra el color. Sin `break`, Java seguiría ejecutando también los `case` de abajo (se dice que «cae» al siguiente): con `amarillo`, `ncb1` pasaría por 4, 5, 6, 7, 8 y 9, y al final entraría al `default` marcando un error.
+
+**¿Por qué la 3.ª banda no acepta dorado ni plateado?** Porque este programa muestra **números del código de colores** (0 a 9), igual que el programa de clase. El dorado y el plateado no son cifras: solo se usan como multiplicador (×0.1 y ×0.01) o como tolerancia. La ampliación de la sección 6, que sí calcula el valor, los acepta en la 3.ª banda.
+
+**¿Por qué la respuesta se lee como `String`?** Con `nextByte()` (como en el original), si el usuario escribe una letra el programa se cae. Leyendo texto, cualquier respuesta distinta de `0` simplemente continúa. Y los textos se comparan con `equals`, no con `==`.
+
+### 5.7 Ejecución real
+
+```text
+===== NUMERO DE CADA BANDA SEGUN SU COLOR =====
+Colores validos (escribalos sin tildes):
+  negro, marron, rojo, naranja, amarillo,
+  verde, azul, violeta, gris, blanco
+
+Ingrese el color de la Primera Banda: amarillo
+Ingrese el color de la Segunda Banda: violeta
+Ingrese el color de la Tercera Banda: rojo
+
+El numero de color de la Primera Banda (amarillo) es: 4
+El numero de color de la Segunda Banda (violeta) es: 7
+El numero de color de la Tercera Banda (rojo) es: 2
+Numeros de las bandas: 4 - 7 - 2
+
+Para terminar Ingrese <0>  (otro valor para continuar)
+Desea terminar? s
+
+Ingrese el color de la Primera Banda: marron
+Ingrese el color de la Segunda Banda: NEGRO
+Ingrese el color de la Tercera Banda: Naranja
+
+El numero de color de la Primera Banda (marron) es: 1
+El numero de color de la Segunda Banda (negro) es: 0
+El numero de color de la Tercera Banda (naranja) es: 3
+Numeros de las bandas: 1 - 0 - 3
+
+Para terminar Ingrese <0>  (otro valor para continuar)
+Desea terminar? s
+
+Ingrese el color de la Primera Banda: celeste
+Ingrese el color de la Segunda Banda: negro
+Ingrese el color de la Tercera Banda: dorado
+
+ * El color de la Primera Banda (celeste) No es valido
+ * El color de la Tercera Banda (dorado) No es valido
+No se puede mostrar: revise los colores.
+
+Para terminar Ingrese <0>  (otro valor para continuar)
+Desea terminar? 0
+
+****** FIN *******
+```
+
+### 5.8 Casos de prueba
+
+| Colores ingresados | Esperado | Lo que muestra el programa |
+|---|---|---|
+| amarillo, violeta, rojo | 4 - 7 - 2 | `Numeros de las bandas: 4 - 7 - 2` ✔ |
+| marron, NEGRO, Naranja | 1 - 0 - 3 | `Numeros de las bandas: 1 - 0 - 3` ✔ (acepta mayúsculas) |
+| verde, azul, violeta | 5 - 6 - 7 | `Numeros de las bandas: 5 - 6 - 7` ✔ (los colores que faltaban en el programa de clase) |
+| blanco, gris, negro | 9 - 8 - 0 | `Numeros de las bandas: 9 - 8 - 0` ✔ |
+| celeste, negro, dorado | Error en la 1.ª y 3.ª banda | Dos mensajes de error ✔ (el dorado no es una cifra) |
+| marrón (con tilde), negro, rojo | Error en la 1.ª banda | Mensaje de color no válido ✔ (hay que escribirlo sin tilde) |
+
+Además, el programa se verificó automáticamente con las **1 000 combinaciones** posibles (10 × 10 × 10): en todas muestra los números correctos.
+
+### 5.9 Prueba de escritorio (amarillo, violeta, rojo)
+
+| Paso | Instrucción | `colorb1` | `colorb2` | `colorb3` | `ncb1` | `ncb2` | `ncb3` | `sw` | En pantalla |
+|---|---|---|---|---|---|---|---|---|---|
+| 1 | Leer los 3 colores | amarillo | violeta | rojo | 0 | 0 | 0 | 0 | |
+| 2 | `switch(colorb1)` → `case "amarillo"` | | | | **4** | 0 | 0 | 0 | |
+| 3 | `switch(colorb2)` → `case "violeta"` | | | | 4 | **7** | 0 | 0 | |
+| 4 | `switch(colorb3)` → `case "rojo"` | | | | 4 | 7 | **2** | 0 | |
+| 5 | `if(sw==0)` → verdadero | | | | | | | 0 | el número de cada banda: 4, 7 y 2 |
+| 6 | Último mensaje | | | | | | | | **`Numeros de las bandas: 4 - 7 - 2`** |
+
+## 6. Ampliación: colores → valor de la resistencia
+
+Este segundo programa lee los colores **igual** que el de la sección 5 (los mismos tres `switch`) y, **además**, con esos números calcula **el valor de la resistencia** en ohmios con la fórmula de la sección 3. Sirve si el profesor pide el valor, o para responder «¿y cuánto vale esa resistencia?».
+
+La única diferencia en los colores es la 3.ª banda: como aquí es el **multiplicador**, se guarda su **potencia de 10** y también se aceptan el dorado (−1) y el plateado (−2).
+
+### 6.1 Análisis Entrada – Proceso – Salida
 
 | | Variable | Tipo | Descripción |
 |---|---|---|---|
@@ -130,7 +459,7 @@ La tarea pide hacer **el camino inverso**: el usuario escribe **los nombres de l
 | **Proceso** | `vr` | `double` | `vr = (ncb1 × 10 + ncb2) × 10^ncb3` |
 | **Salida** | — | — | La cifra de cada banda, el valor en Ohm y su equivalente en kOhm, MOhm o GOhm (o un mensaje de error) |
 
-### 5.2 Pseudocódigo
+### 6.2 Pseudocódigo
 
 ```pseudo
 Algoritmo ValorResistenciaSegunColores
@@ -172,11 +501,11 @@ Algoritmo ValorResistenciaSegunColores
 FinAlgoritmo
 ```
 
-### 5.3 Diagrama de flujo
+### 6.3 Diagrama de flujo
 
 ![Diagrama de flujo del programa de colores](../diagramas/flujo_resistencia.svg)
 
-### 5.4 Código completo
+### 6.4 Código completo
 
 Proyecto: `Parte2_Valor_Resistencia_segun_Colores/` · Archivo: [`Valor_Resistencia_segun_Colores_Bandas.java`](../Parte2_Valor_Resistencia_segun_Colores/src/main/java/com/mycompany/valor_resistencia_segun_colores_bandas/Valor_Resistencia_segun_Colores_Bandas.java)
 
@@ -361,7 +690,7 @@ public class Valor_Resistencia_segun_Colores_Bandas
  */
 ```
 
-### 5.5 Explicación por bloques
+### 6.5 Explicación por bloques
 
 | Líneas | Código | Qué hace | Equivalente en C++ |
 |---|---|---|---|
@@ -385,13 +714,9 @@ public class Valor_Resistencia_segun_Colores_Bandas
 | 159–163 | `datos.next()` y `n.equals("0")` | Pregunta si desea terminar; compara **textos con `equals`** | `if (n == "0")` |
 | 165 | `****** FIN *******` | Mensaje final | |
 
-### 5.6 Detalles importantes (las preguntas típicas)
+### 6.6 Detalles importantes (las preguntas típicas)
 
-**¿Por qué `toLowerCase()`?** Porque `switch` compara letra por letra y `"Rojo"` no es igual a `"rojo"`. Pasando todo a minúsculas, el usuario puede escribir como quiera.
-
-**¿Por qué `switch` y no `if`?** Funcionarían ambos, pero cuando se compara **una misma variable contra muchos valores fijos**, el `switch` es más ordenado y fácil de leer. Además, es la estructura que usó el profesor. Desde Java 7, el `switch` acepta textos (`String`).
-
-**¿Para qué sirve `sw`?** Es una **bandera** (*switch* o interruptor): empieza en 0 y, si algún `switch` llega a `default` (color inválido), se pone en 1. Al final, solo se calcula si `sw` sigue en 0. Es la misma técnica del profesor.
+Las preguntas sobre `toLowerCase()`, el `switch`, la bandera `sw` y la respuesta leída como `String` valen igual para este programa y están en la sección 5.6. Estas son las propias del cálculo:
 
 **¿Por qué `ncb3` puede ser negativo?** Porque el dorado multiplica por 0.1 = 10⁻¹ y el plateado por 0.01 = 10⁻². Guardar la **potencia** (−1, −2) permite usar la misma fórmula con `Math.pow`.
 
@@ -399,9 +724,7 @@ public class Valor_Resistencia_segun_Colores_Bandas
 
 **¿Qué es `4.7E8`?** Es la forma en que Java muestra los `double` grandes: 4.7 × 10⁸ = 470 000 000. Por eso el programa también muestra el valor en MOhm (`470.0 MOhm`).
 
-**¿Por qué la respuesta se lee como `String`?** Con `nextByte()` (como en el original), si el usuario escribe una letra el programa se cae. Leyendo texto, cualquier respuesta distinta de `0` simplemente continúa. Y los textos se comparan con `equals`, no con `==`.
-
-### 5.7 Ejecución real
+### 6.7 Ejecución real
 
 ```text
 ===== VALOR DE UNA RESISTENCIA SEGUN SUS COLORES =====
@@ -473,7 +796,7 @@ Desea terminar? 0
 ****** FIN *******
 ```
 
-### 5.8 Casos de prueba
+### 6.8 Casos de prueba
 
 | Colores ingresados | Cálculo | Esperado | Lo que muestra el programa |
 |---|---|---|---|
@@ -489,7 +812,7 @@ Desea terminar? 0
 | rosado, negro, rojo | — | Error en la 1.ª banda | `El color de la Primera Banda (rosado) No es valido` ✔ |
 | rojo, dorado, celeste | — | Error en la 2.ª y 3.ª banda | Dos mensajes de error ✔ (el dorado no es una cifra) |
 
-### 5.9 Prueba de escritorio (amarillo, violeta, rojo)
+### 6.9 Prueba de escritorio (amarillo, violeta, rojo)
 
 | Paso | Instrucción | `colorb1` | `colorb2` | `colorb3` | `ncb1` | `ncb2` | `ncb3` | `sw` | `vr` |
 |---|---|---|---|---|---|---|---|---|---|
@@ -502,11 +825,11 @@ Desea terminar? 0
 | 7 | `ncb3 >= 0` → `vr = vr * Math.pow(10, 2)` | | | | | | | | **4700.0** |
 | 8 | `vr >= 1000` → `vr / 1000` | | | | | | | | muestra **4.7 kOhm** |
 
-## 6. Versión mejorada (opcional)
+## 7. Versión mejorada (opcional)
 
 Archivo: [`Valor_Resistencia_Version_Mejorada.java`](../Parte2_Valor_Resistencia_segun_Colores/src/main/java/com/mycompany/valor_resistencia_segun_colores_bandas/Valor_Resistencia_Version_Mejorada.java) (está en el mismo proyecto; se ejecuta con clic derecho → *Run File*).
 
-Sirve si el profesor pregunta **«¿se puede mejorar?»**. Hace lo mismo, pero:
+Sirve si el profesor pregunta **«¿se puede mejorar?»**. Hace lo mismo que la ampliación (calcula el valor), pero:
 
 1. Usa **métodos**: el `switch` de colores se escribe **una sola vez** y se reutiliza para las tres bandas.
 2. Lee la **4.ª banda (tolerancia)** y calcula el valor **mínimo** y **máximo** que puede tener la resistencia.
@@ -559,23 +882,27 @@ Valor minimo  : 0.9 Ohm
 Valor maximo  : 1.1 Ohm
 ```
 
-## 7. Cómo ejecutar los programas en NetBeans
+## 8. Cómo ejecutar los programas en NetBeans
 
 ### Opción A — Abrir el proyecto incluido (la más rápida)
 
 1. Copiar la carpeta `Parte2_Valor_Resistencia_segun_Colores` a la computadora.
 2. En NetBeans: *File → Open Project…*, seleccionar esa carpeta (tiene el ícono de proyecto Maven) y *Open Project*.
-3. Presionar <kbd>F6</kbd> (*Run Project*). La primera vez Maven puede tardar porque descarga lo necesario.
+3. Elegir qué programa ejecutar (los tres están en *Source Packages → com.mycompany.valor_resistencia_segun_colores_bandas*):
+   - **Números de las bandas** (sección 5): abrir `Numeros_bandas_segun_Colores_Resistencia.java`, clic derecho → *Run File* (<kbd>Shift</kbd> + <kbd>F6</kbd>).
+   - **Ampliación: valor** (sección 6): presionar <kbd>F6</kbd> (*Run Project*), porque `Valor_Resistencia_segun_Colores_Bandas` es la clase principal del proyecto.
+   - **Versión mejorada** (sección 7): abrir `Valor_Resistencia_Version_Mejorada.java`, clic derecho → *Run File*.
+
+   La primera vez Maven puede tardar porque descarga lo necesario.
 4. Escribir los colores en la ventana *Output* (abajo) y presionar Enter después de cada uno.
-5. Para la versión mejorada: abrir `Valor_Resistencia_Version_Mejorada.java`, clic derecho → *Run File* (<kbd>Shift</kbd> + <kbd>F6</kbd>).
 
 ### Opción B — Crear el proyecto desde cero y pegar el código
 
 1. *File → New Project… → Java with Maven → Java Application → Next*.
 2. *Project Name*: `Valor_Resistencia_segun_Colores_Bandas` → *Finish*. NetBeans crea el paquete `com.mycompany.valor_resistencia_segun_colores_bandas` y una clase con el mismo nombre del proyecto.
-3. Borrar el contenido de esa clase y pegar el código del punto 5.4.
-4. Verificar que la línea `package …` del código coincida con el paquete que creó NetBeans (si el proyecto tiene otro nombre, cambiar solo esa línea y el nombre de la clase para que coincida con el nombre del archivo).
-5. <kbd>F6</kbd> para ejecutar.
+3. **Números de las bandas:** clic derecho sobre el paquete → *New → Java Class…* → *Class Name*: `Numeros_bandas_segun_Colores_Resistencia` → *Finish*. Borrar el contenido de la clase nueva y pegar el código del punto 5.4. Se ejecuta con clic derecho → *Run File* (<kbd>Shift</kbd> + <kbd>F6</kbd>).
+4. **Ampliación (valor):** borrar el contenido de la clase que creó NetBeans y pegar el código del punto 6.4. Se ejecuta con <kbd>F6</kbd>.
+5. Verificar que la línea `package …` del código coincida con el paquete que creó NetBeans (si el proyecto tiene otro nombre, cambiar solo esa línea, y que el nombre de la clase coincida con el nombre del archivo).
 
 ### Problemas frecuentes
 
@@ -585,3 +912,4 @@ Valor maximo  : 1.1 Ohm
 | `package … does not exist` o la clase no aparece | La línea `package` no coincide con la carpeta | Corregir la línea `package` |
 | Escribo `Marrón` y dice que no es válido | Tilde | Escribir sin tildes: `marron` |
 | No pasa nada al escribir | Se está escribiendo en el editor y no en *Output* | Hacer clic en la ventana *Output* antes de escribir |
+| Con <kbd>F6</kbd> se ejecuta el programa del valor y no el de los números | <kbd>F6</kbd> ejecuta la clase principal del proyecto | Abrir `Numeros_bandas_segun_Colores_Resistencia.java` y usar clic derecho → *Run File* (<kbd>Shift</kbd> + <kbd>F6</kbd>) |

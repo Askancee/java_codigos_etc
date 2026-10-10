@@ -178,7 +178,7 @@ Java oculta este detalle al programador (siempre «ve» el número completo), pe
 ![Los huecos entre valores representables crecen con el número](../diagramas/recta_numerica_huecos.svg)
 
 > [!NOTE]
-> **Conexión con la Parte 2:** el valor de la resistencia se guarda en un `double`. El multiplicador dorado es ×0.1, pero 0.1 no es exacto en binario: `12 * 0.1` da **1.2000000000000002**. Por eso nuestro programa **divide entre 10** (12 / 10 = 1.2, el valor guardado más cercano a 1.2) en lugar de multiplicar por 0.1.
+> **Conexión con la Parte 2:** en la ampliación que calcula el valor de la resistencia, ese valor se guarda en un `double`. El multiplicador dorado es ×0.1, pero 0.1 no es exacto en binario: `12 * 0.1` da **1.2000000000000002**. Por eso ese programa **divide entre 10** (12 / 10 = 1.2, el valor guardado más cercano a 1.2) en lugar de multiplicar por 0.1.
 
 ## 13. El programa Java: `Numero_Real_en_Memoria`
 

@@ -5,7 +5,7 @@
 **Objetivo:** que al terminar, los compañeros puedan responder dos preguntas:
 
 1. ¿Cómo guarda la computadora un número con decimales (y por qué a veces «se equivoca»)?
-2. ¿Cómo funciona un programa que, a partir de los **colores** de una resistencia, calcula su **valor**?
+2. ¿Cómo funciona un programa que, a partir de los **colores** de una resistencia, da **el número de cada banda** (y, como ampliación, su **valor**)?
 
 **Público:** compañeros que vieron algo de C++ pero **no saben Java**. Por eso, la estrategia de toda la exposición es:
 
@@ -22,7 +22,7 @@ Pensado para **15 a 20 minutos** y un grupo de **3 personas** (A, B y C). Si son
 | 3 | Demostración 1 (programa de números reales) | 2 min | A o C | NetBeans: `-6.75`, `0.1` y curiosidades |
 | 4 | Parte 2: resistencias y código de colores | 2 min | B | Tabla de colores y dibujo de la resistencia |
 | 5 | Parte 2: el programa de clase y el nuestro | 3–4 min | B | Comparación, tabla C++ ↔ Java, código clave, diagrama de flujo |
-| 6 | Demostración 2 (programa de colores) | 2 min | C | NetBeans: lista de casos de prueba |
+| 6 | Demostración 2 (números de las bandas y ampliación) | 2–3 min | C | NetBeans: lista de casos de prueba |
 | 7 | Conexión entre las dos partes | 1 min | C | El ejemplo 12 × 0.1 |
 | 8 | Conclusiones y preguntas | 2–3 min | Todos | Resumen en 3 ideas |
 
@@ -31,7 +31,7 @@ Pensado para **15 a 20 minutos** y un grupo de **3 personas** (A, B y C). Si son
 
 ## 3. Antes del día de la exposición
 
-- [ ] **Probar los dos programas en la computadora donde se va a exponer.** Si es otra PC, abrir los proyectos un día antes: la primera vez Maven necesita internet para descargar sus componentes.
+- [ ] **Probar los programas en la computadora donde se va a exponer.** Si es otra PC, abrir los proyectos un día antes: la primera vez Maven necesita internet para descargar sus componentes.
 - [ ] **Agrandar la letra** del editor y de la ventana *Output* de NetBeans (*Tools → Options → Fonts & Colors* y *Tools → Options → Miscellaneous → Output*) para que se lea desde el fondo del salón.
 - [ ] Tener **impresa la lista de datos de prueba** (sección 7) para no improvisar.
 - [ ] Tener un **plan B**: este PDF abierto en las ejecuciones reales (o capturas de pantalla) por si NetBeans falla.
@@ -57,8 +57,8 @@ Todas las figuras están en la carpeta `diagramas/` (archivos `.svg`, se pueden 
 | 10 | La resistencia y su código de colores | Qué es, por qué colores, tabla y regla para recordar | `tabla_colores.svg`, `resistencia_bandas.svg` |
 | 11 | Programa de clase vs. el nuestro | Número → color vs. color → número | `comparacion_programas.svg` |
 | 12 | Java en 1 minuto (para quien sabe C++) | Tabla de equivalencias reducida | — |
-| 13 | El código clave | `switch` con texto, `toLowerCase`, `Math.pow`, dividir en vez de multiplicar | — |
-| 14 | Diagrama de flujo | El programa completo de un vistazo | `flujo_resistencia.svg` |
+| 13 | El código clave | `toLowerCase`, `switch` con texto y la salida `4 - 7 - 2`; en la ampliación, `Math.pow` | — |
+| 14 | Diagrama de flujo | El programa completo de un vistazo | `flujo_numeros_bandas.svg` (ampliación: `flujo_resistencia.svg`) |
 | 15 | Demostración 2 | Casos de prueba | — |
 | 16 | Conclusiones | Las 3 ideas | — |
 | 17 | ¿Preguntas? | — | — |
@@ -79,7 +79,7 @@ Las frases entre comillas son una guía; no hay que memorizarlas, pero sí la **
 
 ### Bloque 1 — Apertura (A, 1 min)
 
-> «Buenos días. Empezamos con una pregunta: si le pedimos a la computadora que sume 0.1 más 0.2, ¿qué creen que responde? … Responde **0.30000000000000004**. No es un error de Java: pasa en casi todos los lenguajes. Hoy vamos a explicar **por qué**, es decir, **cómo se guarda un número real en la memoria**. Y después les mostraremos un programa en Java que calcula **el valor de una resistencia a partir de sus colores**, y verán que las dos partes están conectadas.»
+> «Buenos días. Empezamos con una pregunta: si le pedimos a la computadora que sume 0.1 más 0.2, ¿qué creen que responde? … Responde **0.30000000000000004**. No es un error de Java: pasa en casi todos los lenguajes. Hoy vamos a explicar **por qué**, es decir, **cómo se guarda un número real en la memoria**. Y después les mostraremos un programa en Java que, a partir de los **colores de una resistencia**, da **el número de cada banda**, y una ampliación que calcula su valor, donde verán que las dos partes están conectadas.»
 
 ### Bloque 2 — Parte 1: el número real en memoria (A, 5 min)
 
@@ -134,7 +134,7 @@ Las frases entre comillas son una guía; no hay que memorizarlas, pero sí la **
 
 **Diapositiva 11:**
 
-> «En clase vimos un programa que recibe **números** y muestra los **colores**. La tarea era hacer lo contrario: que el usuario escriba **los nombres de los colores** y el programa calcule **el valor**. Mantuvimos la misma estructura del profesor para que se pueda comparar.»
+> «En clase vimos un programa que recibe **números** y muestra los **colores**. La tarea era hacer lo contrario: que el usuario escriba **los nombres de los colores** y el programa dé **el número de cada banda**: amarillo, violeta, rojo → 4, 7, 2. Mantuvimos la misma estructura del profesor para que se pueda comparar: es el mismo `switch`, pero al revés. Además hicimos una ampliación que, con esos números, calcula el valor de la resistencia.»
 
 **Diapositiva 12 (Java para quien sabe C++):**
 
@@ -153,32 +153,47 @@ switch(colorb1)
     default: sw = 1;                     // color que no existe
 }
 
+System.out.print("\nNumeros de las bandas: " + ncb1 + " - " + ncb2 + " - " + ncb3);
+```
+
+> «Primero leemos cada color y lo pasamos a minúsculas, así da igual si escriben ROJO o Rojo. Después, con un `switch` convertimos cada nombre en su número; en Java el `switch` puede comparar textos. Si alguien escribe un color que no existe, entra al `default` y marcamos un error con la variable `sw`. Al final, si no hubo errores, mostramos los tres números: 4 - 7 - 2.»
+
+**Si hay tiempo o preguntan por el valor (ampliación):**
+
+```java
 double vr = ncb1 * 10 + ncb2;           // 4 y 7 -> 47
 vr = vr * Math.pow(10, ncb3);           // 47 x 10^2 = 4700
 ```
 
-> «Primero leemos cada color y lo pasamos a minúsculas, así da igual si escriben ROJO o Rojo. Después, con un `switch` convertimos cada nombre en su número; en Java el `switch` puede comparar textos. Si alguien escribe un color que no existe, entra al `default` y marcamos un error con la variable `sw`. Al final, la fórmula: la primera cifra por 10 más la segunda, por 10 elevado al multiplicador, con `Math.pow`.»
+> «Con esos mismos números, la ampliación aplica la fórmula: la primera cifra por 10 más la segunda, por 10 elevado al multiplicador, con `Math.pow`.»
 
 **Diapositiva 14 (diagrama de flujo):**
 
-> «Este es el programa completo: un ciclo que pide los 3 colores, los convierte, verifica que sean válidos, calcula y pregunta si desea terminar.»
+> «Este es el programa completo: un ciclo que pide los 3 colores, los convierte, verifica que sean válidos, muestra los números y pregunta si desea terminar.»
 
 ### Bloque 6 — Demostración 2 (C, 2 min)
 
-Abrir `Valor_Resistencia_segun_Colores_Bandas`, <kbd>F6</kbd>, e ingresar en este orden:
+Abrir `Numeros_bandas_segun_Colores_Resistencia.java`, clic derecho → *Run File* (<kbd>Shift</kbd> + <kbd>F6</kbd>), e ingresar en este orden:
 
 | Ingresar | Debe mostrar | Qué comentar |
 |---|---|---|
-| `amarillo`, `violeta`, `rojo` | `4700.0 Ohm` · `4.7 kOhm` | El ejemplo de la diapositiva |
-| `ROJO`, `Rojo`, `negro` | `22.0 Ohm` | Acepta mayúsculas |
+| `amarillo`, `violeta`, `rojo` | `Numeros de las bandas: 4 - 7 - 2` | El ejemplo de la diapositiva |
+| `marron`, `NEGRO`, `Naranja` | `Numeros de las bandas: 1 - 0 - 3` | Acepta mayúsculas |
+| `celeste`, `negro`, `dorado` | Dos mensajes de color no válido | Validación con `default` (el dorado no es una cifra) |
+| `0` | `****** FIN *******` | Termina el ciclo |
+
+**Ampliación (si hay tiempo o preguntan por el valor):** <kbd>F6</kbd> ejecuta `Valor_Resistencia_segun_Colores_Bandas`:
+
+| Ingresar | Debe mostrar | Qué comentar |
+|---|---|---|
+| `amarillo`, `violeta`, `rojo` | `4700.0 Ohm` · `4.7 kOhm` | 47 × 10² |
 | `marron`, `rojo`, `dorado` | `1.2 Ohm` | El dorado multiplica por 0.1 |
 | `amarillo`, `violeta`, `violeta` | `4.7E8 Ohm` · `470.0 MOhm` | `E8` es notación científica: × 10⁸ |
-| `rosado`, `negro`, `rojo` | Mensaje de color no válido | Validación con `default` |
 | `0` | `****** FIN *******` | Termina el ciclo |
 
 ### Bloque 7 — Conexión entre las partes (C, 1 min)
 
-> «¿Recuerdan el 0.1 que no se puede guardar exacto? Con la banda dorada hay que multiplicar por 0.1, y 12 por 0.1 da **1.2000000000000002**. Por eso, en nuestro programa, en lugar de multiplicar por 0.1 **dividimos entre 10**, y sale 1.2 limpio. Lo comprobamos con las 1 200 combinaciones posibles de colores: todas dan el valor correcto.»
+> «¿Recuerdan el 0.1 que no se puede guardar exacto? En la ampliación que calcula el valor, la banda dorada multiplica por 0.1, y 12 por 0.1 da **1.2000000000000002**. Por eso, en ese programa, en lugar de multiplicar por 0.1 **dividimos entre 10**, y sale 1.2 limpio. Lo comprobamos con las 1 200 combinaciones posibles de colores: todas dan el valor correcto.»
 
 ### Bloque 8 — Conclusiones (todos, 1 min + preguntas)
 
@@ -186,14 +201,14 @@ Abrir `Valor_Resistencia_segun_Colores_Bandas`, <kbd>F6</kbd>, e ingresar en est
 >
 > 1. Los números reales se guardan como **signo, exponente y mantisa** (IEEE 754), y muchos decimales como 0.1 **no son exactos** en binario.
 > 2. Por eso los reales no se comparan con `==` y a veces conviene dividir en lugar de multiplicar por un decimal.
-> 3. Con un `switch` convertimos los **nombres de los colores** en números y calculamos el valor de la resistencia con su fórmula.
+> 3. Con un `switch` convertimos los **nombres de los colores** en **el número de cada banda**; con esos números, la ampliación calcula el valor de la resistencia.
 > Muchas gracias. ¿Preguntas?»
 
 ## 6. Cómo explicar Java a quien no sabe Java
 
 1. **Compara siempre con C++**: «esto es como `cout`», «esto es como `cin`».
 2. **Diagrama antes que código**: primero el diagrama de flujo o la figura; después el fragmento de código.
-3. **No leas el programa completo**: muestra solo las líneas importantes (lectura, `switch`, fórmula), con la letra bien grande.
+3. **No leas el programa completo**: muestra solo las líneas importantes (lectura, `switch` y lo que se muestra), con la letra bien grande.
 4. **Señala con el cursor** la línea de la que hablas y di su número.
 5. **Evita palabras técnicas** innecesarias (JVM, bytecode, Maven). Si alguien pregunta, una frase basta: «Java se traduce a un código intermedio que funciona en cualquier sistema».
 6. **Explica lo gris de NetBeans** (`s:`, `a:`) al inicio, para que nadie se confunda.
@@ -203,7 +218,9 @@ Abrir `Valor_Resistencia_segun_Colores_Bandas`, <kbd>F6</kbd>, e ingresar en est
 
 **Programa 1 (números reales):** `1` → `-6.75` · `1` → `0.1` · `1` → `4700` · `2` (curiosidades) · `0` (salir).
 
-**Programa 2 (resistencias):** amarillo violeta rojo · ROJO Rojo negro · marron rojo dorado · amarillo violeta violeta · rosado negro rojo · `0`.
+**Programa 2 (números de las bandas):** amarillo violeta rojo · marron NEGRO Naranja · celeste negro dorado · `0`.
+
+**Ampliación (valor de la resistencia):** amarillo violeta rojo · marron rojo dorado · amarillo violeta violeta · `0`.
 
 ## 8. Errores que conviene evitar al exponer
 
@@ -222,10 +239,12 @@ Abrir `Valor_Resistencia_segun_Colores_Bandas`, <kbd>F6</kbd>, e ingresar en est
 | ¿Qué pasa si escribo el color con mayúsculas? | Funciona: `toLowerCase()` lo convierte a minúsculas antes del `switch`. |
 | ¿Y si escribo «marrón» con tilde? | Hay que escribirlo sin tilde (`marron`), como en el programa del profesor; con tilde aparece como color no válido. |
 | ¿Por qué `switch` y no `if`? | Ambos sirven; el `switch` es más claro para comparar una variable con muchos valores fijos, y es lo que usó el profesor. Java permite `switch` con textos desde la versión 7. |
-| ¿Qué hace `Math.pow(10, ncb3)`? | Calcula 10 elevado a `ncb3`: 10², 10³… Es el multiplicador. |
+| ¿Por qué no muestran el valor de la resistencia? | La tarea pide el número de cada banda. El valor lo calcula la ampliación (`Valor_Resistencia_segun_Colores_Bandas`) con la fórmula (cifra₁ × 10 + cifra₂) × 10^multiplicador. |
+| ¿Por qué la 3.ª banda no acepta dorado? | Porque el dorado y el plateado no son cifras del 0 al 9: solo sirven como multiplicador (×0.1, ×0.01) o tolerancia. La ampliación sí los acepta en la 3.ª banda. |
+| ¿Qué hace `Math.pow(10, ncb3)` (en la ampliación)? | Calcula 10 elevado a `ncb3`: 10², 10³… Es el multiplicador. |
 | ¿Por qué sale `4.7E8`? | Es notación científica de Java: 4.7 × 10⁸. Por eso también mostramos `470.0 MOhm`. |
 | ¿Por qué dividen entre 10 en vez de multiplicar por 0.1? | Porque 0.1 no es exacto en binario: 12 × 0.1 = 1.2000000000000002, mientras que 12 / 10 = 1.2. |
-| ¿Qué es la variable `sw`? | Una «bandera»: empieza en 0 y se pone en 1 si algún color no es válido; solo se calcula si sigue en 0. |
+| ¿Qué es la variable `sw`? | Una «bandera»: empieza en 0 y se pone en 1 si algún color no es válido; solo se muestra el resultado si sigue en 0. |
 | ¿Qué es el sesgo? | Un número que se suma al exponente (127 en `float`) para guardar exponentes negativos sin usar signo. |
 | ¿Qué es el bit implícito? | El «1.» inicial de la mantisa: siempre es 1, por eso no se guarda y se gana un bit de precisión. |
 | ¿Por qué 0.1 + 0.2 no da 0.3? | Ni 0.1 ni 0.2 se guardan exactos (son infinitos en binario); sus pequeños errores se suman. |
@@ -239,7 +258,7 @@ Abrir `Valor_Resistencia_segun_Colores_Bandas`, <kbd>F6</kbd>, e ingresar en est
 ## 10. Plan B si la demostración falla
 
 1. Mantener la calma: «Mientras se soluciona, les muestro la ejecución que hicimos antes».
-2. Abrir este PDF en la sección de **ejecución real** de cada programa (Parte 1: sección 13.2; Parte 2: sección 5.7) o mostrar capturas tomadas el día anterior.
+2. Abrir la guía completa en la sección de **ejecución real** de cada programa (Parte 1: sección 13.2; Parte 2: sección 5.7, y 6.7 para la ampliación) o mostrar capturas tomadas el día anterior.
 3. Explicar con la **prueba de escritorio** (Parte 2, sección 5.9): se puede seguir a mano en la pizarra.
 
 ## 11. Tarjeta de bolsillo
@@ -252,6 +271,7 @@ Abrir `Valor_Resistencia_segun_Colores_Bandas`, <kbd>F6</kbd>, e ingresar en est
 | −6.75 | 110.11₂ = 1.1011 × 2² → `C0D80000` (exacto) |
 | 0.1 | 0.000110011…₂ (infinito) → `3DCCCCCD` → 0.100000001490116… |
 | Colores 0–9 | Negro, Marrón, Rojo, Naranja, Amarillo, Verde, Azul, Violeta, Gris, Blanco |
+| Números de las bandas | amarillo-violeta-rojo → 4 - 7 - 2 |
 | Fórmula resistencia | (cifra₁ × 10 + cifra₂) × 10^multiplicador |
 | Ejemplo | amarillo-violeta-rojo = 47 × 100 = 4 700 Ω = 4.7 kΩ |
 | NetBeans | <kbd>F6</kbd> ejecutar proyecto · <kbd>Shift</kbd>+<kbd>F6</kbd> ejecutar archivo |
