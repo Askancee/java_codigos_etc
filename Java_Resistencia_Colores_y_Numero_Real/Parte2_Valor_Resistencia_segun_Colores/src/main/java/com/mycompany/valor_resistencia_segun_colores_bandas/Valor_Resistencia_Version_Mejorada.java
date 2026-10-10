@@ -110,7 +110,7 @@ public class Valor_Resistencia_Version_Mejorada
 
             if(d1 == -1 || d2 == -1 || pot == -99 || tol == -1)
             {
-                System.out.print("\n * Algun color no es valido para su banda. Intente de nuevo.\n");
+                System.out.print("\n * Algun color no es valido para su banda.\n");
             }
             else
             {

@@ -1312,7 +1312,7 @@ La ejecución muestra exactamente lo mismo que la versión `struct` (valor del s
 
 ### Diagrama de flujo
 
-![Ejercicio 9: programa principal y la operación calcularValorStock](../diagramas/ej09_flujo.svg)
+![Ejercicio 9: programa principal y la operación calcularValorStock (el rectángulo con doble borde es la llamada a un subproceso o método)](../diagramas/ej09_flujo.svg)
 
 Pseudocódigo de la operación:
 

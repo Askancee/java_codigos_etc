@@ -95,7 +95,8 @@ public class Numero_Real_en_Memoria
         if(num.signum() == 0 || abs.compareTo(new BigDecimal("1E9")) >= 0
                              || abs.compareTo(new BigDecimal("1E-6")) < 0)
         {
-            System.out.print("(Para cero o numeros muy grandes/pequenos se omite el paso a paso)\n");
+            System.out.print("(Para cero o numeros muy grandes/pequenos"
+                             + " se omite el paso a paso)\n");
             return;
         }
 
@@ -115,11 +116,13 @@ public class Numero_Real_en_Memoria
         }
         else
         {
-            System.out.print("2) Parte entera = " + entero + "  (dividir entre 2 y anotar el resto)\n");
+            System.out.print("2) Parte entera = " + entero
+                             + "  (dividir entre 2 y anotar el resto)\n");
             long q = entero;
             while(q > 0)
             {
-                System.out.print("      " + q + " / 2 = " + (q / 2) + "   resto " + (q % 2) + "\n");
+                System.out.print("      " + q + " / 2 = " + (q / 2)
+                                 + "   resto " + (q % 2) + "\n");
                 binEntero = (q % 2) + binEntero;      // cada resto se escribe a la IZQUIERDA
                 q = q / 2;
             }
@@ -141,20 +144,22 @@ public class Numero_Real_en_Memoria
             BigDecimal producto = fr.multiply(new BigDecimal(2));
             int bit = (producto.compareTo(BigDecimal.ONE) >= 0) ? 1 : 0;
             if(pasos < 10)                        // solo mostramos los 10 primeros pasos
-                System.out.print("      " + limpio(fr) + " x 2 = " + limpio(producto) + "   -> bit " + bit + "\n");
+                System.out.print("      " + limpio(fr) + " x 2 = " + limpio(producto)
+                                 + "   -> bit " + bit + "\n");
             binFrac = binFrac + bit;
-            fr = producto.subtract(new BigDecimal(bit));   // nos quedamos con lo que esta despues del punto
+            fr = producto.subtract(new BigDecimal(bit));   // queda solo lo de despues del punto
             pasos++;
         }
         boolean infinito = fr.signum() > 0;       // nunca llego a 0: binario infinito (periodico)
         if(pasos > 10)
             System.out.print("      ... (" + (pasos - 10) + " pasos mas)\n");
         if(infinito)
-            System.out.print("   => NUNCA llega a 0: en binario este numero tiene infinitos digitos\n");
+            System.out.print("   => NUNCA llega a 0: en binario este numero"
+                             + " tiene infinitos digitos\n");
         if(binFrac.equals(""))
             binFrac = "0";
-        System.out.print("   => numero completo en binario = " + binEntero + "." + recortar(binFrac, 32)
-                         + (infinito ? "..." : "") + "\n");
+        System.out.print("   => numero completo en binario = " + binEntero + "."
+                         + recortar(binFrac, 32) + (infinito ? "..." : "") + "\n");
 
         // ---- Paso 4: normalizar -> 1.xxxxx x 2^exponente ----
         int exponente;
@@ -184,8 +189,10 @@ public class Numero_Real_en_Memoria
         String mantisa = relleno.substring(0, 23);
         boolean bit24 = relleno.charAt(23) == '1';
         boolean hayMasUnos = relleno.substring(24).contains("1") || infinito;
-        System.out.print("6) Mantisa: se toman 23 bits despues del punto (el \"1.\" NO se guarda)\n");
-        System.out.print("      " + mantisa + " | " + relleno.charAt(23) + " ...  <- el bit 24 decide el redondeo\n");
+        System.out.print("6) Mantisa: se toman 23 bits despues del punto"
+                         + " (el \"1.\" NO se guarda)\n");
+        System.out.print("      " + mantisa + " | " + relleno.charAt(23)
+                         + " ...  <- el bit 24 decide el redondeo\n");
         if(bit24 && (hayMasUnos || mantisa.endsWith("1")))
         {
             long m = Long.parseLong(mantisa, 2) + 1;    // se suma 1 al ultimo bit
@@ -195,7 +202,8 @@ public class Numero_Real_en_Memoria
                 expGuardado++;
             }
             mantisa = aBinario(m, 23);
-            System.out.print("      el bit 24 es 1 -> se REDONDEA hacia arriba: " + mantisa + "\n");
+            System.out.print("      el bit 24 es 1 -> se REDONDEA hacia arriba: "
+                             + mantisa + "\n");
         }
         else
             System.out.print("      el resto se descarta (redondeo hacia abajo)\n");
@@ -223,8 +231,10 @@ public class Numero_Real_en_Memoria
 
         System.out.print("\n----- LO QUE JAVA GUARDA: float (32 bits = 4 bytes) -----\n");
         System.out.print("Bits        : " + s + " | " + e + " | " + m + "\n");
-        System.out.print("Signo       : " + s + (s.equals("1") ? "  (negativo)" : "  (positivo)") + "\n");
-        System.out.print("Exponente   : " + e + " = " + expGuardado + explicarExponente(expGuardado, 127, 255) + "\n");
+        System.out.print("Signo       : " + s
+                         + (s.equals("1") ? "  (negativo)" : "  (positivo)") + "\n");
+        System.out.print("Exponente   : " + e + " = " + expGuardado
+                         + explicarExponente(expGuardado, 127, 255) + "\n");
         System.out.print("Mantisa     : " + m + "\n");
         System.out.print("Hexadecimal : " + hex + "\n");
         System.out.print("En la RAM   : " + bytesEnMemoria(hex) + "  (little-endian)\n");
@@ -252,8 +262,10 @@ public class Numero_Real_en_Memoria
 
         System.out.print("\n----- LO QUE JAVA GUARDA: double (64 bits = 8 bytes) -----\n");
         System.out.print("Bits        : " + s + " | " + e + " | " + m + "\n");
-        System.out.print("Signo       : " + s + (s.equals("1") ? "  (negativo)" : "  (positivo)") + "\n");
-        System.out.print("Exponente   : " + e + " = " + expGuardado + explicarExponente(expGuardado, 1023, 2047) + "\n");
+        System.out.print("Signo       : " + s
+                         + (s.equals("1") ? "  (negativo)" : "  (positivo)") + "\n");
+        System.out.print("Exponente   : " + e + " = " + expGuardado
+                         + explicarExponente(expGuardado, 1023, 2047) + "\n");
         System.out.print("Mantisa     : " + m + "\n");
         System.out.print("Hexadecimal : " + hex + "\n");
         System.out.print("En la RAM   : " + bytesEnMemoria(hex) + "  (little-endian)\n");
@@ -287,17 +299,21 @@ public class Numero_Real_en_Memoria
         float grande = 16777217f;
         System.out.print("3) float 16777217 se guarda como " + (long) grande
                          + "  (el float solo tiene 24 bits de precision, ~7 cifras)\n");
-        System.out.print("   double 16777217 se guarda como " + (long) 16777217.0 + "  (~16 cifras)\n");
+        System.out.print("   double 16777217 se guarda como " + (long) 16777217.0
+                         + "  (~16 cifras)\n");
 
         System.out.print("4) 1/3 en float  = " + (1.0f / 3) + "\n");
         System.out.print("   1/3 en double = " + (1.0 / 3) + "\n");
 
-        System.out.print("5) Distancia al siguiente float despues de 1.0       : " + Math.ulp(1.0f) + "\n");
-        System.out.print("   Distancia al siguiente float despues de 1000000.0 : " + Math.ulp(1000000.0f) + "\n");
-        System.out.print("   (mientras mas grande el numero, mas separados estan los valores posibles)\n");
+        System.out.print("5) Distancia al siguiente float despues de 1.0       : "
+                         + Math.ulp(1.0f) + "\n");
+        System.out.print("   Distancia al siguiente float despues de 1000000.0 : "
+                         + Math.ulp(1000000.0f) + "\n");
+        System.out.print("   (mientras mas grande el numero,"
+                         + " mas separados estan los valores posibles)\n");
 
-        System.out.print("6) Valores especiales: 1.0/0 = " + (1.0 / 0) + " ;  -1.0/0 = " + (-1.0 / 0)
-                         + " ;  0.0/0 = " + (0.0 / 0) + "\n");
+        System.out.print("6) Valores especiales: 1.0/0 = " + (1.0 / 0)
+                         + " ;  -1.0/0 = " + (-1.0 / 0) + " ;  0.0/0 = " + (0.0 / 0) + "\n");
 
         System.out.print("7) Resistencia marron-rojo-dorado: 12 * 0.1 = " + (12 * 0.1)
                          + "   pero 12 / 10.0 = " + (12 / 10.0) + "\n");
@@ -321,7 +337,10 @@ public class Numero_Real_en_Memoria
     {
         String hex = "";
         for(int i = 0; i < bits.length(); i += 4)
-            hex = hex + Integer.toHexString(Integer.parseInt(bits.substring(i, i + 4), 2)).toUpperCase();
+        {
+            int valor = Integer.parseInt(bits.substring(i, i + 4), 2);   // 4 bits -> 0..15
+            hex = hex + Integer.toHexString(valor).toUpperCase();           // 0..15 -> 0..F
+        }
         return hex;
     }
 
@@ -345,7 +364,8 @@ public class Numero_Real_en_Memoria
             return "  (todo ceros: el numero es 0 o subnormal)";
         if(expGuardado == maximo)
             return "  (todo unos: Infinito o NaN)";
-        return "  ->  exponente real = " + expGuardado + " - " + sesgo + " = " + (expGuardado - sesgo);
+        return "  ->  exponente real = " + expGuardado + " - " + sesgo
+               + " = " + (expGuardado - sesgo);
     }
 
     // Diferencia entre el numero que escribio el usuario y el que realmente quedo guardado

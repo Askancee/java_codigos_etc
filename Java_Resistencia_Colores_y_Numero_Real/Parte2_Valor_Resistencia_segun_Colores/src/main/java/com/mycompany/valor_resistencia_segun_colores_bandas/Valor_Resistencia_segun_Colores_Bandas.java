@@ -68,7 +68,8 @@ public class Valor_Resistencia_segun_Colores_Bandas
                 case "blanco":   ncb1 = 9;
                                  break;
                 default: sw = 1;
-                         System.out.print("\n * El color de la Primera Banda (" + colorb1 + ") No es valido");
+                         System.out.print("\n * El color de la Primera Banda ("
+                                          + colorb1 + ") No es valido");
             }
             switch(colorb2)
             {
@@ -93,7 +94,8 @@ public class Valor_Resistencia_segun_Colores_Bandas
                 case "blanco":   ncb2 = 9;
                                  break;
                 default: sw = 1;
-                         System.out.print("\n * El color de la Segunda Banda (" + colorb2 + ") No es valido");
+                         System.out.print("\n * El color de la Segunda Banda ("
+                                          + colorb2 + ") No es valido");
             }
             // La Tercera Banda es el MULTIPLICADOR: ncb3 es la potencia de 10
             switch(colorb3)
@@ -123,7 +125,8 @@ public class Valor_Resistencia_segun_Colores_Bandas
                 case "plateado": ncb3 = -2;     // x 0.01
                                  break;
                 default: sw = 1;
-                         System.out.print("\n * El color de la Tercera Banda (" + colorb3 + ") No es valido");
+                         System.out.print("\n * El color de la Tercera Banda ("
+                                          + colorb3 + ") No es valido");
             }
 
             // ---------- PROCESO 2 y SALIDA ----------
@@ -131,9 +134,10 @@ public class Valor_Resistencia_segun_Colores_Bandas
             {
                 System.out.print("\nEl numero de la Primera Banda (" + colorb1 + ") es: " + ncb1);
                 System.out.print("\nEl numero de la Segunda Banda (" + colorb2 + ") es: " + ncb2);
-                System.out.print("\nLa Tercera Banda (" + colorb3 + ") multiplica por: 10^" + ncb3);
+                System.out.print("\nLa Tercera Banda (" + colorb3 + ") multiplica por: 10^"
+                                 + ncb3);
 
-                double vr = ncb1 * 10 + ncb2;          // las 2 primeras bandas forman un numero: 4 y 7 -> 47
+                double vr = ncb1 * 10 + ncb2;          // 2 primeras bandas: 4 y 7 -> 47
                 if(ncb3 >= 0)
                     vr = vr * Math.pow(10, ncb3);      // 47 x 10^2 = 4700
                 else
@@ -150,12 +154,12 @@ public class Valor_Resistencia_segun_Colores_Bandas
                     System.out.print("\nEquivale a: " + (vr / 1000) + " kOhm");
             }
             else
-                System.out.print("\nNo se puede calcular: revise los colores e intente de nuevo.");
+                System.out.print("\nNo se puede calcular: revise los colores.");
 
             System.out.print("\n\nPara terminar Ingrese <0>  (otro valor para continuar)");
             System.out.print("\nDesea terminar? ");
-            String n = datos.next();                  // se lee como texto: no falla si escriben una letra
-            if(n.equals("0"))                         // los String se comparan con equals, NO con ==
+            String n = datos.next();          // se lee como texto: no falla si escriben una letra
+            if(n.equals("0"))                 // los String se comparan con equals, NO con ==
                 opc = 1;
         }
         System.out.print("\n****** FIN *******\n");
