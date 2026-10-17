@@ -1,5 +1,8 @@
 # Guion de exposición
 
+> [!TIP]
+> Este es el guion **general** (las dos partes en 15 a 20 minutos). Para preparar cada parte a fondo, con el razonamiento de cada paso, están los guiones detallados: [el programa de los colores](05_guion_programa_colores_bandas.md) y [cómo se almacena un número real en la memoria](06_guion_numero_real_en_memoria.md).
+
 ## 1. Objetivo y público
 
 **Objetivo:** que al terminar, los compañeros puedan responder dos preguntas:
