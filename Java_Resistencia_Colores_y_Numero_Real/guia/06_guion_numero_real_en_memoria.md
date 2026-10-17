@@ -4,6 +4,9 @@ Este guion sirve para exponer cómo guarda la computadora un número con decimal
 
 Todos los valores que aparecen aquí se comprobaron en Java (las salidas de los programas son reales). La teoría completa, con más detalle, está en el capítulo [Parte 1 — Número real en memoria](02_numero_real_en_memoria.md).
 
+> [!TIP]
+> Si lo que se necesita es **la teoría explicada a fondo** (signo, exponente y sesgo, mantisa, redondeo…), sin indicaciones para exponer, está en [¿Cómo se almacena un número real en la memoria? Teoría completa](07_teoria_numero_real_en_memoria.md).
+
 ## 0. Cómo leer este guion
 
 | Marca | Significa |

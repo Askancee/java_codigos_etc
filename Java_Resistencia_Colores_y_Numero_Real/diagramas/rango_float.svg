@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="272" viewBox="0 0 900 272"><title>Rango de un float</title><defs><marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#455A64"/></marker></defs><rect x="0" y="0" width="900" height="272" rx="0" fill="#FFFFFF" stroke="none" stroke-width="0"/>
+<text x="450" y="22" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="16" font-weight="bold" fill="#263238" text-anchor="middle" dominant-baseline="central">Qué números puede guardar un float (la recta no está a escala)</text>
+<rect x="30" y="62" width="56" height="40" rx="0" fill="#FFEBEE" stroke="#C62828" stroke-width="1.4"/>
+<text x="58.0" y="82.0" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="12" font-weight="bold" fill="#C62828" text-anchor="middle" dominant-baseline="central">−∞</text>
+<rect x="86" y="62" width="250" height="40" rx="0" fill="#E8F5E9" stroke="#2E7D32" stroke-width="1.4"/>
+<text x="211.0" y="82.0" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="12" font-weight="bold" fill="#2E7D32" text-anchor="middle" dominant-baseline="central">normales negativos</text>
+<rect x="336" y="62" width="82" height="40" rx="0" fill="#FFF8E1" stroke="#F9A825" stroke-width="1.4"/>
+<text x="377.0" y="82.0" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="12" font-weight="bold" fill="#F9A825" text-anchor="middle" dominant-baseline="central">subnormales</text>
+<rect x="418" y="62" width="64" height="40" rx="0" fill="#F5F5F5" stroke="#757575" stroke-width="1.4"/>
+<text x="450.0" y="82.0" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="12" font-weight="bold" fill="#757575" text-anchor="middle" dominant-baseline="central">−0 +0</text>
+<rect x="482" y="62" width="82" height="40" rx="0" fill="#FFF8E1" stroke="#F9A825" stroke-width="1.4"/>
+<text x="523.0" y="82.0" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="12" font-weight="bold" fill="#F9A825" text-anchor="middle" dominant-baseline="central">subnormales</text>
+<rect x="564" y="62" width="250" height="40" rx="0" fill="#E8F5E9" stroke="#2E7D32" stroke-width="1.4"/>
+<text x="689.0" y="82.0" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="12" font-weight="bold" fill="#2E7D32" text-anchor="middle" dominant-baseline="central">normales positivos</text>
+<rect x="814" y="62" width="56" height="40" rx="0" fill="#FFEBEE" stroke="#C62828" stroke-width="1.4"/>
+<text x="842.0" y="82.0" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="12" font-weight="bold" fill="#C62828" text-anchor="middle" dominant-baseline="central">+∞</text>
+<line x1="86" y1="102" x2="86" y2="112" stroke="#455A64" stroke-width="1.2"/>
+<text x="86" y="126" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="12" fill="#263238" text-anchor="middle" dominant-baseline="central"><tspan>−3.4 × 10</tspan><tspan font-size="9" dy="-5">38</tspan></text>
+<line x1="336" y1="102" x2="336" y2="112" stroke="#455A64" stroke-width="1.2"/>
+<text x="336" y="126" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="12" fill="#263238" text-anchor="middle" dominant-baseline="central"><tspan>−1.18 × 10</tspan><tspan font-size="9" dy="-5">−38</tspan></text>
+<line x1="564" y1="102" x2="564" y2="112" stroke="#455A64" stroke-width="1.2"/>
+<text x="564" y="126" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="12" fill="#263238" text-anchor="middle" dominant-baseline="central"><tspan>1.18 × 10</tspan><tspan font-size="9" dy="-5">−38</tspan></text>
+<line x1="814" y1="102" x2="814" y2="112" stroke="#455A64" stroke-width="1.2"/>
+<text x="814" y="126" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="12" fill="#263238" text-anchor="middle" dominant-baseline="central"><tspan>3.4 × 10</tspan><tspan font-size="9" dy="-5">38</tspan></text>
+<line x1="418" y1="102" x2="418" y2="112" stroke="#455A64" stroke-width="1.2"/>
+<line x1="482" y1="102" x2="482" y2="112" stroke="#455A64" stroke-width="1.2"/>
+<text x="450.0" y="126" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="11" fill="#263238" text-anchor="middle" dominant-baseline="central"><tspan>± 1.4 × 10</tspan><tspan font-size="8" dy="-5">−45</tspan></text>
+<text x="450.0" y="142" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="10" font-weight="normal" fill="#607D8B" text-anchor="middle" dominant-baseline="central">(el más pequeño)</text>
+<text x="82" y="50" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="11" font-weight="normal" fill="#C62828" text-anchor="end" dominant-baseline="central">overflow → −∞</text>
+<text x="818" y="50" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="11" font-weight="normal" fill="#C62828" text-anchor="start" dominant-baseline="central">overflow → +∞</text>
+<text x="450" y="50" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="11" font-weight="normal" fill="#F9A825" text-anchor="middle" dominant-baseline="central">underflow: cada vez menos precisión → 0</text>
+<rect x="30" y="160" width="840" height="96" rx="10" fill="#FAFAFA" stroke="#CFD8DC" stroke-width="1.5"/>
+<text x="450" y="180" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="12" fill="#263238" text-anchor="middle" dominant-baseline="central"><tspan>Normales: de 1.18 × 10</tspan><tspan font-size="9" dy="-5">−38</tspan><tspan dy="5"> a 3.4 × 10</tspan><tspan font-size="9" dy="-5">38</tspan><tspan dy="5"> en valor absoluto (76 órdenes de magnitud), con unas 7 cifras significativas.</tspan></text>
+<text x="450" y="202" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="12" fill="#263238" text-anchor="middle" dominant-baseline="central"><tspan>Subnormales: los más pequeños de todos, hasta 1.4 × 10</tspan><tspan font-size="9" dy="-5">−45</tspan><tspan dy="5">, con cada vez menos cifras.</tspan></text>
+<text x="450" y="224" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="12" font-weight="normal" fill="#263238" text-anchor="middle" dominant-baseline="central">Además existe NaN («no es un número»): el resultado de operaciones sin sentido como 0/0.</text>
+<text x="450" y="244" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="12" fill="#607D8B" text-anchor="middle" dominant-baseline="central"><tspan fill="#607D8B">En double: de 2.2 × 10</tspan><tspan fill="#607D8B" font-size="9" dy="-5">−308</tspan><tspan fill="#607D8B" dy="5"> a 1.8 × 10</tspan><tspan fill="#607D8B" font-size="9" dy="-5">308</tspan><tspan fill="#607D8B" dy="5"> (subnormales hasta 4.9 × 10</tspan><tspan fill="#607D8B" font-size="9" dy="-5">−324</tspan><tspan fill="#607D8B" dy="5">), con unas 16 cifras.</tspan></text></svg>

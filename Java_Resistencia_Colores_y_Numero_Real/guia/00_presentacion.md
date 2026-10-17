@@ -18,7 +18,7 @@ Esta carpeta resuelve la tarea de las **imágenes del código en NetBeans**, que
 | `Parte2_Valor_Resistencia_segun_Colores/` | Proyecto de NetBeans (Maven) de la resistencia: el programa de los números de las bandas, la ampliación que calcula el valor y la versión mejorada |
 | `imagenes_originales/` | Las capturas del código de clase y su **transcripción completa** en un archivo `.java` |
 | `diagramas/` | Todas las figuras de la guía |
-| `guia/` | El texto de esta guía (se lee en GitHub) y los guiones detallados (también en PDF) |
+| `guia/` | El texto de esta guía (se lee en GitHub), los guiones detallados y la teoría completa del número real (también en PDF) |
 
 ## Orden de lectura recomendado
 
@@ -26,7 +26,7 @@ Esta carpeta resuelve la tarea de las **imágenes del código en NetBeans**, que
 2. **Parte 1 — El número real en memoria**.
 3. **Parte 2 — La resistencia por colores**.
 4. **Guion de exposición**: cómo presentarlo.
-5. **Guiones detallados** (capítulos 05 y 06): para preparar cada parte a fondo.
+5. **Guiones detallados** (capítulos 05 y 06) y **teoría completa del número real** (capítulo 07): para profundizar.
 
 Si van a exponer en grupo, todos deberían leer el capítulo «Java desde cero» y luego cada uno profundizar en la parte que va a presentar.
 

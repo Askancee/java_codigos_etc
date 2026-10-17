@@ -9,6 +9,7 @@ Resolución de la tarea de las **imágenes del código en NetBeans**, que tiene 
 | **[`Guia_Java_Numero_Real_y_Resistencia.pdf`](Guia_Java_Numero_Real_y_Resistencia.pdf)** | La guía completa: teoría, programas explicados, pruebas y guion (60 páginas) |
 | **[`Guion_de_Exposicion.pdf`](Guion_de_Exposicion.pdf)** | Solo el guion de la exposición (11 páginas), para tenerlo a mano al presentar |
 | **[`guia/Guion_Programa_Colores_Bandas.pdf`](guia/Guion_Programa_Colores_Bandas.pdf)** | Guion **detallado** para exponer el programa de los colores (clase `Main`): qué decir, el porqué de cada parte del código, demostración, prueba de escritorio, experimentos y preguntas (23 páginas) |
+| **[`guia/Teoria_Numero_Real_en_Memoria.pdf`](guia/Teoria_Numero_Real_en_Memoria.pdf)** | **Teoría completa** de cómo se almacena un número real: el signo, el exponente y el sesgo, la mantisa y el bit implícito, los valores especiales, el redondeo y los errores, con diagramas, ejemplos y ejercicios resueltos (30 páginas) |
 | **[`guia/Guion_Numero_Real_en_Memoria.pdf`](guia/Guion_Numero_Real_en_Memoria.pdf)** | Guion **detallado** para exponer cómo se almacena un número real en la memoria, con el razonamiento paso a paso, lo que se escribe en la pizarra y una demostración (19 páginas) |
 
 También se puede leer en GitHub, por capítulos:
@@ -21,6 +22,7 @@ También se puede leer en GitHub, por capítulos:
 | [Parte 2 — Resistencia por colores](guia/03_resistencia_por_colores.md) | Resistencias y código de colores, análisis del programa de clase, **el programa nuevo** (colores → número de cada banda) y su **ampliación** (colores → valor), cada uno con pseudocódigo, diagrama de flujo, explicación línea por línea y pruebas; versión mejorada |
 | [Guion de exposición](guia/04_guion_de_exposicion.md) | Estructura y tiempos, diapositivas sugeridas, qué decir, demostraciones, preguntas frecuentes y plan B |
 | [Guion detallado: programa de los colores](guia/05_guion_programa_colores_bandas.md) | El programa `Main` (colores → número de cada banda) bloque por bloque: qué decir, por qué está hecho así, demostración, experimentos «¿qué pasa si…?», preguntas difíciles y el código con números de línea |
+| [Teoría completa: número real en memoria](guia/07_teoria_numero_real_en_memoria.md) | La teoría a fondo, sin indicaciones para exponer: bits y binario, decimales infinitos, punto fijo y punto flotante, IEEE 754, **signo**, **exponente y sesgo**, **mantisa y bit implícito**, codificar y decodificar, valores especiales, redondeo y ULP, errores en las operaciones, Java, glosario y ejercicios |
 | [Guion detallado: número real en memoria](guia/06_guion_numero_real_en_memoria.md) | Del gancho «0.1 + 0.2» a IEEE 754: qué decir, por qué funciona así, pizarra paso a paso (−6.75 y 0.1), demostración y preguntas difíciles |
 
 ## Programas (proyectos de NetBeans)
